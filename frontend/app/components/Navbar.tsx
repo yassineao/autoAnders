@@ -53,8 +53,8 @@ export default function Navbar({
 
           {/* Desktop Navigation */}
           <ul className="hidden items-center gap-1 lg:flex">
-            {content.items.map((item) => (
-              <li key={item.href} className="group relative">
+            {content.items.map((item, itemIndex) => (
+              <li key={`${item.href}-${item.label}-${itemIndex}`} className="group relative">
                 {/* here auf Link wenn funktioniert */}
                 <div
                   className="inline-flex h-10 items-center gap-1 rounded-lg px-4 text-sm font-medium text-brand-graySoft transition-colors hover:bg-white/5 hover:text-white"
@@ -81,8 +81,8 @@ export default function Navbar({
                 {item.children?.length && (
                   <div className="invisible absolute left-0 top-full z-50 mt-2 w-56 translate-y-2 rounded-xl border border-white/10 bg-brand-navyDark/95 p-1.5 opacity-0 shadow-xl backdrop-blur-lg transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
                     <ul className="space-y-0.5">
-                      {item.children.map((child) => (
-                        <li key={child.href}>
+                      {item.children.map((child, childIndex) => (
+                        <li key={`${child.href}-${child.label}-${childIndex}`}>
                           <Link
                             href={localizedHref(child.href)}
                             className="block rounded-lg px-3 py-2.5 text-sm text-brand-graySoft transition-colors hover:bg-white/8 hover:text-white"

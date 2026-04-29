@@ -1,17 +1,10 @@
 import type { MetadataRoute } from "next";
 import { getSiteUrl } from "./lib/seo";
 import { locales } from "./lib/i18n";
-import type { ServiceSlug } from "./types/Service";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const siteUrl = getSiteUrl();
   const lastModified = new Date();
-  const serviceSlugs: ServiceSlug[] = [
-    "social-media",
-    "content-creation",
-    "performance-marketing",
-    "webdesign",
-  ];
 
   const buildAlternateLanguages = (path = "") =>
     Object.fromEntries(
@@ -83,6 +76,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
       },
     },
     {
+      url: `${siteUrl}/${locale}/Catalogue`,
+      lastModified,
+      changeFrequency: "weekly" as const,
+      priority: 0.9,
+      alternates: {
+        languages: buildAlternateLanguages("/Catalogue"),
+      },
+    },
+    {
       url: `${siteUrl}/${locale}/form`,
       lastModified,
       changeFrequency: "monthly" as const,
@@ -91,15 +93,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
         languages: buildAlternateLanguages("/form"),
       },
     },
-    ...serviceSlugs.map((service) => ({
-      url: `${siteUrl}/${locale}/services/${service}`,
-      lastModified,
-      changeFrequency: "monthly" as const,
-      priority: 0.9,
-      alternates: {
-        languages: buildAlternateLanguages(`/services/${service}`),
-      },
-    })),
   ]);
 
   return localizedPages;

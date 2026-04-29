@@ -221,7 +221,11 @@ type CatalogueCar = {
   transmission: string;
   fuel: string;
   image: string;
-  tags: string[];
+  tags: {
+    de: string[];
+    en: string[];
+    nl: string[];
+  };
 };
 
 type CatalogueLabels = {
@@ -231,6 +235,7 @@ type CatalogueLabels = {
   maxPrice: string;
   searchButton: string;
   viewDetails: string;
+  moreButton: string;
 };
 
 type CatalogueContent = {

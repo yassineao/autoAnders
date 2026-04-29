@@ -8,22 +8,22 @@ export const enDictionary: LocaleDictionary = {
       items: [
         {
           label: "Buy a Car",
-          href: "/services",
-          children: [
-            {
-              label: "Available Cars",
-              href: "/services/social-media",
-            },
-            {
-              label: "Car Financing",
-              href: "/services/content-creation",
-            },
-            {
-              label: "Trade-In Service",
-              href: "/services/performance-marketing",
-            },
-            { label: "Vehicle Check", href: "/services/webdesign" },
-          ],
+          href: "/Catalogue",
+          // children: [
+          //   {
+          //     label: "Available Cars",
+          //     href: "/Catalogue",
+          //   },
+          //   {
+          //     label: "Car Financing",
+          //     href: "/Catalogue",
+          //   },
+          //   {
+          //     label: "Trade-In Service",
+          //     href: "/Catalogue",
+          //   },
+          //   { label: "Vehicle Check", href: "/Catalogue" },
+          // ],
         },
         { label: "FAQ", href: "/faq" },
         { label: "Sell your car", href: "/sell-your-car" },
@@ -41,14 +41,14 @@ export const enDictionary: LocaleDictionary = {
       navigationLinks: [
         { label: "Home", href: "/" },
         { label: "Benefits", href: "/advantages" },
-        { label: "Buy a Car", href: "#services" },
+        { label: "Buy a Car", href: "/Catalogue" },
         { label: "About Us", href: "/about" },
       ],
       serviceLinks: [
-        { label: "Available Cars", href: "/services/social-media" },
-        { label: "Car Financing", href: "/services/content-creation" },
-        { label: "Trade-In Service", href: "/services/performance-marketing" },
-        { label: "Vehicle Check", href: "/services/webdesign" },
+        { label: "Available Cars", href: "/Catalogue" },
+        { label: "Car Financing", href: "/Catalogue" },
+        { label: "Trade-In Service", href: "/Catalogue" },
+        { label: "Vehicle Check", href: "/Catalogue" },
       ],
       contactLinks: [
         { label: "Sell Your Car", href: "/form" },
@@ -162,6 +162,7 @@ export const enDictionary: LocaleDictionary = {
     maxPrice: "Maximum price",
     searchButton: "Search",
     viewDetails: "View details",
+    moreButton: "More",
   },
   cars: [
     {
@@ -174,7 +175,11 @@ export const enDictionary: LocaleDictionary = {
       transmission: "Automatic",
       fuel: "Petrol",
       image: "/cars/bmw.jpg",
-      tags: ["Navigation", "Leather", "Warranty"],
+      tags: {
+        de: ["Navigation", "Leder", "Garantie"],
+        en: ["Navigation", "Leather", "Warranty"],
+        nl: ["Navigatie", "Leder", "Garantie"],
+      },
     },
     {
       id: 2,
@@ -186,7 +191,11 @@ export const enDictionary: LocaleDictionary = {
       transmission: "Manual",
       fuel: "Diesel",
       image: "/cars/audi.jpg",
-      tags: ["LED", "Camera", "Cruise Control"],
+      tags: {
+        de: ["LED", "Kamera", "Tempomat"],
+        en: ["LED", "Camera", "Cruise Control"],
+        nl: ["LED", "Camera", "Cruise control"],
+      },
     },
     {
       id: 3,
@@ -198,7 +207,11 @@ export const enDictionary: LocaleDictionary = {
       transmission: "Automatic",
       fuel: "Hybrid",
       image: "/cars/mercedes.jpg",
-      tags: ["AMG Line", "PDC", "Heated Seats"],
+      tags: {
+        de: ["AMG Line", "PDC", "Sitzheizung"],
+        en: ["AMG Line", "PDC", "Heated Seats"],
+        nl: ["AMG Line", "PDC", "Stoelverwarming"],
+      },
     },
   ],
 },

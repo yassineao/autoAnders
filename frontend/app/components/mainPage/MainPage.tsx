@@ -7,7 +7,7 @@ import AboutUs from "./AboutUs";
 import Advantages from "./Advantages";
 import Hero from "./Hero";
 import Services from "./Services";
-import AutoCatalogue from "./AutoCatalogue";
+import AutoCatalogue from "../AutoCatalogue";
 
 export default function MainPage({
   home,
@@ -55,21 +55,22 @@ export default function MainPage({
         <Hero content={home.hero} />
       </div>
 
-      <div className="defer-section lg:py-16 bg-black">
-        <Advantages content={home.advantages} />
-      </div>
+      
       <div className="defer-section  ">
         <Services content={home.services} />
       </div>
       <div className="defer-section bg-black">
         <AutoCatalogue
-          cars={home.catalogue.cars}
+          cars={home.catalogue.cars.slice(0, 3)}
+          locale={locale}
           title={home.catalogue.title}
           subtitle={home.catalogue.subtitle}
           labels={home.catalogue.labels}
         />
       </div>
-
+<div className="defer-section lg:py-16 bg-black">
+        <Advantages content={home.advantages} />
+      </div>
       <div className="defer-section bg-black">
         <AboutUs content={home.about} locale={locale} />
       </div>

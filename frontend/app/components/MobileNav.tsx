@@ -112,9 +112,9 @@ export default function MobileNav({ locale, content }: MobileNavProps) {
 
           <div className="max-h-[calc(100vh-7rem)] overflow-y-auto p-3">
             <ul className="space-y-2">
-              {content.items.map((item) => (
+              {content.items.map((item, itemIndex) => (
                 <li
-                  key={item.href}
+                  key={`${item.href}-${item.label}-${itemIndex}`}
                   className="rounded-2xl border border-white/8 bg-white/[0.03] p-2"
                 >
                   <Link
@@ -146,8 +146,8 @@ export default function MobileNav({ locale, content }: MobileNavProps) {
                   {item.children?.length ? (
                     <div className="mt-2 rounded-xl border border-white/6 bg-black/20 p-2">
                       <ul className="space-y-1">
-                        {item.children.map((child) => (
-                          <li key={child.href}>
+                        {item.children.map((child, childIndex) => (
+                          <li key={`${child.href}-${child.label}-${childIndex}`}>
                             <Link
                               href={localizedHref(child.href)}
                               onClick={closeMenu}

@@ -8,22 +8,22 @@ export const nlDictionary: LocaleDictionary = {
     items: [
       {
         label: "Auto kopen",
-        href: "/services",
-        children: [
-          {
-            label: "Beschikbare auto's",
-            href: "/services/social-media",
-          },
-          {
-            label: "Financiering",
-            href: "/services/content-creation",
-          },
-          {
-            label: "Inruilservice",
-            href: "/services/performance-marketing",
-          },
-          { label: "Voertuigcheck", href: "/services/webdesign" },
-        ],
+        href: "/Catalogue",
+        // children: [
+        //   {
+        //     label: "Beschikbare auto's",
+        //     href: "/Catalogue",
+        //   },
+        //   {
+        //     label: "Financiering",
+        //     href: "/Catalogue",
+        //   },
+        //   {
+        //     label: "Inruilservice",
+        //     href: "/Catalogue",
+        //   },
+        //   { label: "Voertuigcheck", href: "/Catalogue" },
+        // ],
       },
       { label: "FAQ", href: "/faq" },
       { label: "Auto verkopen", href: "/sell-your-car" },
@@ -41,14 +41,14 @@ export const nlDictionary: LocaleDictionary = {
     navigationLinks: [
       { label: "Home", href: "/" },
       { label: "Voordelen", href: "/advantages" },
-      { label: "Auto kopen", href: "#services" },
+      { label: "Auto kopen", href: "/Catalogue" },
       { label: "Over Ons", href: "/about" },
     ],
     serviceLinks: [
-      { label: "Beschikbare auto's", href: "/services/social-media" },
-      { label: "Financiering", href: "/services/content-creation" },
-      { label: "Inruilservice", href: "/services/performance-marketing" },
-      { label: "Voertuigcheck", href: "/services/webdesign" },
+      { label: "Beschikbare auto's", href: "/Catalogue" },
+      { label: "Financiering", href: "/Catalogue" },
+      { label: "Inruilservice", href: "/Catalogue" },
+      { label: "Voertuigcheck", href: "/Catalogue" },
     ],
     contactLinks: [
       { label: "Auto verkopen", href: "/form" },
@@ -162,6 +162,7 @@ export const nlDictionary: LocaleDictionary = {
     maxPrice: "Maximale prijs",
     searchButton: "Zoeken",
     viewDetails: "Bekijk details",
+    moreButton: "Meer",
   },
   cars: [
     {
@@ -174,7 +175,11 @@ export const nlDictionary: LocaleDictionary = {
       transmission: "Automaat",
       fuel: "Benzine",
       image: "/cars/bmw.jpg",
-      tags: ["Navigatie", "Leder", "Garantie"],
+      tags: {
+        de: ["Navigation", "Leder", "Garantie"],
+        en: ["Navigation", "Leather", "Warranty"],
+        nl: ["Navigatie", "Leder", "Garantie"],
+      },
     },
     {
       id: 2,
@@ -186,7 +191,11 @@ export const nlDictionary: LocaleDictionary = {
       transmission: "Handgeschakeld",
       fuel: "Diesel",
       image: "/cars/audi.jpg",
-      tags: ["LED", "Camera", "Cruise control"],
+      tags: {
+        de: ["LED", "Kamera", "Tempomat"],
+        en: ["LED", "Camera", "Cruise Control"],
+        nl: ["LED", "Camera", "Cruise control"],
+      },
     },
     {
       id: 3,
@@ -198,7 +207,11 @@ export const nlDictionary: LocaleDictionary = {
       transmission: "Automaat",
       fuel: "Hybride",
       image: "/cars/mercedes.jpg",
-      tags: ["AMG Line", "PDC", "Stoelverwarming"],
+      tags: {
+        de: ["AMG Line", "PDC", "Sitzheizung"],
+        en: ["AMG Line", "PDC", "Heated Seats"],
+        nl: ["AMG Line", "PDC", "Stoelverwarming"],
+      },
     },
   ],
 },
