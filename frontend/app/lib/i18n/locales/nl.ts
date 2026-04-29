@@ -6,7 +6,6 @@ export const nlDictionary: LocaleDictionary = {
     ariaLabel: "Hoofdnavigatie",
     homeAriaLabel: "Ga naar AutoAnders homepage",
     items: [
-      { label: "Voordelen", href: "/advantages" },
       {
         label: "Auto kopen",
         href: "/services",

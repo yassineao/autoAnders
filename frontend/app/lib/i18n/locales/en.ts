@@ -6,7 +6,6 @@ export const enDictionary: LocaleDictionary = {
       ariaLabel: "Main navigation",
       homeAriaLabel: "Go to AutoAnders homepage",
       items: [
-        { label: "Benefits", href: "/advantages" },
         {
           label: "Buy a Car",
           href: "/services",
