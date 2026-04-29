@@ -153,9 +153,17 @@ export const nlDictionary: LocaleDictionary = {
       more: "Meer"
     },
     scrollTexts: ["Beschikbare auto's", "Eerlijke biedingen"],
-    catalogue: {
-  title: "Unsere Fahrzeuge",
-  subtitle: "Verfügbare Autos",
+  catalogue: {
+  title: "Onze voertuigen",
+  subtitle: "Beschikbare auto's",
+  labels: {
+    vehiclesFound: "voertuigen gevonden",
+    searchPlaceholder: "Zoek model",
+    allBrands: "Alle merken",
+    maxPrice: "Maximale prijs",
+    searchButton: "Zoeken",
+    viewDetails: "Bekijk details",
+  },
   cars: [
     {
       id: 1,
@@ -164,10 +172,10 @@ export const nlDictionary: LocaleDictionary = {
       price: 24950,
       year: 2019,
       km: 82000,
-      transmission: "Automatik",
-      fuel: "Benzin",
+      transmission: "Automaat",
+      fuel: "Benzine",
       image: "/cars/bmw.jpg",
-      tags: ["Navigation", "Leder", "Garantie"],
+      tags: ["Navigatie", "Leder", "Garantie"],
     },
     {
       id: 2,
@@ -176,10 +184,10 @@ export const nlDictionary: LocaleDictionary = {
       price: 21750,
       year: 2018,
       km: 96000,
-      transmission: "Schaltung",
+      transmission: "Handgeschakeld",
       fuel: "Diesel",
       image: "/cars/audi.jpg",
-      tags: ["LED", "Kamera", "Tempomat"],
+      tags: ["LED", "Camera", "Cruise control"],
     },
     {
       id: 3,
@@ -188,10 +196,10 @@ export const nlDictionary: LocaleDictionary = {
       price: 29900,
       year: 2020,
       km: 61000,
-      transmission: "Automatik",
-      fuel: "Hybrid",
+      transmission: "Automaat",
+      fuel: "Hybride",
       image: "/cars/mercedes.jpg",
-      tags: ["AMG Line", "PDC", "Sitzheizung"],
+      tags: ["AMG Line", "PDC", "Stoelverwarming"],
     },
   ],
 },

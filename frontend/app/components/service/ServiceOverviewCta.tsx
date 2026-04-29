@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Background from "@/app/components/Background";
 import type { LocaleDictionary } from "@/app/lib/i18n";
 
 type ServiceOverviewCtaProps = {

@@ -167,9 +167,17 @@ export const deDictionary: LocaleDictionary = {
         more: "Mehr"
       },
       scrollTexts: ["Verfuegbare Autos", "Faire Angebote"],
-      catalogue: {
+   catalogue: {
   title: "Unsere Fahrzeuge",
   subtitle: "Verfügbare Autos",
+  labels: {
+    vehiclesFound: "Fahrzeuge gefunden",
+    searchPlaceholder: "Modell suchen",
+    allBrands: "Alle Marken",
+    maxPrice: "Maximaler Preis",
+    searchButton: "Suchen",
+    viewDetails: "Details ansehen",
+  },
   cars: [
     {
       id: 1,

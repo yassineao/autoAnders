@@ -1,3 +1,4 @@
+"use client"
 import React, { useMemo, useState } from "react";
 import { Calendar, Fuel, Gauge, Search, SlidersHorizontal } from "lucide-react";
 
@@ -14,10 +15,20 @@ export type Car = {
   tags: string[];
 };
 
+export type AutoCatalogueLabels = {
+  vehiclesFound: string;
+  searchPlaceholder: string;
+  allBrands: string;
+  maxPrice: string;
+  searchButton: string;
+  viewDetails: string;
+};
+
 export type AutoCatalogueProps = {
   cars: Car[];
-  title?: string;
-  subtitle?: string;
+  title: string;
+  subtitle: string;
+  labels: AutoCatalogueLabels;
   onViewDetails?: (car: Car) => void;
 };
 
@@ -30,19 +41,20 @@ const formatPrice = (value: number) =>
 
 export default function AutoCatalogue({
   cars,
-  title = "Auto catalogue",
-  subtitle = "Available stock",
+  title,
+  subtitle,
+  labels,
   onViewDetails,
 }: AutoCatalogueProps) {
-  const [search, setSearch] = useState<string>("");
-  const [brand, setBrand] = useState<string>("All");
-  const [maxPrice, setMaxPrice] = useState<string>("All");
+  const [search, setSearch] = useState("");
+  const [brand, setBrand] = useState("All");
+  const [maxPrice, setMaxPrice] = useState("All");
 
-  const brands = useMemo<string[]>(() => {
+  const brands = useMemo(() => {
     return ["All", ...Array.from(new Set(cars.map((car) => car.brand)))];
   }, [cars]);
 
-  const filteredCars = useMemo<Car[]>(() => {
+  const filteredCars = useMemo(() => {
     return cars.filter((car) => {
       const query = `${car.brand} ${car.model}`.toLowerCase();
       const matchesSearch = query.includes(search.toLowerCase());
@@ -61,7 +73,10 @@ export default function AutoCatalogue({
             <p className="font-semibold text-red-500">{subtitle}</p>
             <h2 className="text-4xl font-black">{title}</h2>
           </div>
-          <p className="text-zinc-400">{filteredCars.length} vehicles found</p>
+
+          <p className="text-zinc-400">
+            {filteredCars.length} {labels.vehiclesFound}
+          </p>
         </div>
 
         <div className="mb-10 grid gap-4 rounded-2xl border border-white/10 bg-zinc-900 p-4 md:grid-cols-4">
@@ -71,7 +86,7 @@ export default function AutoCatalogue({
               value={search}
               onChange={(event) => setSearch(event.target.value)}
               className="w-full rounded-xl border border-white/10 bg-zinc-950 py-3 pl-11 pr-4 outline-none focus:border-red-500"
-              placeholder="Search model"
+              placeholder={labels.searchPlaceholder}
             />
           </label>
 
@@ -82,7 +97,7 @@ export default function AutoCatalogue({
           >
             {brands.map((brandOption) => (
               <option key={brandOption} value={brandOption}>
-                {brandOption === "All" ? "All brands" : brandOption}
+                {brandOption === "All" ? labels.allBrands : brandOption}
               </option>
             ))}
           </select>
@@ -92,15 +107,15 @@ export default function AutoCatalogue({
             onChange={(event) => setMaxPrice(event.target.value)}
             className="rounded-xl border border-white/10 bg-zinc-950 px-4 py-3 outline-none focus:border-red-500"
           >
-            <option value="All">Max price</option>
+            <option value="All">{labels.maxPrice}</option>
             <option value="15000">€15,000</option>
             <option value="25000">€25,000</option>
             <option value="40000">€40,000</option>
           </select>
 
-          <button className="flex items-center justify-center gap-2 rounded-xl bg-red-600 font-bold hover:bg-red-700">
+          <button className="flex items-center justify-center gap-2 rounded-xl bg-red-600 py-3 font-bold hover:bg-red-700">
             <SlidersHorizontal className="h-4 w-4" />
-            Search
+            {labels.searchButton}
           </button>
         </div>
 
@@ -121,7 +136,9 @@ export default function AutoCatalogue({
                   <h3 className="text-xl font-black">
                     {car.brand} {car.model}
                   </h3>
-                  <span className="font-bold text-green-700">{formatPrice(car.price)}</span>
+                  <span className="font-bold text-green-700">
+                    {formatPrice(car.price)}
+                  </span>
                 </div>
 
                 <div className="mb-4 grid grid-cols-2 gap-3 text-sm text-zinc-400">
@@ -129,11 +146,14 @@ export default function AutoCatalogue({
                     <Calendar className="h-4 w-4" />
                     {car.year}
                   </span>
+
                   <span className="flex items-center gap-2">
                     <Gauge className="h-4 w-4" />
                     {car.km.toLocaleString("nl-NL")} km
                   </span>
+
                   <span>{car.transmission}</span>
+
                   <span className="flex items-center gap-2">
                     <Fuel className="h-4 w-4" />
                     {car.fuel}
@@ -153,7 +173,7 @@ export default function AutoCatalogue({
                   onClick={() => onViewDetails?.(car)}
                   className="w-full rounded-xl bg-white py-3 font-bold text-black hover:bg-zinc-200"
                 >
-                  View details
+                  {labels.viewDetails}
                 </button>
               </div>
             </article>

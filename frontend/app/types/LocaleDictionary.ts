@@ -130,11 +130,7 @@ type HomeContent = {
     cta: string;
     more :string
   };
-  catalogue: {
-  title: string;
-  subtitle: string;
-  cars: CatalogueCar[];
-};
+  catalogue: CatalogueContent;
   scrollTexts: [string, string];
   seo: PageSeo;
 };
@@ -226,4 +222,20 @@ type CatalogueCar = {
   fuel: string;
   image: string;
   tags: string[];
+};
+
+type CatalogueLabels = {
+  vehiclesFound: string;
+  searchPlaceholder: string;
+  allBrands: string;
+  maxPrice: string;
+  searchButton: string;
+  viewDetails: string;
+};
+
+type CatalogueContent = {
+  title: string;
+  subtitle: string;
+  labels: CatalogueLabels;
+  cars: CatalogueCar[];
 };

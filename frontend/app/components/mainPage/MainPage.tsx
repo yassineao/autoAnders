@@ -62,7 +62,12 @@ export default function MainPage({
         <Services content={home.services} />
       </div>
       <div className="defer-section bg-black">
-        <AutoCatalogue  cars={home.catalogue.cars} />
+        <AutoCatalogue
+          cars={home.catalogue.cars}
+          title={home.catalogue.title}
+          subtitle={home.catalogue.subtitle}
+          labels={home.catalogue.labels}
+        />
       </div>
 
       <div className="defer-section bg-black">
