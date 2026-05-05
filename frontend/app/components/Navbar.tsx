@@ -37,7 +37,7 @@ export default function Navbar({
             <div className="relative flex h-10 items-center gap-2.5 overflow-hidden    px-4  sm:h-11 sm:px-5 lg:h-12">
               <Image
                 src="/Logo.png"
-                alt="Gloyoo Logo"
+                alt="AutoAnders Logo"
                 width={288}
                 height={70}
                 quality={90}

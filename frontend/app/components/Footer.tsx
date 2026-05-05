@@ -86,7 +86,7 @@ export default function Footer({
                     {/* Bottom bar */}
                     <div className="mt-8 border-t border-white/10 pt-5 sm:mt-10 sm:pt-6 ">
                         <div className="flex flex-col gap-4 sm:gap-5 lg:flex-row lg:items-center lg:justify-between">
-                            <p className="text-center text-xs leading-5 text-brand-muted sm:text-left sm:text-sm">
+                             <p className="text-center text-xs leading-5 text-brand-muted sm:text-left sm:text-sm">
                                 &copy; {new Date().getFullYear()} AutoAnders. {content.rights}
                             <Link
                                             href="https://gloyoo.vercel.app/en"
