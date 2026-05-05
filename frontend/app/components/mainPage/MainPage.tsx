@@ -55,7 +55,7 @@ export default function MainPage({
         <Hero content={home.hero} />
       </div>
 
-      
+
       <div className="defer-section  ">
         <Services content={home.services} />
       </div>
@@ -68,14 +68,14 @@ export default function MainPage({
           labels={home.catalogue.labels}
         />
       </div>
-<div className="defer-section lg:py-16 bg-black">
+      <div className="defer-section lg:py-16 bg-black">
         <Advantages content={home.advantages} />
       </div>
       <div className="defer-section bg-black">
         <AboutUs content={home.about} locale={locale} />
       </div>
 
-      <div className="defer-section bg-black sm:py-16">
+      <div className="defer-section bg-black sm:py-16 lg:py-24">
         <Faq
           content={faq}
           items={faq.items.slice(0, 4)}

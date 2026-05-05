@@ -15,7 +15,7 @@ export default function Services({
     return (
         <div
             id="services"
-            className="flex flex-1 flex-col items-center justify-center overflow-hidden bg-gray lg:py-16"
+            className=" flex flex-1 flex-col items-center justify-center overflow-hidden bg-gray lg:py-16"
         >
             <section
                 id="services-list"

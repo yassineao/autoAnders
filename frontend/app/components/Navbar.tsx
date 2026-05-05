@@ -56,7 +56,7 @@ export default function Navbar({
             {content.items.map((item, itemIndex) => (
               <li key={`${item.href}-${item.label}-${itemIndex}`} className="group relative">
                 {/* here auf Link wenn funktioniert */}
-                <div
+                <Link href={localizedHref(item.href)}
                   className="inline-flex h-10 items-center gap-1 rounded-lg px-4 text-sm font-medium text-brand-graySoft transition-colors hover:bg-white/5 hover:text-white"
                 >
                   {item.label}
@@ -75,7 +75,7 @@ export default function Navbar({
                       />
                     </svg>
                   )}
-                </div>
+                </Link>
 
                 {/* Dropdown Menu */}
                 {item.children?.length && (

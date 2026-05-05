@@ -12,7 +12,7 @@ export default function Advantages({
   return (
     <section
       id="advantages"
-      className="overflow-hidden bg-black"
+      className="overflow-hidden bg-black "
       aria-labelledby="advantages-heading"
     >
       <div className="flex justify-center pt-8">

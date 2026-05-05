@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import Form from "../../components/form/Form";
+import Form from "../../components/Form";
 import {
   getAlternateLocale,
   getDictionary,
