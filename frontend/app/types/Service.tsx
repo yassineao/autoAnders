@@ -1,8 +1,8 @@
 type ServiceSlug =
-  | "social-media"
-  | "content-creation"
-  | "performance-marketing"
-  | "webdesign";
+  | "available-cars"
+  | "financing"
+  | "tradein"
+  | "vehicle-check";
 
 type ServiceHero = {
   badge: string;

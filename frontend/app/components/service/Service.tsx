@@ -12,7 +12,7 @@ type ServiceProps = {
 };
 
 export default function Service({ content, locale, service }: ServiceProps) {
-  const heroContent = content.hero[service] ?? content.hero["social-media"];
+  const heroContent = content.hero[service] ?? content.hero["available-cars"];
 
   return (
     <div>

@@ -1,4 +1,4 @@
-﻿import type { LocaleDictionary } from "../../../types/LocaleDictionary";
+import type { LocaleDictionary } from "../../../types/LocaleDictionary";
 
 export const nlDictionary: LocaleDictionary = {
   localeName: "Nederlands",
@@ -373,136 +373,136 @@ export const nlDictionary: LocaleDictionary = {
         description:
           "Kies wat u nu nodig heeft en zie hoe we u helpen bij kopen, verkopen of inruilen.",
         imageAlts: {
-          "social-media": "Illustratie voor beschikbare auto's",
-          "content-creation": "Illustratie voor autofinanciering",
-          "performance-marketing":
+          "available-cars": "Illustratie voor beschikbare auto's",
+          financing: "Illustratie voor autofinanciering",
+          tradein:
             "Illustratie voor inruilservice",
-          webdesign: "Illustratie voor voertuigcheck",
+          "vehicle-check": "Illustratie voor voertuigcheck",
         },
       },
     },
     hero: {
-      "social-media": {
+      "available-cars": {
         imageUrl: "/bg.jpg",
-        badge: "Social Media Beheer",
-        title: "Social Media Beheer dat Uw Merk Zichtbaar Maakt",
+        badge: "Beschikbare auto's",
+        title: "Vind een gecontroleerde occasion die bij u past",
         description:
-          "We plannen, ontwerpen en beheren uw kanalen zodat uw merk professioneel overkomt en regelmatig gekwalificeerde aanvragen genereert.",
-        primaryCta: "Advies Aanvragen",
-        secondaryCta: "Meer Informatie",
-        imageAlt: "Social Media Beheer door AutoAnders",
+          "Bekijk beschikbare auto's met duidelijke foto's, kilometerstand, uitrusting en transparante prijzen.",
+        primaryCta: "Auto's bekijken",
+        secondaryCta: "Meer informatie",
+        imageAlt: "Beschikbare auto's bij AutoAnders",
       },
-      "content-creation": {
-        badge: "Contentcreatie",
+      financing: {
+        badge: "Financiering",
         imageUrl: "/bg.jpg",
-        title: "Contentcreatie die Aandacht Omzet in Vertrouwen",
+        title: "Financiering met duidelijke voorwaarden",
         description:
-          "Van reels tot brand assets, we creëren content die uw doelgroep aanspreekt, herkenbaarheid creÃ«ert en uw merk versterkt.",
-        primaryCta: "Project Aanvragen",
-        secondaryCta: "Portfolio Bekijken",
-        imageAlt: "Contentcreatie door AutoAnders",
+          "Wij helpen u een passende betalingsoptie te vinden die aansluit bij uw budget.",
+        primaryCta: "Advies aanvragen",
+        secondaryCta: "Meer informatie",
+        imageAlt: "Autofinanciering bij AutoAnders",
       },
-      "performance-marketing": {
+      tradein: {
         imageUrl: "/bg.jpg",
-        badge: "Performance Marketing",
-        title: "Performance Marketing Gericht op Leads en Omzet",
+        badge: "Inruilservice",
+        title: "Ruil uw huidige auto eenvoudig in",
         description:
-          "Met datagedreven campagnes verhogen we bereik, conversies en meetbare resultaten op de kanalen die tellen voor uw bedrijf.",
-        primaryCta: "Strategie Aanvragen",
-        secondaryCta: "Potentieel Ontdekken",
-        imageAlt: "Performance Marketing door AutoAnders",
+          "Stuur ons uw voertuiggegevens en ontvang een eerlijk bod voor verkoop of inruil.",
+        primaryCta: "Bod aanvragen",
+        secondaryCta: "Auto verkopen",
+        imageAlt: "Auto inruilen bij AutoAnders",
       },
-      webdesign: {
+      "vehicle-check": {
         imageUrl: "/bg.jpg",
-        badge: "Webdesign",
-        title: "Webdesign dat Overtuigt en Aanvragen Genereert",
+        badge: "Voertuigcheck",
+        title: "Duidelijke informatie vóór u beslist",
         description:
-          "We ontwikkelen moderne websites die uw merk professioneel presenteren, vertrouwen opbouwen en bezoekers omzetten in klantaanvragen.",
-        primaryCta: "Website Plannen",
-        secondaryCta: "Meer Informatie",
-        imageAlt: "Webdesign door AutoAnders",
+          "Wij controleren belangrijke voertuiggegevens zodat u met vertrouwen kunt kopen.",
+        primaryCta: "Voertuigen bekijken",
+        secondaryCta: "Contact opnemen",
+        imageAlt: "Voertuigcheck bij AutoAnders",
       },
     },
     features: {
-      badge: "Onze Kerndiensten",
-      title: "Elk merk heeft een duidelijke, sterke digitale uitstraling nodig.",
+      badge: "Waarom AutoAnders",
+      title: "Een betere autokeuze begint met duidelijke informatie.",
       description:
-        "We combineren strategie, creativiteit en uitvoering, zodat uw online aanwezigheid professioneel overkomt en meetbare resultaten levert.",
+        "Van de eerste zoekopdracht tot de overdracht houden we het proces transparant, praktisch en gericht op de juiste auto voor u.",
       items: [
         {
-          title: "Meer Bereik",
+          title: "Duidelijke voertuigdetails",
           description:
-            "Vergroot zichtbaarheid, websitebezoeken en gekwalificeerde contacten via sterke content en campagnes.",
-          imageAlt: "Bereikvergroting door social media",
-          statLabel: "45%",
+            "Bekijk de belangrijkste informatie voordat u een bezichtiging plant of een beslissing neemt.",
+          imageAlt: "Duidelijke voertuigdetails",
+          statLabel: "100%",
         },
         {
-          title: "Structuur voor Uw Marketing",
+          title: "Eerlijke biedingen",
           description:
-            "Duidelijke processen, afgestemde content en een consistente merkuitstraling voor duurzame groei.",
-          imageAlt: "Marketing structuur en processen",
+            "Ontvang realistische prijzen wanneer u koopt, verkoopt of uw huidige auto inruilt.",
+          imageAlt: "Eerlijke autowaardering",
         },
         {
-          title: "Naadloze Implementatie",
+          title: "Eenvoudig proces",
           description:
-            "Webdesign, content en performance marketing grijpen in elkaar en zorgen voor een samenhangend totaalbeeld.",
-          imageAlt: "geïntegreerde digitale marketing oplossingen",
+            "Wij helpen met vragen, documenten, afspraken en de volgende stap op het juiste moment.",
+          imageAlt: "Eenvoudig aankoopproces",
         },
       ],
       sections: [
         {
-          title: "Projecten strategisch aansturen",
+          title: "Kies uw volgende auto met vertrouwen",
           points: [
-            "Duidelijke content- en campagneplanning voor uw doelen",
-            "Afgestemde processen tussen merk, design en performance",
-            "Meetbare prioriteiten voor duurzame groei",
-            "Meer structuur voor interne en externe samenwerking",
-            "Snellere afstemming met duidelijke goedkeuringswegen",
-            "Beter overzicht van lopende activiteiten",
-            "Betrouwbare uitvoering over alle kanalen heen",
-            "Transparante communicatie over voortgang en resultaten",
-            "Planbare acties in plaats van spontane losse initiatieven",
+            "Vergelijk auto's op prijs, kilometerstand, staat en uitrusting",
+            "Stel vragen voordat u een bezichtiging plant",
+            "Begrijp wat belangrijk is voor uw budget en dagelijks gebruik",
+            "Bekijk beschikbare informatie vóór uw beslissing",
+            "Plan de volgende stap met persoonlijke ondersteuning",
+            "Vermijd druk en onduidelijke beloften",
+            "Houd het proces eenvoudig van zoeken tot overdracht",
+            "Krijg transparante antwoorden over het voertuig",
+            "Ga pas verder wanneer de auto goed voelt",
           ],
         },
         {
-          title: "Uw website gericht doorontwikkelen",
+          title: "Verkoop of ruil in zonder verwarring",
           points: [
-            "Teksten en content structureren passend bij uw doelgroep",
-            "Design en gebruikerservaring optimaliseren voor meer vertrouwen",
-            "Duidelijke boodschappen uitwerken voor aanbiedingen en diensten",
-            "Responsieve ervaring garanderen voor mobiel en desktop",
-            "Snelle aanpassingen mogelijk maken zonder onnodige complexiteit",
-            "Consistente merkuitstraling bewaren over alle pagina's",
-            "Conversie-sterke elementen bewust plaatsen",
-            "Content flexibel uitbreiden voor campagnes en acties",
-            "Technische basis versterken voor zichtbaarheid en performance",
+            "Stuur de belangrijkste gegevens van uw auto door",
+            "Deel kilometerstand, staat, documenten en foto's",
+            "Ontvang een realistische eerste inschatting",
+            "Verduidelijk het definitieve bod na controle",
+            "Gebruik de waarde voor uw volgende voertuig",
+            "Begrijp elke stap voordat u beslist",
+            "Verminder heen-en-weer contact met een helder proces",
+            "Bereid documenten voor vóór de overdracht",
+            "Verkoop met minder tijdverlies en minder stress",
           ],
         },
         {
-          title: "Merkuitstraling consistent vormgeven",
+          title: "Begrijp het voertuig vóór aankoop",
           points: [
-            "Social media, website en advertentiemateriaal visueel verbinden",
-            "Herkenbare content ontwikkelen voor sterke merkimpact",
-            "Designsystemen creëren die in de praktijk bruikbaar blijven",
-            "Sjablonen voorbereiden voor posts, landingspagina's en campagnes",
-            "Creatieve ideeÃ«n netjes in uitvoering brengen",
-            "Merkwaarden vertalen naar beeldtaal en tone of voice",
-            "Flexibel reageren op nieuwe formats en trends",
-            "Professionele uitstraling garanderen over alle contactpunten",
-            "Meer consistentie zonder individualiteit te verliezen",
+            "Bekijk kilometerstand, uitrusting en staat",
+            "Vraag naar onderhoudshistorie wanneer beschikbaar",
+            "Controleer wat bij het voertuig is inbegrepen",
+            "Bespreek financiering of betalingsopties",
+            "Plan een bezichtiging of proefrit",
+            "Weet welke documenten nodig zijn",
+            "Krijg ondersteuning voordat u iets ondertekent",
+            "Maak beslissingen op basis van feiten",
+            "Rijd weg met vertrouwen",
           ],
         },
       ],
     },
     hero2: {
       badge: "Waarom AutoAnders?",
-      title: "Samen creëren we een uitstraling die zichtbaar maakt waar uw merk voor staat.",
+      title: "Een auto kopen of verkopen moet vanaf de eerste stap duidelijk voelen.",
       description:
-        "We ontwikkelen geen standaardoplossingen. Elk bedrijf, elk merk en elk doel is anders. Daarom werken we nauw met u samen om een individuele strategie en uitstraling te creëren die echt bij u past.",
-      subtitle: "Laten we samen uw digitale aanwezigheid vormgeven.",
+        "Elke bestuurder, elk budget en elk voertuig is anders. Daarom nemen we de tijd om opties helder uit te leggen en u te helpen kiezen wat past.",
+      subtitle: "Laten we samen de juiste auto-oplossing vinden.",
       subdescription:
-        "Of het nu gaat om social media, content of webdesign—we laten uw merk online stralen en zorgen dat u zichtbaar wordt waar uw doelgroep actief is.",
-      imageAlt: "Abstracte 3D-vormen op de achtergrond",
+        "Of u nu wilt kopen, verkopen, inruilen of financiering bespreken: AutoAnders houdt het proces praktisch en transparant.",
+      imageAlt: "Autodetails op de achtergrond",
       imageUrl: "/bg.jpg",
     },
     seo: {
@@ -512,8 +512,8 @@ export const nlDictionary: LocaleDictionary = {
         "Auto verkopen",
         "Auto inruilen",
         "Autofinanciering",
-        "Instagram Marketing",
-        "Facebook Advertenties",
+        "Voertuigcheck",
+        "Autowaardering",
       ],
       offerCatalogName: "Onze Diensten",
       services: [
@@ -686,7 +686,7 @@ export const nlDictionary: LocaleDictionary = {
             "Wij zetten ons in om uw persoonsgegevens te beschermen en deze eerlijk, rechtmatig en transparant te verwerken.",
           ],
           note:
-            "AutoAnders\n[Volledig geregistreerd adres]\nBTW: [EU VAT number]\nE-mail: [privacy@youragency.com]\n[Functionaris voor gegevensbescherming (indien van toepassing): [dpo@youragency.com]]",
+            "AutoAnders\n[Volledig geregistreerd adres]\nBTW: [EU VAT number]\nE-mail: privacy@autoanders.com\n[Functionaris voor gegevensbescherming (indien van toepassing): dpo@autoanders.com]",
         },
         {
           title: "Gegevens die wij verzamelen",
@@ -813,7 +813,7 @@ export const nlDictionary: LocaleDictionary = {
           title: "Uw GDPR-rechten",
           paragraphs: [
             "Onder de GDPR heeft u de volgende rechten met betrekking tot uw persoonsgegevens.",
-            "Om uw rechten uit te oefenen, neemt u contact op via [privacy@youragency.com]. Wij reageren binnen 30 kalenderdagen. Wij kunnen vragen om verificatie van uw identiteit voordat wij uw verzoek verwerken.",
+            "Om uw rechten uit te oefenen, neemt u contact op via privacy@autoanders.com. Wij reageren binnen 30 kalenderdagen. Wij kunnen vragen om verificatie van uw identiteit voordat wij uw verzoek verwerken.",
           ],
           rights: [
             { article: "Art. 15", title: "Inzage", description: "Ontvang een kopie van de persoonsgegevens die wij van u bewaren." },
@@ -860,7 +860,7 @@ export const nlDictionary: LocaleDictionary = {
           title: "Privacy van kinderen",
           paragraphs: [
             "Onze diensten zijn niet gericht op kinderen onder de 16 jaar, of de relevante leeftijd voor digitale toestemming in uw lidstaat.",
-            "Wij verzamelen niet bewust persoonsgegevens van kinderen. Als u denkt dat een kind ons persoonsgegevens heeft verstrekt, neem dan onmiddellijk contact met ons op via [privacy@youragency.com] en wij verwijderen deze gegevens direct.",
+            "Wij verzamelen niet bewust persoonsgegevens van kinderen. Als u denkt dat een kind ons persoonsgegevens heeft verstrekt, neem dan onmiddellijk contact met ons op via privacy@autoanders.com en wij verwijderen deze gegevens direct.",
           ],
         },
         {
@@ -877,7 +877,7 @@ export const nlDictionary: LocaleDictionary = {
             "Gebruik voor alle privacygerelateerde vragen, verzoeken of klachten de onderstaande contactgegevens.",
           ],
           note:
-            "Privacy & GDPR: [privacy@youragency.com]\nFunctionaris voor gegevensbescherming: [dpo@youragency.com] (indien van toepassing)\nPost: AutoAnders, [Volledig adres], t.a.v. Privacy Team\nReactietermijn: Binnen 30 kalenderdagen (GDPR-termijn)",
+            "Privacy & GDPR: privacy@autoanders.com\nFunctionaris voor gegevensbescherming: dpo@autoanders.com (indien van toepassing)\nPost: AutoAnders, [Volledig adres], t.a.v. Privacy Team\nReactietermijn: Binnen 30 kalenderdagen (GDPR-termijn)",
         },
       ],
       note:
@@ -912,7 +912,7 @@ export const nlDictionary: LocaleDictionary = {
             "In overeenstemming met Richtlijn 2000/31/EG en nationale wetgeving wordt de volgende informatie verstrekt.",
           ],
           contactCards: [
-            { label: "Bedrijfsnaam", value: "[UW BEDRIJFSNAAM]" },
+            { label: "Bedrijfsnaam", value: "AutoAnders" },
             { label: "Rechtsvorm", value: "[bijv. BV / GmbH / Ltd]" },
             { label: "Kapitaal", value: "[bijv. €10.000]" },
             {
@@ -931,7 +931,7 @@ export const nlDictionary: LocaleDictionary = {
               label: "Publicatieverantwoordelijke",
               value: "[Naam]",
             },
-            { label: "E-mail", value: "[contact@youragency.com]" },
+            { label: "E-mail", value: "contact@autoanders.com" },
             { label: "Telefoon", value: "[+XX XXX XXX XXXX]" },
           ],
         },
@@ -951,7 +951,7 @@ export const nlDictionary: LocaleDictionary = {
         {
           title: "Auteursrecht",
           paragraphs: [
-            "Alle content op deze website is eigendom van [UW BEDRIJFSNAAM] en beschermd onder EU-wetgeving.",
+            "Alle content op deze website is eigendom van AutoAnders en beschermd onder EU-wetgeving.",
             "Gebruik zonder toestemming is verboden.",
           ],
           note:
@@ -969,7 +969,7 @@ export const nlDictionary: LocaleDictionary = {
           title: "Toepasselijk recht",
           paragraphs: [
             "Onderworpen aan wetgeving van [LAND] en EU-regels.",
-            "Contact: [legal@youragency.com]",
+            "Contact: legal@autoanders.com",
           ],
           bullets: [
             "EU Richtlijn 2000/31/EG",
@@ -992,7 +992,7 @@ export const nlDictionary: LocaleDictionary = {
           "autoanders voorwaarden",
           "algemene voorwaarden",
           "autodealer voorwaarden",
-          "webdesign contract",
+          "autodealer voorwaarden",
           "social media management voorwaarden",
         ],
       },
@@ -1026,49 +1026,48 @@ export const nlDictionary: LocaleDictionary = {
             "Voor de toepassing van deze Algemene Voorwaarden gelden de volgende definities.",
           ],
           bullets: [
-            '"Agentschap" / "Wij" / "Ons" — [UW BEDRIJFSNAAM], aanbieder van digitale diensten.',
-            '"Klant" / "U" — natuurlijke of rechtspersoon die gebruikmaakt van de diensten.',
+            '"AutoAnders" / "Wij" / "Ons" — AutoAnders, aanbieder van de hier beschreven voertuigdiensten.',
+            '"Klant" / "U" — natuurlijke of rechtspersoon die gebruikmaakt van of informatie vraagt over onze diensten.',
             '"Consument" — natuurlijke persoon handelend buiten beroep of bedrijf volgens EU-richtlijn 2011/83/EU.',
-            '"Diensten" — social media management, webdesign en digitale diensten.',
-            '"Overeenkomst" — contract tussen agentschap en klant.',
-            '"Deliverables" — alle opgeleverde materialen zoals content, code en ontwerpen.',
-            '"SOW" — document met scope, planning en prijs.',
+            '"Diensten" — voertuiginformatie, auto kopen, auto verkopen, inruil, financieringshulp en voertuigadvies.',
+            '"Overeenkomst" — afspraak, aanbod, order of koopdocument tussen AutoAnders en klant.',
+            '"Voertuiggegevens" — informatie over merk, model, kilometerstand, staat, uitrusting, documenten en prijs.',
+            '"Bod" — vrijblijvende of bindende waardering, afhankelijk van de individuele afspraak.',
           ],
         },
         {
           title: "Diensten",
           subsections: [
             {
-              title: "Social Media Management",
+              title: "Voertuigaanvragen en auto kopen",
               bullets: [
-                "Strategieontwikkeling en contentplanning",
-                "Contentcreatie (tekst, design, video)",
-                "Community management",
-                "Advertenties (Meta, TikTok, LinkedIn, Google)",
-                "Maandelijkse rapportage en optimalisatie",
+                "Beschikbare voertuigen en belangrijke voertuiggegevens tonen",
+                "Informatie over merk, model, staat, kilometerstand, uitrusting en prijs",
+                "Ondersteuning bij vragen vóór bezichtiging of proefrit",
+                "Begeleiding tot overdracht wanneer individueel afgesproken",
               ],
             },
             {
-              title: "Website Ontwikkeling",
+              title: "Auto verkopen of inruilen",
               bullets: [
-                "UX/UI design",
-                "CMS (WordPress, Webflow, Shopify)",
-                "E-commerce oplossingen",
-                "Onderhoud en SEO",
-                "Toegankelijkheid (WCAG 2.1 / EN 301 549)",
+                "Belangrijke voertuiggegevens van de klant verzamelen",
+                "Staat, kilometerstand, documenten en marktvraag beoordelen",
+                "Een eerlijke inschatting of bod voorbereiden na controle",
+                "Ondersteuning bij overdracht en benodigde documenten",
               ],
             },
             {
-              title: "Aanvullende diensten",
+              title: "Financiering en voertuigadvies",
               bullets: [
-                "Branding en grafisch ontwerp",
-                "E-mailmarketing",
-                "Digitale audits",
+                "Mogelijke betalings- en financieringsopties uitleggen",
+                "Benodigde informatie en documenten verduidelijken",
+                "Transparant advies geven zonder afsluitdruk",
+                "Relevante voertuigdetails controleren vóór de beslissing",
               ],
             },
           ],
           note:
-            "De exacte scope en prijs worden vastgelegd in een SOW of voorstel.",
+            "De exacte omvang hangt af van de individuele aanvraag, voertuigcontrole en afspraak. Een bod kan wijzigen na fysieke controle of documentcontrole.",
         },
         {
           title: "Acceptatie van voorwaarden",
@@ -1292,8 +1291,8 @@ export const nlDictionary: LocaleDictionary = {
         {
           title: "Contact",
           contactCards: [
-            { label: "Algemeen", value: "[contact@youragency.com]" },
-            { label: "Juridisch", value: "[legal@youragency.com]" },
+            { label: "Algemeen", value: "contact@autoanders.com" },
+            { label: "Juridisch", value: "legal@autoanders.com" },
             { label: "Adres", value: "[adres]" },
             { label: "Reactietijd", value: "Binnen 5 werkdagen" },
           ],

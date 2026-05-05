@@ -1,4 +1,4 @@
-﻿import type { LocaleDictionary } from "../../../types/LocaleDictionary";
+import type { LocaleDictionary } from "../../../types/LocaleDictionary";
 
 export const enDictionary: LocaleDictionary = {
     localeName: "English",
@@ -373,17 +373,17 @@ export const enDictionary: LocaleDictionary = {
           description:
             "Choose what you need next and see how we support you through the car buying or selling process.",
           imageAlts: {
-            "social-media":
+            "available-cars":
               "Illustration for available cars",
-            "content-creation": "Illustration for car financing",
-            "performance-marketing":
+            financing: "Illustration for car financing",
+            tradein:
               "Illustration for trade-in service",
-            webdesign: "Illustration for vehicle check",
+            "vehicle-check": "Illustration for vehicle check",
           },
         },
       },
       hero: {
-        "social-media": {
+        "available-cars": {
           imageUrl: "/bg.jpg",
           badge: "Available Cars",
           title: "Find a car that fits your life",
@@ -393,7 +393,7 @@ export const enDictionary: LocaleDictionary = {
           secondaryCta: "Learn More",
           imageAlt: "Available car from AutoAnders",
         },
-        "content-creation": {
+        financing: {
           badge: "Car Financing",
           imageUrl: "/bg.jpg",
           title: "Financing options explained clearly",
@@ -403,7 +403,7 @@ export const enDictionary: LocaleDictionary = {
           secondaryCta: "View Cars",
           imageAlt: "Car financing support at AutoAnders",
         },
-        "performance-marketing": {
+        tradein: {
           imageUrl: "/bg.jpg",
           badge: "Trade-In Service",
           title: "Trade in or sell your car without stress",
@@ -413,7 +413,7 @@ export const enDictionary: LocaleDictionary = {
           secondaryCta: "How It Works",
           imageAlt: "Trade-in service from AutoAnders",
         },
-        webdesign: {
+        "vehicle-check": {
           imageUrl: "/bg.jpg",
           badge: "Vehicle Check",
           title: "Know the important details before you buy",
@@ -687,7 +687,7 @@ export const enDictionary: LocaleDictionary = {
               "We are committed to protecting your personal data and to processing it fairly, lawfully, and transparently.",
             ],
             note:
-              "[YOUR AGENCY NAME]\n[Full registered address]\nVAT: [EU VAT number]\nEmail: [privacy@youragency.com]\n[Data Protection Officer (if applicable): [dpo@youragency.com]]",
+              "AutoAnders\n[Full registered address]\nVAT: [EU VAT number]\nEmail: privacy@autoanders.com\n[Data Protection Officer (if applicable): dpo@autoanders.com]",
           },
           {
             title: "Data We Collect",
@@ -733,27 +733,27 @@ export const enDictionary: LocaleDictionary = {
               rows: [
                 [
                   "Delivering contracted services and managing projects",
-                  "Art. 6(1)(b) â€” Contract performance",
+                  "Art. 6(1)(b) — Contract performance",
                 ],
                 [
                   "Invoicing, accounting, and tax compliance",
-                  "Art. 6(1)(c) â€” Legal obligation",
+                  "Art. 6(1)(c) — Legal obligation",
                 ],
                 [
                   "Sending marketing emails to existing clients",
-                  "Art. 6(1)(f) â€” Legitimate interests",
+                  "Art. 6(1)(f) — Legitimate interests",
                 ],
                 [
                   "Fraud prevention, security, and portfolio display",
-                  "Art. 6(1)(f) â€” Legitimate interests",
+                  "Art. 6(1)(f) — Legitimate interests",
                 ],
                 [
                   "Marketing emails to prospects and non-essential cookies",
-                  "Art. 6(1)(a) â€” Consent",
+                  "Art. 6(1)(a) — Consent",
                 ],
                 [
                   "Analytics and website improvement",
-                  "Art. 6(1)(a) â€” Consent (cookie) or Art. 6(1)(f)",
+                  "Art. 6(1)(a) — Consent (cookie) or Art. 6(1)(f)",
                 ],
               ],
             },
@@ -856,7 +856,7 @@ export const enDictionary: LocaleDictionary = {
             title: "Your GDPR Rights",
             paragraphs: [
               "Under the GDPR, you have the following rights regarding your personal data.",
-              "To exercise your rights, contact [privacy@youragency.com]. We will respond within 30 calendar days. We may request identity verification before processing your request.",
+              "To exercise your rights, contact privacy@autoanders.com. We will respond within 30 calendar days. We may request identity verification before processing your request.",
             ],
             rights: [
               {
@@ -945,7 +945,7 @@ export const enDictionary: LocaleDictionary = {
             title: "Children's Privacy",
             paragraphs: [
               "Our services are not directed at children under the age of 16, or the relevant age of digital consent in your member state.",
-              "We do not knowingly collect personal data from children. If you believe a child has provided us with personal data, please contact us immediately at [privacy@youragency.com] and we will delete it promptly.",
+              "We do not knowingly collect personal data from children. If you believe a child has provided us with personal data, please contact us immediately at privacy@autoanders.com and we will delete it promptly.",
             ],
           },
           {
@@ -962,7 +962,7 @@ export const enDictionary: LocaleDictionary = {
               "For any privacy-related questions, requests, or complaints, please use the contact details below.",
             ],
             note:
-              "Privacy & GDPR: [privacy@youragency.com]\nData Protection Officer: [dpo@youragency.com] (if applicable)\nPost: [YOUR AGENCY NAME], [Full address], Attn: Privacy Team\nResponse time: Within 30 calendar days (GDPR deadline)",
+              "Privacy & GDPR: privacy@autoanders.com\nData Protection Officer: dpo@autoanders.com (if applicable)\nPost: AutoAnders, [Full address], Attn: Privacy Team\nResponse time: Within 30 calendar days (GDPR deadline)",
           },
         ],
         note:
@@ -995,12 +995,12 @@ export const enDictionary: LocaleDictionary = {
           {
             title: "Company Details",
             paragraphs: [
-              "In compliance with EU Directive 2000/31/EC on electronic commerce and applicable national law, including France's Art. 6 LCEN, Germany's Â§5 TMG, Spain's Art. 10 LSSI-CE, and equivalent national provisions, the following mandatory information is disclosed to all users and visitors of this website.",
+              "In compliance with EU Directive 2000/31/EC on electronic commerce and applicable national law, including France's Art. 6 LCEN, Germany's §5 TMG, Spain's Art. 10 LSSI-CE, and equivalent national provisions, the following mandatory information is disclosed to all users and visitors of this website.",
             ],
             contactCards: [
               {
                 label: "Company Name",
-                value: "[YOUR AGENCY NAME]",
+                value: "AutoAnders",
               },
               {
                 label: "Legal Form",
@@ -1008,7 +1008,7 @@ export const enDictionary: LocaleDictionary = {
               },
               {
                 label: "Share Capital",
-                value: "[e.g. â‚¬10,000]",
+                value: "[e.g. €10,000]",
               },
               {
                 label: "Registered Address",
@@ -1028,7 +1028,7 @@ export const enDictionary: LocaleDictionary = {
               },
               {
                 label: "Email",
-                value: "[contact@youragency.com]",
+                value: "contact@autoanders.com",
               },
               {
                 label: "Phone",
@@ -1063,8 +1063,8 @@ export const enDictionary: LocaleDictionary = {
           {
             title: "Copyright & Content Rights",
             paragraphs: [
-              "All content published on this website, including but not limited to text, graphics, logos, icons, images, audio clips, and software, is the property of [YOUR AGENCY NAME] or its content suppliers and is protected under EU copyright law (Directive 2019/790/EU) and international intellectual property treaties.",
-              "Unauthorized reproduction, distribution, or commercial use of any material from this website is strictly prohibited without prior written consent from [YOUR AGENCY NAME].",
+              "All content published on this website, including but not limited to text, graphics, logos, icons, images, audio clips, and software, is the property of AutoAnders or its content suppliers and is protected under EU copyright law (Directive 2019/790/EU) and international intellectual property treaties.",
+              "Unauthorized reproduction, distribution, or commercial use of any material from this website is strictly prohibited without prior written consent from AutoAnders.",
             ],
             note:
               "Exception: You may reproduce content for personal, non-commercial use provided you clearly attribute the source. Any other use requires written authorization.",
@@ -1072,22 +1072,22 @@ export const enDictionary: LocaleDictionary = {
           {
             title: "Disclaimer of Liability",
             paragraphs: [
-              "The information on this website is provided for general informational purposes only. [YOUR AGENCY NAME] makes reasonable efforts to keep information current and accurate, but makes no warranties as to completeness, accuracy, or fitness for a particular purpose.",
-              "This website may contain links to third-party websites. [YOUR AGENCY NAME] has no control over the content of external sites and accepts no responsibility for them. The inclusion of any link does not imply endorsement.",
-              "To the extent permitted by applicable EU law, [YOUR AGENCY NAME] shall not be liable for any damages arising from use of or inability to use this website.",
+              "The information on this website is provided for general informational purposes only. AutoAnders makes reasonable efforts to keep information current and accurate, but makes no warranties as to completeness, accuracy, or fitness for a particular purpose.",
+              "This website may contain links to third-party websites. AutoAnders has no control over the content of external sites and accepts no responsibility for them. The inclusion of any link does not imply endorsement.",
+              "To the extent permitted by applicable EU law, AutoAnders shall not be liable for any damages arising from use of or inability to use this website.",
             ],
           },
           {
             title: "Governing Framework",
             paragraphs: [
               "This Legal Notice is governed by the laws of [Country of registration] and applicable EU legislation.",
-              "For any questions regarding this Legal Notice, contact us at [legal@youragency.com].",
+              "For any questions regarding this Legal Notice, contact us at legal@autoanders.com.",
             ],
             bullets: [
-              "EU Directive 2000/31/EC â€” Electronic Commerce.",
-              "EU Directive 2019/790/EU â€” Copyright in the Digital Single Market.",
-              "Regulation (EU) 2016/679 â€” GDPR.",
-              "EU Directive 2009/136/EC â€” ePrivacy (Cookies).",
+              "EU Directive 2000/31/EC — Electronic Commerce.",
+              "EU Directive 2019/790/EU — Copyright in the Digital Single Market.",
+              "Regulation (EU) 2016/679 — GDPR.",
+              "EU Directive 2009/136/EC — ePrivacy (Cookies).",
               "National implementation laws of the member state of establishment.",
             ],
           },
@@ -1139,49 +1139,48 @@ export const enDictionary: LocaleDictionary = {
               "For the purposes of these Terms and Conditions, the following terms have the meanings set out below.",
             ],
             bullets: [
-              '"Agency" / "We" / "Us" â€” [YOUR AGENCY NAME], the provider of digital services described herein.',
-              "\"Client\" / \"You\" â€” Any natural or legal person who contracts or inquires about the Agency's services.",
-              '"Consumer" â€” A natural person acting outside their trade or profession, per EU Directive 2011/83/EU.',
-              '"Services" â€” Social media management, website design and development, and related digital services.',
-              '"Contract" â€” The service agreement, proposal, or order form agreed between Agency and Client.',
-              '"Deliverables" â€” Any work product created, including content, visuals, code, websites, and campaign assets.',
-              '"Statement of Work (SOW)" â€” A document specifying scope, timeline, and price for a specific project.',
+              '"AutoAnders" / "We" / "Us" — AutoAnders, the provider of the vehicle services described herein.',
+              "\"Customer\" / \"You\" — Any natural or legal person who uses or inquires about AutoAnders services.",
+              '"Consumer" — A natural person acting outside their trade or profession, per EU Directive 2011/83/EU.',
+              '"Services" — Vehicle inquiries, car sales, trade-ins, financing support, and vehicle information.',
+              '"Contract" — The agreement, offer, order, or purchase document agreed between AutoAnders and the Customer.',
+              '"Vehicle Data" — Information about make, model, mileage, condition, equipment, documents, and price.',
+              '"Offer" — A non-binding or binding vehicle estimate depending on the individual agreement.',
             ],
           },
           {
             title: "Services Offered",
             subsections: [
               {
-                title: "Social Media Management",
+                title: "Vehicle Inquiries and Car Purchase",
                 bullets: [
-                  "Strategy development and editorial calendar planning.",
-                  "Content creation, including copywriting, graphic design, and short-form video.",
-                  "Community management and audience engagement.",
-                  "Paid advertising on Meta, TikTok, LinkedIn, Google, and other platforms.",
-                  "Monthly performance reporting and campaign optimisation.",
+                  "Providing available vehicle listings and key vehicle information.",
+                  "Information about make, model, condition, mileage, equipment, and pricing.",
+                  "Support with questions before viewings or test drives.",
+                  "Assistance with next steps up to handover where individually agreed.",
                 ],
               },
               {
-                title: "Website Design & Development",
+                title: "Selling or Trading In a Vehicle",
                 bullets: [
-                  "Custom UX/UI design and front-end development.",
-                  "CMS-based websites such as WordPress, Webflow, Shopify, and others.",
-                  "E-commerce development and payment gateway integration.",
-                  "Website maintenance, SEO, and hosting coordination.",
-                  "Accessibility compliance, including WCAG 2.1 / EN 301 549.",
+                  "Collecting the most important vehicle details from the customer.",
+                  "Assessing condition, mileage, documents, and current market demand.",
+                  "Preparing a fair estimate or offer after review.",
+                  "Supporting the handover and required vehicle documents.",
                 ],
               },
               {
-                title: "Additional Services",
+                title: "Financing and Vehicle Advice",
                 bullets: [
-                  "Brand identity and graphic design.",
-                  "Email marketing strategy and campaign execution.",
-                  "Digital audits and competitive analysis.",
+                  "Explaining possible payment and financing options.",
+                  "Helping clarify required information and documents.",
+                  "Providing transparent guidance without pressure to conclude.",
+                  "Checking relevant vehicle details before a decision is made.",
                 ],
               },
             ],
             note:
-              "The exact scope, deliverables, timeline, and pricing for each project are defined in a Statement of Work (SOW) or proposal agreed before work commences. These Terms apply to all Contracts and SOWs.",
+              "The exact scope depends on the individual inquiry, vehicle review, and agreement. Vehicle offers may change after physical inspection or review of documents.",
           },
           {
             title: "Acceptance of Terms",
@@ -1274,13 +1273,13 @@ export const enDictionary: LocaleDictionary = {
               {
                 title: "Pricing & VAT",
                 paragraphs: [
-                  "All prices are quoted in euros (â‚¬) and are exclusive of VAT unless explicitly stated otherwise. Applicable VAT rates comply with EU Directive 2006/112/EC. For cross-border B2B transactions within the EU, the reverse-charge mechanism may apply.",
+                  "All prices are quoted in euros (€) and are exclusive of VAT unless explicitly stated otherwise. Applicable VAT rates comply with EU Directive 2006/112/EC. For cross-border B2B transactions within the EU, the reverse-charge mechanism may apply.",
                 ],
               },
               {
                 title: "Deposit & Milestone Payments",
                 bullets: [
-                  "A deposit of [30â€“50]% of the total project fee is due upon signing the Contract, before work commences.",
+                  "A deposit of [30–50]% of the total project fee is due upon signing the Contract, before work commences.",
                   "Remaining balances are invoiced upon agreed project milestones or at project completion.",
                   "Monthly retainer fees are due on the 1st business day of each month.",
                 ],
@@ -1294,9 +1293,9 @@ export const enDictionary: LocaleDictionary = {
                 ],
               },
               {
-                title: "Late Payment â€” EU Directive 2011/7/EU",
+                title: "Late Payment — EU Directive 2011/7/EU",
                 note:
-                  "In accordance with EU Directive 2011/7/EU on combating late payment in commercial transactions, overdue invoices will incur:\n\nÂ· Statutory interest at the ECB reference rate + 8 percentage points per annum\nÂ· A flat recovery fee of â‚¬40 per overdue invoice\nÂ· The right to suspend all active services until payment is received",
+                  "In accordance with EU Directive 2011/7/EU on combating late payment in commercial transactions, overdue invoices will incur:\n\n· Statutory interest at the ECB reference rate + 8 percentage points per annum\n· A flat recovery fee of €40 per overdue invoice\n· The right to suspend all active services until payment is received",
               },
               {
                 title: "Scope Changes & Additional Work",
@@ -1326,7 +1325,7 @@ export const enDictionary: LocaleDictionary = {
               {
                 title: "How to Exercise the Right",
                 paragraphs: [
-                  "Notify us via an unambiguous written statement to [legal@youragency.com] or by post. You may use the following model form, which is not mandatory.",
+                  "Notify us via an unambiguous written statement to legal@autoanders.com or by post. You may use the following model form, which is not mandatory.",
                 ],
                 note:
                   '"I hereby give notice that I withdraw from my contract for the provision of the following service: [description], ordered on [date]. Name: [name]. Address: [address]. Date: [date]."',
@@ -1374,7 +1373,7 @@ export const enDictionary: LocaleDictionary = {
               {
                 title: "Retainer Agreements",
                 paragraphs: [
-                  "Monthly retainer agreements may be terminated by either party with [30â€“60 days'] written notice, as specified in the Contract. Services will continue until the end of the notice period, subject to payment of all fees due.",
+                  "Monthly retainer agreements may be terminated by either party with [30–60 days'] written notice, as specified in the Contract. Services will continue until the end of the notice period, subject to payment of all fees due.",
                 ],
               },
               {
@@ -1424,7 +1423,7 @@ export const enDictionary: LocaleDictionary = {
               {
                 title: "Governing Law",
                 paragraphs: [
-                  "These Terms and all Contracts shall be governed by the laws of [Country of registration], without prejudice to any mandatory provisions protecting Consumers under the law of their country of habitual residence (EU Regulation No. 593/2008 â€” Rome I).",
+                  "These Terms and all Contracts shall be governed by the laws of [Country of registration], without prejudice to any mandatory provisions protecting Consumers under the law of their country of habitual residence (EU Regulation No. 593/2008 — Rome I).",
                 ],
               },
               {
@@ -1445,7 +1444,7 @@ export const enDictionary: LocaleDictionary = {
                     href: "https://ec.europa.eu/consumers/odr",
                   },
                 ],
-                note: "Agency ODR email: [contact@youragency.com]",
+                note: "Agency ODR email: contact@autoanders.com",
               },
               {
                 title: "Amicable Resolution",
@@ -1498,11 +1497,11 @@ export const enDictionary: LocaleDictionary = {
             contactCards: [
               {
                 label: "General",
-                value: "[contact@youragency.com]",
+                value: "contact@autoanders.com",
               },
               {
                 label: "Legal / Billing",
-                value: "[legal@youragency.com]",
+                value: "legal@autoanders.com",
               },
               {
                 label: "Address",

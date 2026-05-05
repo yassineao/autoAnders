@@ -53,11 +53,10 @@ export default function MobileNav({ locale, content }: MobileNavProps) {
           aria-controls={menuId}
           aria-expanded={open}
           aria-label={content.mobileMenuLabel}
-          className={`inline-flex h-10 w-10 items-center justify-center rounded-full border text-white transition-all duration-300 ${
-            open
+          className={`inline-flex h-10 w-10 items-center justify-center rounded-full border text-white transition-all duration-300 ${open
               ? "border-brand-petalPink/50 bg-brand-petalPink/15 shadow-lg shadow-brand-purple/20"
               : "border-white/12 bg-white/6 hover:border-white/20 hover:bg-white/10"
-          }`}
+            }`}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -90,18 +89,16 @@ export default function MobileNav({ locale, content }: MobileNavProps) {
       <div
         aria-hidden="true"
         onClick={closeMenu}
-        className={`fixed inset-0 top-16 z-40 bg-brand-navyDark/45 backdrop-blur-[2px] transition-opacity duration-300 ${
-          open ? "opacity-100" : "pointer-events-none opacity-0"
-        }`}
+        className={`fixed inset-0 top-16 z-40 bg-brand-navyDark/45 backdrop-blur-[2px] transition-opacity duration-300 ${open ? "opacity-100" : "pointer-events-none opacity-0"
+          }`}
       />
 
       <div
         id={menuId}
-        className={`absolute right-0 top-[calc(100%+0.75rem)] z-50 w-[min(24rem,calc(100vw-2rem))] origin-top-right transition-all duration-300 ${
-          open
+        className={`absolute bg-black/80 right-0 top-[calc(100%+0.75rem)] z-50 w-[min(24rem,calc(100vw-2rem))] origin-top-right transition-all duration-300 ${open
             ? "translate-y-0 scale-100 opacity-100"
             : "pointer-events-none -translate-y-3 scale-95 opacity-0"
-        }`}
+          }`}
       >
         <div className="overflow-hidden rounded-[1.75rem] border border-white/10 bg-brand-navyDark/95 shadow-[0_30px_80px_rgba(0,0,0,0.45)] ring-1 ring-white/5 backdrop-blur-xl">
           <div className="border-b border-white/8 bg-white/[0.03] px-4 py-3">

@@ -14,6 +14,7 @@ import {
   Search,
   SlidersHorizontal,
 } from "lucide-react";
+import CarDetail from "./CarDetail";
 import type { AutoCatalogueProps, Car } from "../types/Car";
 
 const allValue = "All";
@@ -168,6 +169,7 @@ export default function AutoCatalogue({
   const [draftFilters, setDraftFilters] = useState<FilterState>(initialFilters);
   const [appliedFilters, setAppliedFilters] = useState<FilterState>(initialFilters);
   const [advancedFiltersVisible, setAdvancedFiltersVisible] = useState(false);
+  const [selectedCar, setSelectedCar] = useState<Car | null>(null);
 
   const options = useMemo(
     () => ({
@@ -208,6 +210,11 @@ export default function AutoCatalogue({
     setAppliedFilters(initialFilters);
   };
 
+  const handleViewDetails = (car: Car) => {
+    setSelectedCar(car);
+    onViewDetails?.(car);
+  };
+
   const maxMileageOptions = [allValue, "50000", "75000", "100000", "150000"];
   const maxPriceOptions = [allValue, "15000", "25000", "40000"];
 
@@ -242,7 +249,7 @@ export default function AutoCatalogue({
           className="mb-10 rounded-lg border border-white/10 bg-zinc-900 p-4"
         >
           <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-5">
-            <label className="relative xl:col-span-1">
+         
               <input
                 value={draftFilters.search}
                 onChange={(event) =>
@@ -254,7 +261,7 @@ export default function AutoCatalogue({
                 className={`${inputClass}`}
                 placeholder={labels.searchPlaceholder}
               />
-            </label>
+            
             <SelectFilter
               label={labels.allVehicles}
               value={draftFilters.vehicle}
@@ -464,7 +471,7 @@ export default function AutoCatalogue({
 
                   <button
                     type="button"
-                    onClick={() => onViewDetails?.(car)}
+                    onClick={() => handleViewDetails(car)}
                     className="w-full rounded-lg bg-white py-3 font-bold text-black transition hover:bg-zinc-200 "
                   >
                     {labels.viewDetails}
@@ -475,6 +482,14 @@ export default function AutoCatalogue({
           })}
         </div>
       </div>
+
+      {selectedCar ? (
+        <CarDetail
+          car={selectedCar}
+          locale={locale}
+          onClose={() => setSelectedCar(null)}
+        />
+      ) : null}
     </section>
   );
 }
