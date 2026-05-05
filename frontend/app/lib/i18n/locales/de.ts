@@ -209,7 +209,7 @@ export const deDictionary: LocaleDictionary = {
           vat: "MwSt. ausweisbar",
           vehicle: "Limousine",
           colour: "Schwarz",
-          image: "/cars/bmw.jpg",
+          image: "/cars/BMW.jpg",
           tags: {
             de: ["Navigation", "Leder", "Garantie"],
             en: ["Navigation", "Leather", "Warranty"],

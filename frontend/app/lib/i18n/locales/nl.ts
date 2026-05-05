@@ -195,7 +195,7 @@ export const nlDictionary: LocaleDictionary = {
       vat: "BTW aftrekbaar",
       vehicle: "Sedan",
       colour: "Zwart",
-      image: "/cars/bmw.jpg",
+      image: "/cars/BMW.jpg",
       tags: {
         de: ["Navigation", "Leder", "Garantie"],
         en: ["Navigation", "Leather", "Warranty"],

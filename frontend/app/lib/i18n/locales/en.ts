@@ -195,7 +195,7 @@ export const enDictionary: LocaleDictionary = {
       vat: "VAT deductible",
       vehicle: "Saloon",
       colour: "Black",
-      image: "/cars/bmw.jpg",
+      image: "/cars/BMW.jpg",
       tags: {
         de: ["Navigation", "Leder", "Garantie"],
         en: ["Navigation", "Leather", "Warranty"],
