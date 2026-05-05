@@ -1,4 +1,4 @@
-import type { LocaleDictionary } from "../../../types/LocaleDictionary";
+﻿import type { LocaleDictionary } from "../../../types/LocaleDictionary";
 
 export const deDictionary: LocaleDictionary = {
   localeName: "Deutsch",
@@ -28,10 +28,10 @@ export const deDictionary: LocaleDictionary = {
      
       { label: "Auto verkaufen", href: "/Sell" },
        { label: "FAQ", href: "/faq" },
-      { label: "Über uns", href: "/about" },
+      { label: "Ãœber uns", href: "/about" },
     ],
     contactLabel: "Kontakt",
-    mobileMenuLabel: "Menü",
+    mobileMenuLabel: "MenÃ¼",
     switchLabel: "EN",
   },
   footer: {
@@ -40,10 +40,10 @@ export const deDictionary: LocaleDictionary = {
     servicesTitle: "Autos",
     contactTitle: "Kontakt",
     navigationLinks: [
-      { label: "Startseite", href: "/" }, // ✅ Fixed: was "#home"
+      { label: "Startseite", href: "/" }, // âœ… Fixed: was "#home"
       { label: "Vorteile", href: "/advantages" },
       { label: "Auto kaufen", href: "/Catalogue" },
-      { label: "Über uns", href: "/about" },
+      { label: "Ãœber uns", href: "/about" },
     ],
     serviceLinks: [
       { label: "Verfuegbare Autos", href: "/Catalogue" },
@@ -58,24 +58,24 @@ export const deDictionary: LocaleDictionary = {
     ],
     rights: "Alle Rechte vorbehalten.",
     legalLinks: [
-      { label: "Datenschutz", href: "/privacy" }, // ✅ Fixed: was "#about-us"
-      { label: "Impressum", href: "/impressum" }, // ✅ Fixed: was "#about-us"
+      { label: "Datenschutz", href: "/privacy" }, // âœ… Fixed: was "#about-us"
+      { label: "Impressum", href: "/impressum" }, // âœ… Fixed: was "#about-us"
       { label: "Bedingungen", href: "/terms" },
       { label: "Cookies", href: "/cookie" },
     ],
   },
   home: {
     metadata: {
-      // ✅ IMPROVED: More specific, keyword-rich title
+      // âœ… IMPROVED: More specific, keyword-rich title
       title: "Autos kaufen und verkaufen | AutoAnders",
 
-      // ✅ IMPROVED: Removed "aus Deutschland", added remote positioning, more compelling
+      // âœ… IMPROVED: Removed "aus Deutschland", added remote positioning, more compelling
       description:
-        "Finden Sie geprüfte Gebrauchtwagen, erhalten Sie faire Angebote für Ihr Auto und kaufen Sie Ihr nächstes Fahrzeug mit klaren Informationen.",
+        "Finden Sie geprÃ¼fte Gebrauchtwagen, erhalten Sie faire Angebote fÃ¼r Ihr Auto und kaufen Sie Ihr nÃ¤chstes Fahrzeug mit klaren Informationen.",
 
       locale: "de_DE",
 
-      // ✅ IMPROVED: Updated keywords (removed generic ones, added specific services)
+      // âœ… IMPROVED: Updated keywords (removed generic ones, added specific services)
       keywords: [
         "auto kaufen",
         "gebrauchtwagen",
@@ -88,13 +88,13 @@ export const deDictionary: LocaleDictionary = {
       ],
     },
     hero: {
-      // ✅ IMPROVED: Removed "aus Deutschland" - focus on value
+      // âœ… IMPROVED: Removed "aus Deutschland" - focus on value
       eyebrow: "Autos kaufen und verkaufen mit Vertrauen",
 
       titleFirst: "Finden Sie Ihr naechstes Auto",
       titleSecond: "oder verkaufen Sie Ihres zum fairen Preis",
 
-      // ✅ IMPROVED: Removed location, added remote benefit
+      // âœ… IMPROVED: Removed location, added remote benefit
       description:
         "AutoAnders hilft Ihnen, verfuegbare Autos zu vergleichen, jedes wichtige Detail zu verstehen und den Kauf oder Verkauf ohne Druck abzuschliessen.",
 
@@ -133,34 +133,34 @@ export const deDictionary: LocaleDictionary = {
       eyebrow: "Unsere Services",
       title: "Alles, was Sie zum Kaufen oder Verkaufen eines Autos brauchen",
       description:
-        "Sehen Sie verfügbare Fahrzeuge, erhalten Sie Unterstützung bei der Finanzierung und bekommen Sie ein faires Angebot für Ihr aktuelles Auto.",
+        "Sehen Sie verfÃ¼gbare Fahrzeuge, erhalten Sie UnterstÃ¼tzung bei der Finanzierung und bekommen Sie ein faires Angebot fÃ¼r Ihr aktuelles Auto.",
       cta: "Loslegen",
       items: [
         {
           title: "Verfuegbare Autos",
           description:
-            "Entdecken Sie geprüfte Fahrzeuge mit klaren Fotos, wichtigen Details, Kilometerstand, Ausstattung und Preis.",
+            "Entdecken Sie geprÃ¼fte Fahrzeuge mit klaren Fotos, wichtigen Details, Kilometerstand, Ausstattung und Preis.",
         },
         {
           title: "Finanzierung",
           description:
-            "Finden Sie eine passende Zahlungsmoeglichkeit mit verständlicher Beratung und ohne Druck.",
+            "Finden Sie eine passende Zahlungsmoeglichkeit mit verstÃ¤ndlicher Beratung und ohne Druck.",
         },
         {
           title: "Verkaufen oder eintauschen",
           description:
-            "Senden Sie uns Ihre Fahrzeugdaten und erhalten Sie ein faires Angebot für Verkauf oder Inzahlungnahme.",
+            "Senden Sie uns Ihre Fahrzeugdaten und erhalten Sie ein faires Angebot fÃ¼r Verkauf oder Inzahlungnahme.",
         },
       ],
     },
     about: {
-      eyebrow: "Über AutoAnders",
+      eyebrow: "Ãœber AutoAnders",
       title: "Der einfachere Weg, Autos zu kaufen und zu verkaufen",
 
-      // ✅ IMPROVED: Added remote positioning, removed generic filler
+      // âœ… IMPROVED: Added remote positioning, removed generic filler
       paragraphs: [
-        "AutoAnders ist für Fahrer gemacht, die beim Autokauf klare Informationen, faire Preise und eine angenehme Beratung wollen.",
-        "Ob Sie Ihr nächstes Auto suchen oder Ihr aktuelles Fahrzeug verkaufen möchten: Wir helfen Ihnen, Optionen zu verstehen, fair zu vergleichen und sicher zu entscheiden.",
+        "AutoAnders ist fÃ¼r Fahrer gemacht, die beim Autokauf klare Informationen, faire Preise und eine angenehme Beratung wollen.",
+        "Ob Sie Ihr nÃ¤chstes Auto suchen oder Ihr aktuelles Fahrzeug verkaufen mÃ¶chten: Wir helfen Ihnen, Optionen zu verstehen, fair zu vergleichen und sicher zu entscheiden.",
       ],
 
       cta: "Kontakt aufnehmen",
@@ -169,7 +169,7 @@ export const deDictionary: LocaleDictionary = {
     scrollTexts: ["Verfuegbare Autos", "Faire Angebote"],
     catalogue: {
       title: "Unsere Fahrzeuge",
-      subtitle: "Verfügbare Autos",
+      subtitle: "VerfÃ¼gbare Autos",
       labels: {
         vehiclesFound: "Fahrzeuge gefunden",
         searchPlaceholder: "Keyword suchen",
@@ -267,7 +267,7 @@ export const deDictionary: LocaleDictionary = {
       ],
     },
     seo: {
-      // ✅ IMPROVED: Updated for schema (consistent with metadata)
+      // âœ… IMPROVED: Updated for schema (consistent with metadata)
       areaServed: ["Germany", "Austria", "Switzerland"],
       knowsAbout: [
         "Gebrauchtwagen",
@@ -292,7 +292,7 @@ export const deDictionary: LocaleDictionary = {
     metadata: {
       title: "FAQ | Auto kaufen & verkaufen | AutoAnders",
       description:
-        "Antworten auf häufige Fragen rund um Gebrauchtwagen, Autoankauf, Inzahlungnahme, Finanzierung und den Fahrzeugkauf bei AutoAnders.",
+        "Antworten auf hÃ¤ufige Fragen rund um Gebrauchtwagen, Autoankauf, Inzahlungnahme, Finanzierung und den Fahrzeugkauf bei AutoAnders.",
       locale: "de_DE",
       keywords: [
         "auto faq",
@@ -303,69 +303,69 @@ export const deDictionary: LocaleDictionary = {
       ],
     },
     badge: "FAQ",
-    title: "Häufige Fragen rund um AutoAnders",
+    title: "HÃ¤ufige Fragen rund um AutoAnders",
     description:
-      "Ein kompakter Überblick über Fragen, die Kunden vor dem Kauf, Verkauf oder der Finanzierung eines Fahrzeugs besonders oft stellen.",
+      "Ein kompakter Ãœberblick Ã¼ber Fragen, die Kunden vor dem Kauf, Verkauf oder der Finanzierung eines Fahrzeugs besonders oft stellen.",
     ctaLabel: "Alle FAQs ansehen",
     items: [
       {
         question: "Welche Autos bietet AutoAnders an?",
         answer:
-          "Wir bieten geprüfte Gebrauchtwagen verschiedener Marken und Modelle an. Unser Bestand ändert sich regelmäßig, daher lohnt sich ein häufiger Blick in unseren Fahrzeugbestand.",
+          "Wir bieten geprÃ¼fte Gebrauchtwagen verschiedener Marken und Modelle an. Unser Bestand Ã¤ndert sich regelmÃ¤ÃŸig, daher lohnt sich ein hÃ¤ufiger Blick in unseren Fahrzeugbestand.",
       },
       {
-        question: "Sind die Fahrzeuge geprüft?",
+        question: "Sind die Fahrzeuge geprÃ¼ft?",
         answer:
-          "Ja, unsere Fahrzeuge werden vor dem Verkauf geprüft und mit transparenten Informationen zu Zustand, Kilometerstand und Ausstattung angeboten.",
+          "Ja, unsere Fahrzeuge werden vor dem Verkauf geprÃ¼ft und mit transparenten Informationen zu Zustand, Kilometerstand und Ausstattung angeboten.",
       },
       {
         question: "Kann ich mein aktuelles Auto verkaufen?",
         answer:
-          "Ja, Sie können Ihr Fahrzeug direkt an uns verkaufen. Senden Sie uns einfach die wichtigsten Fahrzeugdaten und wir erstellen ein faires Angebot.",
+          "Ja, Sie kÃ¶nnen Ihr Fahrzeug direkt an uns verkaufen. Senden Sie uns einfach die wichtigsten Fahrzeugdaten und wir erstellen ein faires Angebot.",
       },
       {
-        question: "Ist auch eine Inzahlungnahme möglich?",
+        question: "Ist auch eine Inzahlungnahme mÃ¶glich?",
         answer:
-          "Ja, wir nehmen Ihr aktuelles Fahrzeug gerne in Zahlung und verrechnen den Wert mit Ihrem nächsten Auto.",
+          "Ja, wir nehmen Ihr aktuelles Fahrzeug gerne in Zahlung und verrechnen den Wert mit Ihrem nÃ¤chsten Auto.",
       },
       {
         question: "Bietet AutoAnders Finanzierung an?",
         answer:
-          "Ja, wir unterstützen Sie bei passenden Finanzierungsmöglichkeiten, damit Sie Ihr Wunschfahrzeug flexibel bezahlen können.",
+          "Ja, wir unterstÃ¼tzen Sie bei passenden FinanzierungsmÃ¶glichkeiten, damit Sie Ihr Wunschfahrzeug flexibel bezahlen kÃ¶nnen.",
       },
       {
         question: "Kann ich eine Probefahrt machen?",
         answer:
-          "Ja, nach Terminvereinbarung können Sie Ihr Wunschfahrzeug besichtigen und eine Probefahrt durchführen.",
+          "Ja, nach Terminvereinbarung kÃ¶nnen Sie Ihr Wunschfahrzeug besichtigen und eine Probefahrt durchfÃ¼hren.",
       },
       {
-        question: "Wie schnell bekomme ich ein Angebot für mein Auto?",
+        question: "Wie schnell bekomme ich ein Angebot fÃ¼r mein Auto?",
         answer:
-          "Nach Übermittlung der Fahrzeugdaten erhalten Sie in der Regel schnellstmöglich eine Rückmeldung mit einem realistischen Angebot.",
+          "Nach Ãœbermittlung der Fahrzeugdaten erhalten Sie in der Regel schnellstmÃ¶glich eine RÃ¼ckmeldung mit einem realistischen Angebot.",
       },
       {
         question: "Welche Unterlagen brauche ich beim Verkauf?",
         answer:
-          "In der Regel benötigen Sie Fahrzeugschein, Fahrzeugbrief, TÜV-Unterlagen, Serviceheft sowie vorhandene Schlüssel und Zubehör.",
+          "In der Regel benÃ¶tigen Sie Fahrzeugschein, Fahrzeugbrief, TÃœV-Unterlagen, Serviceheft sowie vorhandene SchlÃ¼ssel und ZubehÃ¶r.",
       },
       {
-        question: "Kann ich mein Auto auch ohne TÜV verkaufen?",
+        question: "Kann ich mein Auto auch ohne TÃœV verkaufen?",
         answer:
-          "Ja, auch Fahrzeuge ohne gültigen TÜV können je nach Zustand angefragt und bewertet werden.",
+          "Ja, auch Fahrzeuge ohne gÃ¼ltigen TÃœV kÃ¶nnen je nach Zustand angefragt und bewertet werden.",
       },
       {
-        question: "Warum AutoAnders wählen?",
+        question: "Warum AutoAnders wÃ¤hlen?",
         answer:
-          "Wir stehen für transparente Preise, persönliche Beratung, geprüfte Fahrzeuge und einen einfachen Ablauf beim Kaufen oder Verkaufen.",
+          "Wir stehen fÃ¼r transparente Preise, persÃ¶nliche Beratung, geprÃ¼fte Fahrzeuge und einen einfachen Ablauf beim Kaufen oder Verkaufen.",
       },
     ],
   },
   servicePage: {
     metadata: {
-      // ✅ IMPROVED: More specific, keyword-rich
+      // âœ… IMPROVED: More specific, keyword-rich
       title: "Autoservices | Kaufen, verkaufen, finanzieren | AutoAnders",
 
-      // ✅ IMPROVED: Better flow, removed "fuer" typo
+      // âœ… IMPROVED: Better flow, removed "fuer" typo
       description:
         "Entdecken Sie die AutoAnders Services: gepruefte Gebrauchtwagen, Auto verkaufen, Inzahlungnahme, Finanzierung und transparente Fahrzeugchecks.",
 
@@ -385,22 +385,22 @@ export const deDictionary: LocaleDictionary = {
       hero: {
         eyebrow: "Unsere Leistungen",
         title:
-          "Leistungsübersicht für Marken mit Anspruch auf einen starken digitalen Auftritt",
+          "LeistungsÃ¼bersicht fÃ¼r Marken mit Anspruch auf einen starken digitalen Auftritt",
         description:
-          "Entdecken Sie die Leistungen, mit denen wir Sichtbarkeit, Struktur und Wachstum für moderne Marken aufbauen.",
+          "Entdecken Sie die Leistungen, mit denen wir Sichtbarkeit, Struktur und Wachstum fÃ¼r moderne Marken aufbauen.",
         primaryCta: "Beratung anfragen",
       },
       cards: {
         eyebrow: "Leistungen entdecken",
         description:
-          "Wählen Sie den Leistungsbereich, der zu Ihrem nächsten Schritt passt, und sehen Sie sich anschließend die Details an.",
+          "WÃ¤hlen Sie den Leistungsbereich, der zu Ihrem nÃ¤chsten Schritt passt, und sehen Sie sich anschlieÃŸend die Details an.",
         imageAlts: {
           "social-media":
-            "Abstrakte Illustration für Social Media Betreuung",
-          "content-creation": "Abstrakte Illustration für Content Creation",
+            "Abstrakte Illustration fÃ¼r Social Media Betreuung",
+          "content-creation": "Abstrakte Illustration fÃ¼r Content Creation",
           "performance-marketing":
-            "Abstrakte Illustration für Performance Marketing",
-          webdesign: "Abstrakte Illustration für Webdesign",
+            "Abstrakte Illustration fÃ¼r Performance Marketing",
+          webdesign: "Abstrakte Illustration fÃ¼r Webdesign",
         },
       },
     },
@@ -410,138 +410,138 @@ export const deDictionary: LocaleDictionary = {
         badge: "Social Media Betreuung",
         title: "Social Media Betreuung, die Ihre Marke sichtbar macht",
 
-        // ✅ IMPROVED: Fixed typo "Kanaele" → "Kanäle", "regelmaessig" → "regelmäßig"
+        // âœ… IMPROVED: Fixed typo "Kanaele" â†’ "KanÃ¤le", "regelmaessig" â†’ "regelmÃ¤ÃŸig"
         description:
-          "Wir planen, gestalten und betreuen Ihre Kanäle so, dass Ihre Marke professionell auftritt und regelmäßig qualifizierte Anfragen gewinnt.",
+          "Wir planen, gestalten und betreuen Ihre KanÃ¤le so, dass Ihre Marke professionell auftritt und regelmÃ¤ÃŸig qualifizierte Anfragen gewinnt.",
 
         primaryCta: "Beratung anfragen",
         secondaryCta: "Mehr erfahren",
-        imageAlt: "Social Media Betreuung von Gloyoo",
+        imageAlt: "Social Media Betreuung von AutoAnders",
       },
       "content-creation": {
         badge: "Content Creation",
         imageUrl: "/bg.jpg",
         title: "Content Creation, die Aufmerksamkeit in Vertrauen verwandelt",
 
-        // ✅ IMPROVED: Fixed typo "staerken" → "stärken"
+        // âœ… IMPROVED: Fixed typo "staerken" â†’ "stÃ¤rken"
         description:
-          "Von Reels bis Brand Assets erstellen wir Inhalte, die Ihre Zielgruppe ansprechen, Wiedererkennung schaffen und Ihre Marke stärken.",
+          "Von Reels bis Brand Assets erstellen wir Inhalte, die Ihre Zielgruppe ansprechen, Wiedererkennung schaffen und Ihre Marke stÃ¤rken.",
 
         primaryCta: "Projekt anfragen",
         secondaryCta: "Referenzen ansehen",
-        imageAlt: "Content Creation von Gloyoo",
+        imageAlt: "Content Creation von AutoAnders",
       },
       "performance-marketing": {
         imageUrl: "/bg.jpg",
         badge: "Performance Marketing",
         title: "Performance Marketing mit Fokus auf Leads und Umsatz",
 
-        // ✅ IMPROVED: Fixed typo "Kanaelen" → "Kanälen", "zaehlen" → "zählen"
+        // âœ… IMPROVED: Fixed typo "Kanaelen" â†’ "KanÃ¤len", "zaehlen" â†’ "zÃ¤hlen"
         description:
-          "Mit datenbasierten Kampagnen steigern wir Reichweite, Conversions und messbare Ergebnisse auf den Kanälen, die für Ihr Unternehmen zählen.",
+          "Mit datenbasierten Kampagnen steigern wir Reichweite, Conversions und messbare Ergebnisse auf den KanÃ¤len, die fÃ¼r Ihr Unternehmen zÃ¤hlen.",
 
         primaryCta: "Strategie anfragen",
         secondaryCta: "Potenzial entdecken",
-        imageAlt: "Performance Marketing von Gloyoo",
+        imageAlt: "Performance Marketing von AutoAnders",
       },
       webdesign: {
         imageUrl: "/bg.jpg",
         badge: "Webdesign",
 
-        // ✅ IMPROVED: Fixed typo "ueberzeugt" → "überzeugt"
-        title: "Webdesign, das überzeugt und Anfragen erzeugt",
+        // âœ… IMPROVED: Fixed typo "ueberzeugt" â†’ "Ã¼berzeugt"
+        title: "Webdesign, das Ã¼berzeugt und Anfragen erzeugt",
 
-        // ✅ IMPROVED: Fixed typos "praesentieren" → "präsentieren"
+        // âœ… IMPROVED: Fixed typos "praesentieren" â†’ "prÃ¤sentieren"
         description:
-          "Wir entwickeln moderne Websites, die Ihre Marke professionell präsentieren, Vertrauen aufbauen und Besucher in Kundenanfragen verwandeln.",
+          "Wir entwickeln moderne Websites, die Ihre Marke professionell prÃ¤sentieren, Vertrauen aufbauen und Besucher in Kundenanfragen verwandeln.",
 
         primaryCta: "Website planen",
         secondaryCta: "Mehr erfahren",
-        imageAlt: "Webdesign von Gloyoo",
+        imageAlt: "Webdesign von AutoAnders",
       },
     },
     features: {
       badge: "Unsere Kernleistungen",
       title: "Jede Marke braucht einen klaren, starken digitalen Auftritt.",
 
-      // ✅ IMPROVED: Fixed typos throughout
+      // âœ… IMPROVED: Fixed typos throughout
       description:
-        "Wir kombinieren Strategie, Kreativität und Umsetzung, damit Ihre Online-Präsenz professionell wirkt und messbare Ergebnisse liefert.",
+        "Wir kombinieren Strategie, KreativitÃ¤t und Umsetzung, damit Ihre Online-PrÃ¤senz professionell wirkt und messbare Ergebnisse liefert.",
 
       items: [
         {
           title: "Mehr Reichweite",
           description:
-            "Steigern Sie Sichtbarkeit, Website-Besuche und qualifizierte Kontakte über starke Inhalte und Kampagnen.",
+            "Steigern Sie Sichtbarkeit, Website-Besuche und qualifizierte Kontakte Ã¼ber starke Inhalte und Kampagnen.",
           imageAlt: "Reichweitensteigerung durch Social Media",
           statLabel: "45%",
         },
         {
-          title: "Struktur für Ihr Marketing",
+          title: "Struktur fÃ¼r Ihr Marketing",
           description:
-            "Klare Prozesse, abgestimmte Inhalte und ein konsistenter Markenauftritt für nachhaltiges Wachstum.",
+            "Klare Prozesse, abgestimmte Inhalte und ein konsistenter Markenauftritt fÃ¼r nachhaltiges Wachstum.",
           imageAlt: "Marketing-Struktur und Prozesse",
         },
         {
           title: "Nahtlose Umsetzung",
           description:
-            "Webdesign, Content und Performance Marketing greifen ineinander und sorgen für ein stimmiges Gesamterlebnis.",
-          imageAlt: "Integrierte digitale Marketing-Lösungen",
+            "Webdesign, Content und Performance Marketing greifen ineinander und sorgen fÃ¼r ein stimmiges Gesamterlebnis.",
+          imageAlt: "Integrierte digitale Marketing-LÃ¶sungen",
         },
       ],
       sections: [
         {
           title: "Projekte strategisch steuern",
           points: [
-            "Klare Content- und Kampagnenplanung für Ihre Ziele",
+            "Klare Content- und Kampagnenplanung fÃ¼r Ihre Ziele",
             "Abgestimmte Prozesse zwischen Marke, Design und Performance",
-            "Messbare Prioritäten für nachhaltiges Wachstum",
-            "Mehr Struktur für interne und externe Zusammenarbeit",
+            "Messbare PrioritÃ¤ten fÃ¼r nachhaltiges Wachstum",
+            "Mehr Struktur fÃ¼r interne und externe Zusammenarbeit",
             "Schnellere Abstimmungen mit klaren Freigabewegen",
-            "Bessere Übersicht über laufende Maßnahmen",
-            "Verlässliche Umsetzung über alle Kanäle hinweg",
+            "Bessere Ãœbersicht Ã¼ber laufende MaÃŸnahmen",
+            "VerlÃ¤ssliche Umsetzung Ã¼ber alle KanÃ¤le hinweg",
             "Transparente Kommunikation zu Fortschritt und Ergebnissen",
-            "Planbare Maßnahmen statt spontaner Einzelaktionen",
+            "Planbare MaÃŸnahmen statt spontaner Einzelaktionen",
           ],
         },
         {
           title: "Ihre Website gezielt weiterentwickeln",
           points: [
             "Texte und Inhalte passend zu Ihrer Zielgruppe strukturieren",
-            "Design und Nutzerführung für mehr Vertrauen optimieren",
-            "Klare Botschaften für Angebote und Leistungen ausarbeiten",
-            "Responsives Erlebnis für Mobile und Desktop sicherstellen",
-            "Schnelle Anpassungen ohne unnötige Komplexität ermöglichen",
-            "Einheitlichen Markenauftritt über alle Seiten halten",
+            "Design und NutzerfÃ¼hrung fÃ¼r mehr Vertrauen optimieren",
+            "Klare Botschaften fÃ¼r Angebote und Leistungen ausarbeiten",
+            "Responsives Erlebnis fÃ¼r Mobile und Desktop sicherstellen",
+            "Schnelle Anpassungen ohne unnÃ¶tige KomplexitÃ¤t ermÃ¶glichen",
+            "Einheitlichen Markenauftritt Ã¼ber alle Seiten halten",
             "Conversion-starke Elemente bewusst platzieren",
-            "Inhalte flexibel für Kampagnen und Aktionen erweitern",
-            "Technische Basis für Sichtbarkeit und Performance stärken",
+            "Inhalte flexibel fÃ¼r Kampagnen und Aktionen erweitern",
+            "Technische Basis fÃ¼r Sichtbarkeit und Performance stÃ¤rken",
           ],
         },
         {
           title: "Markenauftritt konsistent gestalten",
           points: [
             "Social Media, Website und Werbemittel visuell verbinden",
-            "Wiedererkennbare Inhalte für eine starke Markenwirkung entwickeln",
+            "Wiedererkennbare Inhalte fÃ¼r eine starke Markenwirkung entwickeln",
             "Designsysteme schaffen, die im Alltag nutzbar bleiben",
-            "Vorlagen für Posts, Landingpages und Kampagnen vorbereiten",
+            "Vorlagen fÃ¼r Posts, Landingpages und Kampagnen vorbereiten",
             "Kreative Ideen sauber in die Umsetzung bringen",
-            "Markenwerte in Bildsprache und Tonalität übersetzen",
+            "Markenwerte in Bildsprache und TonalitÃ¤t Ã¼bersetzen",
             "Flexibel auf neue Formate und Trends reagieren",
-            "Professionellen Auftritt über alle Kontaktpunkte sichern",
-            "Mehr Konsistenz ohne an Individualität zu verlieren",
+            "Professionellen Auftritt Ã¼ber alle Kontaktpunkte sichern",
+            "Mehr Konsistenz ohne an IndividualitÃ¤t zu verlieren",
           ],
         },
       ],
     },
     hero2: {
-      badge: "Warum Gloyoo?",
-      title: "Gemeinsam schaffen wir einen Auftritt, der sichtbar macht, wofür Ihre Marke steht.",
+      badge: "Warum AutoAnders?",
+      title: "Gemeinsam schaffen wir einen Auftritt, der sichtbar macht, wofÃ¼r Ihre Marke steht.",
       description:
-        "Wir entwickeln keine Standardlösungen. Jedes Unternehmen, jede Marke und jedes Ziel ist anders. Deshalb arbeiten wir eng mit Ihnen zusammen, um eine individuelle Strategie und einen Auftritt zu schaffen, der wirklich zu Ihnen passt.",
-      subtitle: "Lassen Sie uns gemeinsam Ihre digitale Präsenz gestalten.",
+        "Wir entwickeln keine StandardlÃ¶sungen. Jedes Unternehmen, jede Marke und jedes Ziel ist anders. Deshalb arbeiten wir eng mit Ihnen zusammen, um eine individuelle Strategie und einen Auftritt zu schaffen, der wirklich zu Ihnen passt.",
+      subtitle: "Lassen Sie uns gemeinsam Ihre digitale PrÃ¤senz gestalten.",
       subdescription:
-        "Ob Social Media, Content oder Webdesign – wir bringen Ihre Marke online zum Strahlen und sorgen dafür, dass Sie dort sichtbar wird, wo Ihre Zielgruppe unterwegs ist.",
+        "Ob Social Media, Content oder Webdesign â€“ wir bringen Ihre Marke online zum Strahlen und sorgen dafÃ¼r, dass Sie dort sichtbar wird, wo Ihre Zielgruppe unterwegs ist.",
       imageAlt: "Abstrakte 3D-Formen im Hintergrund",
       imageUrl: "/bg.jpg",
     },
@@ -565,7 +565,7 @@ export const deDictionary: LocaleDictionary = {
   },
   form: {
     metadata: {
-      // ✅ IMPROVED: More action-oriented title
+      // âœ… IMPROVED: More action-oriented title
       title: "Kontakt AutoAnders | Auto kaufen oder verkaufen",
 
       description:
@@ -584,7 +584,7 @@ export const deDictionary: LocaleDictionary = {
     content: {
       title: "Kontakt aufnehmen",
 
-      // ✅ IMPROVED: Fixed typo "Gespraech" → "Gespräch"
+      // âœ… IMPROVED: Fixed typo "Gespraech" â†’ "GesprÃ¤ch"
       description:
         "Sie haben eine Frage zu einem Fahrzeug, zum Verkauf Ihres Autos oder zur Finanzierung? Unser Team hilft Ihnen gerne weiter.",
 
@@ -601,16 +601,16 @@ export const deDictionary: LocaleDictionary = {
         email: "hallo@unternehmen.de",
         phoneNumber: "+49 123 456789",
 
-        // ✅ IMPROVED: Fixed typo "Erzaehlen" → "Erzählen"
-        message: "Erzählen Sie uns, welches Auto Sie interessiert oder welches Fahrzeug Sie verkaufen möchten",
+        // âœ… IMPROVED: Fixed typo "Erzaehlen" â†’ "ErzÃ¤hlen"
+        message: "ErzÃ¤hlen Sie uns, welches Auto Sie interessiert oder welches Fahrzeug Sie verkaufen mÃ¶chten",
       },
       consent: {
         prefix: "Sie stimmen unseren",
         terms: "Bedingungen",
         and: "und der",
 
-        // ✅ IMPROVED: Fixed typo "Datenschutzerklaerung" → "Datenschutzerklärung"
-        privacyPolicy: "Datenschutzerklärung",
+        // âœ… IMPROVED: Fixed typo "Datenschutzerklaerung" â†’ "DatenschutzerklÃ¤rung"
+        privacyPolicy: "DatenschutzerklÃ¤rung",
         suffix: "zu.",
       },
       submitLabel: "Nachricht senden",
@@ -649,19 +649,19 @@ export const deDictionary: LocaleDictionary = {
   pages: {
     about: {
       metadata: {
-        title: "Über uns | AutoAnders",
+        title: "Ãœber uns | AutoAnders",
         description:
-          "Erfahren Sie mehr über AutoAnders und wie wir Fahrer beim Autokauf, Autoverkauf, bei Inzahlungnahme und Finanzierung klar begleiten.",
+          "Erfahren Sie mehr Ã¼ber AutoAnders und wie wir Fahrer beim Autokauf, Autoverkauf, bei Inzahlungnahme und Finanzierung klar begleiten.",
         locale: "de_DE",
         keywords: [
-          "über autoanders",
+          "Ã¼ber autoanders",
           "auto kaufen",
           "auto verkaufen",
           "gebrauchtwagen",
           "inzahlungnahme",
         ],
       },
-      eyebrow: "Über AutoAnders",
+      eyebrow: "Ãœber AutoAnders",
       title: "Der klare Weg, Autos zu kaufen oder zu verkaufen",
       intro:
         "AutoAnders hilft Fahrern, Fahrzeuge besser zu verstehen, fair zu vergleichen und Entscheidungen ohne Druck zu treffen.",
@@ -669,8 +669,8 @@ export const deDictionary: LocaleDictionary = {
         {
           title: "Unser Ansatz",
           paragraphs: [
-            "Wir konzentrieren uns auf ausgewählte Fahrzeuge, transparente Informationen und eine Beratung, die verständlich bleibt.",
-            "Ob Sie ein Auto kaufen, verkaufen oder in Zahlung geben möchten: Wir machen den Ablauf übersichtlich und erklären die nächsten Schritte klar.",
+            "Wir konzentrieren uns auf ausgewÃ¤hlte Fahrzeuge, transparente Informationen und eine Beratung, die verstÃ¤ndlich bleibt.",
+            "Ob Sie ein Auto kaufen, verkaufen oder in Zahlung geben mÃ¶chten: Wir machen den Ablauf Ã¼bersichtlich und erklÃ¤ren die nÃ¤chsten Schritte klar.",
           ],
         },
         {
@@ -678,7 +678,7 @@ export const deDictionary: LocaleDictionary = {
           bullets: [
             "Wir beantworten wichtige Fragen zu Zustand, Kilometerstand, Ausstattung und Preis.",
             "Wir vergleichen Fahrzeuge und Angebote mit realistischem Blick auf den Markt.",
-            "Wir begleiten den Prozess vom ersten Kontakt bis zur Übergabe oder Bewertung.",
+            "Wir begleiten den Prozess vom ersten Kontakt bis zur Ãœbergabe oder Bewertung.",
           ],
         },
         {
@@ -686,7 +686,7 @@ export const deDictionary: LocaleDictionary = {
           bullets: [
             "Ehrliche Beratung und nachvollziehbare Fahrzeugdaten.",
             "Faire Angebote beim Verkauf oder bei der Inzahlungnahme.",
-            "Ein Autokauf, der ruhig, professionell und transparent abläuft.",
+            "Ein Autokauf, der ruhig, professionell und transparent ablÃ¤uft.",
           ],
         },
       ],
@@ -736,7 +736,7 @@ export const deDictionary: LocaleDictionary = {
             "Wir verpflichten uns, Ihre personenbezogenen Daten zu schuetzen und sie fair, rechtmaessig und transparent zu verarbeiten.",
           ],
           note:
-            "Gloyoo\n[Vollstaendige registrierte Anschrift]\nUSt-ID: [EU VAT number]\nE-Mail: [privacy@youragency.com]\n[Datenschutzbeauftragter (falls vorhanden): [dpo@youragency.com]]",
+            "AutoAnders\n[Vollstaendige registrierte Anschrift]\nUSt-ID: [EU VAT number]\nE-Mail: [privacy@youragency.com]\n[Datenschutzbeauftragter (falls vorhanden): [dpo@youragency.com]]",
         },
         {
           title: "Welche Daten wir erheben",
@@ -780,12 +780,12 @@ export const deDictionary: LocaleDictionary = {
           table: {
             columns: ["Verarbeitungstaetigkeit", "Rechtsgrundlage (GDPR Art. 6)"],
             rows: [
-              ["Erbringung vertraglich vereinbarter Leistungen und Projektmanagement", "Art. 6(1)(b) — Vertragserfuellung"],
-              ["Rechnungsstellung, Buchhaltung und steuerliche Pflichten", "Art. 6(1)(c) — Rechtliche Verpflichtung"],
-              ["Versand von Marketing-E-Mails an bestehende Kunden", "Art. 6(1)(f) — Berechtigte Interessen"],
-              ["Betrugspraevention, Sicherheit und Portfolio-Darstellung", "Art. 6(1)(f) — Berechtigte Interessen"],
-              ["Marketing-E-Mails an Interessenten und nicht notwendige Cookies", "Art. 6(1)(a) — Einwilligung"],
-              ["Analytics und Verbesserung der Website", "Art. 6(1)(a) — Einwilligung (Cookie) oder Art. 6(1)(f)"],
+              ["Erbringung vertraglich vereinbarter Leistungen und Projektmanagement", "Art. 6(1)(b) â€” Vertragserfuellung"],
+              ["Rechnungsstellung, Buchhaltung und steuerliche Pflichten", "Art. 6(1)(c) â€” Rechtliche Verpflichtung"],
+              ["Versand von Marketing-E-Mails an bestehende Kunden", "Art. 6(1)(f) â€” Berechtigte Interessen"],
+              ["Betrugspraevention, Sicherheit und Portfolio-Darstellung", "Art. 6(1)(f) â€” Berechtigte Interessen"],
+              ["Marketing-E-Mails an Interessenten und nicht notwendige Cookies", "Art. 6(1)(a) â€” Einwilligung"],
+              ["Analytics und Verbesserung der Website", "Art. 6(1)(a) â€” Einwilligung (Cookie) oder Art. 6(1)(f)"],
             ],
           },
         },
@@ -927,7 +927,7 @@ export const deDictionary: LocaleDictionary = {
             "Fuer alle datenschutzbezogenen Fragen, Antraege oder Beschwerden nutzen Sie bitte die nachstehenden Kontaktdaten.",
           ],
           note:
-            "Privacy & GDPR: [privacy@youragency.com]\nDatenschutzbeauftragter: [dpo@youragency.com] (falls vorhanden)\nPost: Gloyoo, [Vollstaendige Anschrift], z. Hd. Privacy Team\nAntwortfrist: Innerhalb von 30 Kalendertagen (GDPR-Frist)",
+            "Privacy & GDPR: [privacy@youragency.com]\nDatenschutzbeauftragter: [dpo@youragency.com] (falls vorhanden)\nPost: AutoAnders, [Vollstaendige Anschrift], z. Hd. Privacy Team\nAntwortfrist: Innerhalb von 30 Kalendertagen (GDPR-Frist)",
         },
       ],
       note:
@@ -950,25 +950,25 @@ export const deDictionary: LocaleDictionary = {
       eyebrow: "Rechtliches",
       title: "Impressum",
       intro:
-        "Diese Seite enthält die gesetzlich vorgeschriebenen Anbieter- und Offenlegungsangaben für die AutoAnders-Website.",
+        "Diese Seite enthÃ¤lt die gesetzlich vorgeschriebenen Anbieter- und Offenlegungsangaben fÃ¼r die AutoAnders-Website.",
       heroMeta: [
         "Zuletzt aktualisiert: [DATUM]",
-        "Gerichtsstand: Europäische Union",
-        "Gilt für alle EU-Besucher",
+        "Gerichtsstand: EuropÃ¤ische Union",
+        "Gilt fÃ¼r alle EU-Besucher",
       ],
       sections: [
         {
           title: "Unternehmensangaben",
           paragraphs: [
-            "In Übereinstimmung mit der Richtlinie 2000/31/EG über den elektronischen Geschäftsverkehr und den anwendbaren nationalen Gesetzen, einschließlich Art. 6 LCEN (Frankreich), §5 TMG (Deutschland), Art. 10 LSSI-CE (Spanien) sowie vergleichbaren nationalen Vorschriften, werden die folgenden Pflichtangaben bereitgestellt.",
+            "In Ãœbereinstimmung mit der Richtlinie 2000/31/EG Ã¼ber den elektronischen GeschÃ¤ftsverkehr und den anwendbaren nationalen Gesetzen, einschlieÃŸlich Art. 6 LCEN (Frankreich), Â§5 TMG (Deutschland), Art. 10 LSSI-CE (Spanien) sowie vergleichbaren nationalen Vorschriften, werden die folgenden Pflichtangaben bereitgestellt.",
           ],
           contactCards: [
-            { label: "Firmenname", value: "Gloyoo" },
+            { label: "Firmenname", value: "AutoAnders" },
             { label: "Rechtsform", value: "[z. B. SAS / GmbH / SRL / Ltd]" },
-            { label: "Stammkapital", value: "[z. B. 10.000 €]" },
+            { label: "Stammkapital", value: "[z. B. 10.000 â‚¬]" },
             {
-              label: "Geschäftsanschrift",
-              value: "[Straße, Stadt, Postleitzahl, Land]",
+              label: "GeschÃ¤ftsanschrift",
+              value: "[StraÃŸe, Stadt, Postleitzahl, Land]",
             },
             {
               label: "Registernummer",
@@ -979,10 +979,10 @@ export const deDictionary: LocaleDictionary = {
               value: "[z. B. FR12345678901]",
             },
             {
-              label: "Verantwortlich für den Inhalt",
+              label: "Verantwortlich fÃ¼r den Inhalt",
               value: "[Name des gesetzlichen Vertreters]",
             },
-            { label: "E-Mail", value: "contact@Gloyoo.com" },
+            { label: "E-Mail", value: "contact@autoanders.com" },
             { label: "Telefon", value: "[+XX XXX XXX XXXX]" },
           ],
         },
@@ -1002,18 +1002,18 @@ export const deDictionary: LocaleDictionary = {
         {
           title: "Urheberrecht",
           paragraphs: [
-            "Alle Inhalte dieser Website sind Eigentum von Gloyoo oder deren Partnern und durch EU-Urheberrecht geschützt (Richtlinie (EU) 2019/790).",
+            "Alle Inhalte dieser Website sind Eigentum von AutoAnders oder deren Partnern und durch EU-Urheberrecht geschÃ¼tzt (Richtlinie (EU) 2019/790).",
             "Die Nutzung ohne vorherige schriftliche Zustimmung ist untersagt.",
           ],
           note:
-            "Ausnahme: Nutzung für private, nicht-kommerzielle Zwecke mit Quellenangabe ist erlaubt.",
+            "Ausnahme: Nutzung fÃ¼r private, nicht-kommerzielle Zwecke mit Quellenangabe ist erlaubt.",
         },
         {
           title: "Haftungsausschluss",
           paragraphs: [
-            "Alle Inhalte dienen nur zu Informationszwecken. Es wird keine Gewähr für Vollständigkeit oder Richtigkeit übernommen.",
-            "Für Inhalte externer Links wird keine Haftung übernommen.",
-            "Soweit gesetzlich zulässig, haftet Gloyoo nicht für Schäden aus der Nutzung dieser Website.",
+            "Alle Inhalte dienen nur zu Informationszwecken. Es wird keine GewÃ¤hr fÃ¼r VollstÃ¤ndigkeit oder Richtigkeit Ã¼bernommen.",
+            "FÃ¼r Inhalte externer Links wird keine Haftung Ã¼bernommen.",
+            "Soweit gesetzlich zulÃ¤ssig, haftet AutoAnders nicht fÃ¼r SchÃ¤den aus der Nutzung dieser Website.",
           ],
         },
         {
@@ -1023,34 +1023,34 @@ export const deDictionary: LocaleDictionary = {
             "Kontakt: [legal@youragency.com]",
           ],
           bullets: [
-            "Richtlinie 2000/31/EG — E-Commerce",
-            "Richtlinie (EU) 2019/790 — Urheberrecht",
-            "Verordnung (EU) 2016/679 — DSGVO",
-            "Richtlinie 2009/136/EG — ePrivacy",
+            "Richtlinie 2000/31/EG â€” E-Commerce",
+            "Richtlinie (EU) 2019/790 â€” Urheberrecht",
+            "Verordnung (EU) 2016/679 â€” DSGVO",
+            "Richtlinie 2009/136/EG â€” ePrivacy",
           ],
         },
       ],
       note:
-        "Vor Veröffentlichung alle Platzhalter ersetzen (Name, Adresse, VAT, Hosting etc.).",
+        "Vor VerÃ¶ffentlichung alle Platzhalter ersetzen (Name, Adresse, VAT, Hosting etc.).",
     },
     terms: {
       metadata: {
         title: "TEST TITLE",
         description:
-          "Allgemeine Geschäftsbedingungen fuer AutoAnders Leistungen rund um Autokauf, Autoverkauf, Inzahlungnahme, Finanzierung und Fahrzeuganfragen.",
+          "Allgemeine GeschÃ¤ftsbedingungen fuer AutoAnders Leistungen rund um Autokauf, Autoverkauf, Inzahlungnahme, Finanzierung und Fahrzeuganfragen.",
         locale: "de_DE",
         keywords: [
           "autoanders agb",
-          "allgemeine geschäftsbedingungen",
+          "allgemeine geschÃ¤ftsbedingungen",
           "autohaus agb",
           "autokauf agb",
           "auto verkaufen agb",
         ],
       },
       eyebrow: "Rechtliches",
-      title: "Allgemeine Geschäftsbedingungen",
+      title: "Allgemeine GeschÃ¤ftsbedingungen",
       intro:
-        "Diese Seite beschreibt die Bedingungen für AutoAnders Leistungen rund um Fahrzeuganfragen, Autokauf, Autoverkauf, Inzahlungnahme, Finanzierung, Zahlung, Haftung und Streitbeilegung.",
+        "Diese Seite beschreibt die Bedingungen fÃ¼r AutoAnders Leistungen rund um Fahrzeuganfragen, Autokauf, Autoverkauf, Inzahlungnahme, Finanzierung, Zahlung, Haftung und Streitbeilegung.",
       heroMeta: [
         "Zuletzt aktualisiert: [DATUM]",
         "Richtlinie 2011/83/EU konform",
@@ -1064,8 +1064,8 @@ export const deDictionary: LocaleDictionary = {
         "Geistiges Eigentum",
         "Zahlung & Preise",
         "Widerrufsrecht",
-        "Kündigung",
-        "Haftungsbeschränkung",
+        "KÃ¼ndigung",
+        "HaftungsbeschrÃ¤nkung",
         "Anwendbares Recht & Streitigkeiten",
         "Sonstiges",
         "Kontakt",
@@ -1074,16 +1074,16 @@ export const deDictionary: LocaleDictionary = {
         {
           title: "Definitionen",
           paragraphs: [
-            "Für die Zwecke dieser Allgemeinen Geschäftsbedingungen gelten die folgenden Begriffe.",
+            "FÃ¼r die Zwecke dieser Allgemeinen GeschÃ¤ftsbedingungen gelten die folgenden Begriffe.",
           ],
           bullets: [
-            '"AutoAnders" / "Wir" — AutoAnders',
-            '"Kunde" / "Sie" — natürliche oder juristische Person',
-            '"Verbraucher" — gemäß EU-Richtlinie 2011/83/EU',
-            '"Dienstleistungen" — Fahrzeuganfragen, Autoverkauf, Inzahlungnahme, Finanzierung und Fahrzeugberatung',
-            '"Vertrag" — Vereinbarung zwischen AutoAnders und Kunde',
-            '"Fahrzeugdaten" — Angaben zu Marke, Modell, Zustand, Kilometerstand, Ausstattung und Preis',
-            '"Angebot" — unverbindliche oder verbindliche Einschätzung je nach individueller Vereinbarung',
+            '"AutoAnders" / "Wir" â€” AutoAnders',
+            '"Kunde" / "Sie" â€” natÃ¼rliche oder juristische Person',
+            '"Verbraucher" â€” gemÃ¤ÃŸ EU-Richtlinie 2011/83/EU',
+            '"Dienstleistungen" â€” Fahrzeuganfragen, Autoverkauf, Inzahlungnahme, Finanzierung und Fahrzeugberatung',
+            '"Vertrag" â€” Vereinbarung zwischen AutoAnders und Kunde',
+            '"Fahrzeugdaten" â€” Angaben zu Marke, Modell, Zustand, Kilometerstand, Ausstattung und Preis',
+            '"Angebot" â€” unverbindliche oder verbindliche EinschÃ¤tzung je nach individueller Vereinbarung',
           ],
         },
         {
@@ -1092,11 +1092,11 @@ export const deDictionary: LocaleDictionary = {
             {
               title: "Fahrzeuganfragen und Autokauf",
               bullets: [
-                "Bereitstellung verfügbarer Fahrzeugangebote",
+                "Bereitstellung verfÃ¼gbarer Fahrzeugangebote",
                 "Informationen zu Marke, Modell, Zustand und Ausstattung",
-                "Unterstützung bei Besichtigung und Probefahrt",
+                "UnterstÃ¼tzung bei Besichtigung und Probefahrt",
                 "Beantwortung von Fragen zu Preis, Historie und Fahrzeugdaten",
-                "Begleitung bis zur Übergabe nach individueller Absprache",
+                "Begleitung bis zur Ãœbergabe nach individueller Absprache",
               ],
             },
             {
@@ -1104,38 +1104,38 @@ export const deDictionary: LocaleDictionary = {
               bullets: [
                 "Erfassung der wichtigsten Fahrzeugdaten",
                 "Bewertung anhand von Zustand, Kilometerstand und Marktumfeld",
-                "Erstellung einer fairen Einschätzung oder eines Angebots",
-                "Unterstützung bei Unterlagen und Übergabe",
-                "Möglichkeit zur Inzahlungnahme nach Prüfung",
+                "Erstellung einer fairen EinschÃ¤tzung oder eines Angebots",
+                "UnterstÃ¼tzung bei Unterlagen und Ãœbergabe",
+                "MÃ¶glichkeit zur Inzahlungnahme nach PrÃ¼fung",
               ],
             },
             {
               title: "Finanzierung und Fahrzeugberatung",
               bullets: [
-                "Erklärung möglicher Zahlungs- und Finanzierungsoptionen",
-                "Unterstützung bei benötigten Informationen und Unterlagen",
+                "ErklÃ¤rung mÃ¶glicher Zahlungs- und Finanzierungsoptionen",
+                "UnterstÃ¼tzung bei benÃ¶tigten Informationen und Unterlagen",
                 "Transparente Beratung ohne Abschlussdruck",
-                "Fahrzeugcheck und Klärung relevanter Details",
+                "Fahrzeugcheck und KlÃ¤rung relevanter Details",
                 "Allgemeine Beratung rund um Kauf, Verkauf und Inzahlungnahme",
               ],
             },
           ],
           note:
-            "Der genaue Leistungsumfang ergibt sich aus der jeweiligen Anfrage, Fahrzeugprüfung und individuellen Vereinbarung.",
+            "Der genaue Leistungsumfang ergibt sich aus der jeweiligen Anfrage, FahrzeugprÃ¼fung und individuellen Vereinbarung.",
         },
         {
           title: "Annahme der Bedingungen",
           paragraphs: [
-            "Durch die Nutzung unserer Dienstleistungen erklären Sie sich mit diesen Bedingungen einverstanden.",
-            "Die Annahme erfolgt durch Vertrag, Zahlung oder schriftliche Bestätigung.",
-            "Änderungen werden mindestens 30 Tage im Voraus mitgeteilt.",
-            "Bei Vertretung eines Unternehmens bestätigen Sie Ihre Berechtigung.",
+            "Durch die Nutzung unserer Dienstleistungen erklÃ¤ren Sie sich mit diesen Bedingungen einverstanden.",
+            "Die Annahme erfolgt durch Vertrag, Zahlung oder schriftliche BestÃ¤tigung.",
+            "Ã„nderungen werden mindestens 30 Tage im Voraus mitgeteilt.",
+            "Bei Vertretung eines Unternehmens bestÃ¤tigen Sie Ihre Berechtigung.",
           ],
           bullets: [
             "Unterzeichnung eines Vertrags",
             "Akzeptieren per Checkbox",
             "Zahlung einer Rechnung",
-            "Bestätigung per E-Mail",
+            "BestÃ¤tigung per E-Mail",
           ],
         },
         {
@@ -1145,23 +1145,23 @@ export const deDictionary: LocaleDictionary = {
               title: "Zusammenarbeit",
               bullets: [
                 "Bereitstellung aller notwendigen Informationen",
-                "Feedback innerhalb von 5–7 Werktagen",
+                "Feedback innerhalb von 5â€“7 Werktagen",
                 "Benennung eines Ansprechpartners",
-                "Mitteilung von Änderungen",
+                "Mitteilung von Ã„nderungen",
               ],
             },
             {
-              title: "Rechtmäßigkeit",
+              title: "RechtmÃ¤ÃŸigkeit",
               bullets: [
                 "Rechte an bereitgestellten Materialien",
                 "Einhaltung von Plattformregeln",
-                "DSGVO-Konformität",
+                "DSGVO-KonformitÃ¤t",
               ],
             },
             {
-              title: "Verzögerungen",
+              title: "VerzÃ¶gerungen",
               paragraphs: [
-                "Die Agentur haftet nicht für Verzögerungen, die durch den Kunden verursacht werden.",
+                "Die Agentur haftet nicht fÃ¼r VerzÃ¶gerungen, die durch den Kunden verursacht werden.",
               ],
             },
           ],
@@ -1176,20 +1176,20 @@ export const deDictionary: LocaleDictionary = {
               ],
             },
             {
-              title: "Übertragung",
+              title: "Ãœbertragung",
               paragraphs: [
-                "Die Rechte werden erst nach vollständiger Zahlung übertragen.",
+                "Die Rechte werden erst nach vollstÃ¤ndiger Zahlung Ã¼bertragen.",
               ],
               bullets: [
                 "Reproduktion und Nutzung",
                 "Bearbeitung ohne falsche Urheberangabe",
-                "Veröffentlichung",
+                "VerÃ¶ffentlichung",
               ],
             },
             {
               title: "Portfolio",
               paragraphs: [
-                "Die Agentur darf Arbeiten für Marketingzwecke verwenden.",
+                "Die Agentur darf Arbeiten fÃ¼r Marketingzwecke verwenden.",
               ],
             },
           ],
@@ -1200,13 +1200,13 @@ export const deDictionary: LocaleDictionary = {
             {
               title: "Preise",
               paragraphs: [
-                "Alle Preise in Euro (€) zzgl. MwSt.",
+                "Alle Preise in Euro (â‚¬) zzgl. MwSt.",
               ],
             },
             {
               title: "Zahlungen",
               bullets: [
-                "30–50% Anzahlung",
+                "30â€“50% Anzahlung",
                 "Rest bei Meilensteinen",
                 "Monatliche Retainer",
               ],
@@ -1221,14 +1221,14 @@ export const deDictionary: LocaleDictionary = {
             {
               title: "Zahlungsverzug",
               note:
-                "EZB Zinssatz + 8 %, 40 € Gebühr, Serviceaussetzung möglich",
+                "EZB Zinssatz + 8 %, 40 â‚¬ GebÃ¼hr, Serviceaussetzung mÃ¶glich",
             },
           ],
         },
         {
           title: "Widerrufsrecht",
           note:
-            "Gilt nur für Verbraucher gemäß EU-Richtlinie.",
+            "Gilt nur fÃ¼r Verbraucher gemÃ¤ÃŸ EU-Richtlinie.",
           subsections: [
             {
               title: "Frist",
@@ -1239,12 +1239,12 @@ export const deDictionary: LocaleDictionary = {
           ],
         },
         {
-          title: "Kündigung",
+          title: "KÃ¼ndigung",
           subsections: [
             {
               title: "Durch Kunden",
               paragraphs: [
-                "30 Tage Kündigungsfrist.",
+                "30 Tage KÃ¼ndigungsfrist.",
               ],
             },
             {
@@ -1258,9 +1258,9 @@ export const deDictionary: LocaleDictionary = {
           ],
         },
         {
-          title: "Haftungsbeschränkung",
+          title: "HaftungsbeschrÃ¤nkung",
           paragraphs: [
-            "Haftung begrenzt auf Gebühren der letzten 3 Monate.",
+            "Haftung begrenzt auf GebÃ¼hren der letzten 3 Monate.",
           ],
         },
         {
@@ -1278,7 +1278,7 @@ export const deDictionary: LocaleDictionary = {
         {
           title: "Kontakt",
           contactCards: [
-            { label: "Allgemein", value: "contact@Gloyoo.com" },
+            { label: "Allgemein", value: "contact@autoanders.com" },
             { label: "Recht / Abrechnung", value: "[legal@youragency.com]" },
             { label: "Adresse", value: "[Adresse]" },
             { label: "Antwortzeit", value: "Innerhalb von 5 Werktagen" },
@@ -1360,9 +1360,9 @@ export const deDictionary: LocaleDictionary = {
               title: "Unbedingt erforderlich",
               columns: ["Name", "Anbieter", "Zweck", "Dauer"],
               rows: [
-                ["_session", "Gloyoo", "Haelt Ihre Sitzung waehrend der Navigation auf der Website aufrecht", "Sitzung"],
-                ["csrf_token", "Gloyoo", "Sicherheits-Token zum Schutz vor Cross-Site-Request-Forgery", "Sitzung"],
-                ["cookie_consent", "Gloyoo", "Speichert Ihre Cookie-Einwilligungseinstellungen", "12 Monate"],
+                ["_session", "AutoAnders", "Haelt Ihre Sitzung waehrend der Navigation auf der Website aufrecht", "Sitzung"],
+                ["csrf_token", "AutoAnders", "Sicherheits-Token zum Schutz vor Cross-Site-Request-Forgery", "Sitzung"],
+                ["cookie_consent", "AutoAnders", "Speichert Ihre Cookie-Einwilligungseinstellungen", "12 Monate"],
               ],
             },
             {
@@ -1388,8 +1388,8 @@ export const deDictionary: LocaleDictionary = {
               title: "Praeferenzen (mit Einwilligung)",
               columns: ["Name", "Anbieter", "Zweck", "Dauer"],
               rows: [
-                ["lang_pref", "Gloyoo", "Speichert Ihre Spracheinstellung", "12 Monate"],
-                ["theme_pref", "Gloyoo", "Speichert Ihre Anzeigeeinstellung", "12 Monate"],
+                ["lang_pref", "AutoAnders", "Speichert Ihre Spracheinstellung", "12 Monate"],
+                ["theme_pref", "AutoAnders", "Speichert Ihre Anzeigeeinstellung", "12 Monate"],
               ],
             },
           ],
@@ -1461,7 +1461,7 @@ export const deDictionary: LocaleDictionary = {
           title: "Aktualisierungen dieser Richtlinie",
           paragraphs: [
             "Wir koennen diese Cookie-Richtlinie aktualisieren, wenn wir die von uns verwendeten Cookies aendern oder sich rechtliche Anforderungen aendern. Ueber wesentliche Aenderungen informieren wir Sie ueber unser Cookie-Banner oder durch ein aktualisiertes Datum auf dieser Seite. Wir empfehlen, diese Seite regelmaessig zu ueberpruefen.",
-            "Bei Fragen zu unserem Einsatz von Cookies kontaktieren Sie uns unter privacy@gloyoo.com.",
+            "Bei Fragen zu unserem Einsatz von Cookies kontaktieren Sie uns unter privacy@autoanders.com.",
           ],
         },
       ],
@@ -1470,3 +1470,4 @@ export const deDictionary: LocaleDictionary = {
     },
   },
 };
+

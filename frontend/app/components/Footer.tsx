@@ -88,8 +88,14 @@ export default function Footer({
                         <div className="flex flex-col gap-4 sm:gap-5 lg:flex-row lg:items-center lg:justify-between">
                             <p className="text-center text-xs leading-5 text-brand-muted sm:text-left sm:text-sm">
                                 &copy; {new Date().getFullYear()} AutoAnders. {content.rights}
+                            <Link
+                                            href="https://gloyoo.vercel.app/en"
+                                            className=" ml-1 text-m inline-flex items-center rounded-lg bg-blue-600 px-2 py-1 text-xs font-bold text-white transition hover:bg-blue-700"
+                                        >
+                                            powered by Gloyoo
+                                        </Link>
                             </p>
-
+                            
                             <ul className="flex flex-wrap items-center justify-center gap-2 sm:justify-start lg:justify-end">
                                 {content.legalLinks.map((link) => (
                                     <li key={link.label}>

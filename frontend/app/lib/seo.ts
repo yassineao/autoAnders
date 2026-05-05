@@ -1,10 +1,10 @@
 const fallbackSiteUrl = "https://autoanders.nl";
 
 export const siteConfig = {
-  name: "AutoAnders",
-  defaultTitle: "AutoAnders | Autos kaufen, verkaufen und finanzieren",
+  name: "Gloyoo",
+  defaultTitle: "Gloyoo | Social Media Agency and modern websites",
   defaultDescription:
-    "AutoAnders hilft Fahrern, geprüfte Gebrauchtwagen zu finden, Fahrzeuge fair zu verkaufen, Inzahlungnahme anzufragen und passende Finanzierung zu verstehen.",
+    "Gloyoo helps companies in Germany grow online visibility through social media management, content creation, performance marketing, and modern websites.",
 };
 
 export function getSiteUrl() {

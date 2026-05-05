@@ -1,4 +1,4 @@
-import type { LocaleDictionary } from "../../../types/LocaleDictionary";
+﻿import type { LocaleDictionary } from "../../../types/LocaleDictionary";
 
 export const enDictionary: LocaleDictionary = {
     localeName: "English",
@@ -733,27 +733,27 @@ export const enDictionary: LocaleDictionary = {
               rows: [
                 [
                   "Delivering contracted services and managing projects",
-                  "Art. 6(1)(b) — Contract performance",
+                  "Art. 6(1)(b) â€” Contract performance",
                 ],
                 [
                   "Invoicing, accounting, and tax compliance",
-                  "Art. 6(1)(c) — Legal obligation",
+                  "Art. 6(1)(c) â€” Legal obligation",
                 ],
                 [
                   "Sending marketing emails to existing clients",
-                  "Art. 6(1)(f) — Legitimate interests",
+                  "Art. 6(1)(f) â€” Legitimate interests",
                 ],
                 [
                   "Fraud prevention, security, and portfolio display",
-                  "Art. 6(1)(f) — Legitimate interests",
+                  "Art. 6(1)(f) â€” Legitimate interests",
                 ],
                 [
                   "Marketing emails to prospects and non-essential cookies",
-                  "Art. 6(1)(a) — Consent",
+                  "Art. 6(1)(a) â€” Consent",
                 ],
                 [
                   "Analytics and website improvement",
-                  "Art. 6(1)(a) — Consent (cookie) or Art. 6(1)(f)",
+                  "Art. 6(1)(a) â€” Consent (cookie) or Art. 6(1)(f)",
                 ],
               ],
             },
@@ -995,7 +995,7 @@ export const enDictionary: LocaleDictionary = {
           {
             title: "Company Details",
             paragraphs: [
-              "In compliance with EU Directive 2000/31/EC on electronic commerce and applicable national law, including France's Art. 6 LCEN, Germany's §5 TMG, Spain's Art. 10 LSSI-CE, and equivalent national provisions, the following mandatory information is disclosed to all users and visitors of this website.",
+              "In compliance with EU Directive 2000/31/EC on electronic commerce and applicable national law, including France's Art. 6 LCEN, Germany's Â§5 TMG, Spain's Art. 10 LSSI-CE, and equivalent national provisions, the following mandatory information is disclosed to all users and visitors of this website.",
             ],
             contactCards: [
               {
@@ -1008,7 +1008,7 @@ export const enDictionary: LocaleDictionary = {
               },
               {
                 label: "Share Capital",
-                value: "[e.g. €10,000]",
+                value: "[e.g. â‚¬10,000]",
               },
               {
                 label: "Registered Address",
@@ -1084,10 +1084,10 @@ export const enDictionary: LocaleDictionary = {
               "For any questions regarding this Legal Notice, contact us at [legal@youragency.com].",
             ],
             bullets: [
-              "EU Directive 2000/31/EC — Electronic Commerce.",
-              "EU Directive 2019/790/EU — Copyright in the Digital Single Market.",
-              "Regulation (EU) 2016/679 — GDPR.",
-              "EU Directive 2009/136/EC — ePrivacy (Cookies).",
+              "EU Directive 2000/31/EC â€” Electronic Commerce.",
+              "EU Directive 2019/790/EU â€” Copyright in the Digital Single Market.",
+              "Regulation (EU) 2016/679 â€” GDPR.",
+              "EU Directive 2009/136/EC â€” ePrivacy (Cookies).",
               "National implementation laws of the member state of establishment.",
             ],
           },
@@ -1139,13 +1139,13 @@ export const enDictionary: LocaleDictionary = {
               "For the purposes of these Terms and Conditions, the following terms have the meanings set out below.",
             ],
             bullets: [
-              '"Agency" / "We" / "Us" — [YOUR AGENCY NAME], the provider of digital services described herein.',
-              "\"Client\" / \"You\" — Any natural or legal person who contracts or inquires about the Agency's services.",
-              '"Consumer" — A natural person acting outside their trade or profession, per EU Directive 2011/83/EU.',
-              '"Services" — Social media management, website design and development, and related digital services.',
-              '"Contract" — The service agreement, proposal, or order form agreed between Agency and Client.',
-              '"Deliverables" — Any work product created, including content, visuals, code, websites, and campaign assets.',
-              '"Statement of Work (SOW)" — A document specifying scope, timeline, and price for a specific project.',
+              '"Agency" / "We" / "Us" â€” [YOUR AGENCY NAME], the provider of digital services described herein.',
+              "\"Client\" / \"You\" â€” Any natural or legal person who contracts or inquires about the Agency's services.",
+              '"Consumer" â€” A natural person acting outside their trade or profession, per EU Directive 2011/83/EU.',
+              '"Services" â€” Social media management, website design and development, and related digital services.',
+              '"Contract" â€” The service agreement, proposal, or order form agreed between Agency and Client.',
+              '"Deliverables" â€” Any work product created, including content, visuals, code, websites, and campaign assets.',
+              '"Statement of Work (SOW)" â€” A document specifying scope, timeline, and price for a specific project.',
             ],
           },
           {
@@ -1274,13 +1274,13 @@ export const enDictionary: LocaleDictionary = {
               {
                 title: "Pricing & VAT",
                 paragraphs: [
-                  "All prices are quoted in euros (€) and are exclusive of VAT unless explicitly stated otherwise. Applicable VAT rates comply with EU Directive 2006/112/EC. For cross-border B2B transactions within the EU, the reverse-charge mechanism may apply.",
+                  "All prices are quoted in euros (â‚¬) and are exclusive of VAT unless explicitly stated otherwise. Applicable VAT rates comply with EU Directive 2006/112/EC. For cross-border B2B transactions within the EU, the reverse-charge mechanism may apply.",
                 ],
               },
               {
                 title: "Deposit & Milestone Payments",
                 bullets: [
-                  "A deposit of [30–50]% of the total project fee is due upon signing the Contract, before work commences.",
+                  "A deposit of [30â€“50]% of the total project fee is due upon signing the Contract, before work commences.",
                   "Remaining balances are invoiced upon agreed project milestones or at project completion.",
                   "Monthly retainer fees are due on the 1st business day of each month.",
                 ],
@@ -1294,9 +1294,9 @@ export const enDictionary: LocaleDictionary = {
                 ],
               },
               {
-                title: "Late Payment — EU Directive 2011/7/EU",
+                title: "Late Payment â€” EU Directive 2011/7/EU",
                 note:
-                  "In accordance with EU Directive 2011/7/EU on combating late payment in commercial transactions, overdue invoices will incur:\n\n· Statutory interest at the ECB reference rate + 8 percentage points per annum\n· A flat recovery fee of €40 per overdue invoice\n· The right to suspend all active services until payment is received",
+                  "In accordance with EU Directive 2011/7/EU on combating late payment in commercial transactions, overdue invoices will incur:\n\nÂ· Statutory interest at the ECB reference rate + 8 percentage points per annum\nÂ· A flat recovery fee of â‚¬40 per overdue invoice\nÂ· The right to suspend all active services until payment is received",
               },
               {
                 title: "Scope Changes & Additional Work",
@@ -1374,7 +1374,7 @@ export const enDictionary: LocaleDictionary = {
               {
                 title: "Retainer Agreements",
                 paragraphs: [
-                  "Monthly retainer agreements may be terminated by either party with [30–60 days'] written notice, as specified in the Contract. Services will continue until the end of the notice period, subject to payment of all fees due.",
+                  "Monthly retainer agreements may be terminated by either party with [30â€“60 days'] written notice, as specified in the Contract. Services will continue until the end of the notice period, subject to payment of all fees due.",
                 ],
               },
               {
@@ -1424,7 +1424,7 @@ export const enDictionary: LocaleDictionary = {
               {
                 title: "Governing Law",
                 paragraphs: [
-                  "These Terms and all Contracts shall be governed by the laws of [Country of registration], without prejudice to any mandatory provisions protecting Consumers under the law of their country of habitual residence (EU Regulation No. 593/2008 — Rome I).",
+                  "These Terms and all Contracts shall be governed by the laws of [Country of registration], without prejudice to any mandatory provisions protecting Consumers under the law of their country of habitual residence (EU Regulation No. 593/2008 â€” Rome I).",
                 ],
               },
               {
@@ -1592,9 +1592,9 @@ export const enDictionary: LocaleDictionary = {
                 title: "Strictly Necessary",
                 columns: ["Name", "Provider", "Purpose", "Duration"],
                 rows: [
-                  ["_session", "Gloyoo", "Maintains your session as you navigate the site", "Session"],
-                  ["csrf_token", "Gloyoo", "Security token to prevent cross-site request forgery", "Session"],
-                  ["cookie_consent", "Gloyoo", "Stores your cookie consent preferences", "12 months"],
+                  ["_session", "AutoAnders", "Maintains your session as you navigate the site", "Session"],
+                  ["csrf_token", "AutoAnders", "Security token to prevent cross-site request forgery", "Session"],
+                  ["cookie_consent", "AutoAnders", "Stores your cookie consent preferences", "12 months"],
                 ],
               },
               {
@@ -1620,8 +1620,8 @@ export const enDictionary: LocaleDictionary = {
                 title: "Preference (with consent)",
                 columns: ["Name", "Provider", "Purpose", "Duration"],
                 rows: [
-                  ["lang_pref", "Gloyoo", "Remembers your language preference", "12 months"],
-                  ["theme_pref", "Gloyoo", "Remembers your display theme preference", "12 months"],
+                  ["lang_pref", "AutoAnders", "Remembers your language preference", "12 months"],
+                  ["theme_pref", "AutoAnders", "Remembers your display theme preference", "12 months"],
                 ],
               },
             ],
@@ -1693,7 +1693,7 @@ export const enDictionary: LocaleDictionary = {
             title: "Updates to this policy",
             paragraphs: [
               "We may update this Cookie Policy when we change the cookies we use or when legal requirements change. We will notify you of material changes through our cookie consent banner or by posting an updated date on this page. We recommend reviewing this page periodically.",
-              "For any questions about our use of cookies, contact us at privacy@gloyoo.com.",
+              "For any questions about our use of cookies, contact us at privacy@autoanders.com.",
             ],
           },
         ],
@@ -1702,3 +1702,4 @@ export const enDictionary: LocaleDictionary = {
       },
     },
 };
+

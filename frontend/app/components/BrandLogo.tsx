@@ -15,7 +15,7 @@ export default function BrandLogo({
     <div className={isFooter ? "h-20 sm:h-24" : "h-9 sm:h-10"}>
       <Image
   src="/LogoBG.png"
-  alt="Autoanders Logo"
+  alt="Gloyoo Logo"
   width={2172}
   height={724}
   priority={priority}

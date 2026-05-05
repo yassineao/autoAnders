@@ -1,4 +1,4 @@
-import type { LocaleDictionary } from "../../../types/LocaleDictionary";
+﻿import type { LocaleDictionary } from "../../../types/LocaleDictionary";
 
 export const nlDictionary: LocaleDictionary = {
   localeName: "Nederlands",
@@ -390,17 +390,17 @@ export const nlDictionary: LocaleDictionary = {
           "We plannen, ontwerpen en beheren uw kanalen zodat uw merk professioneel overkomt en regelmatig gekwalificeerde aanvragen genereert.",
         primaryCta: "Advies Aanvragen",
         secondaryCta: "Meer Informatie",
-        imageAlt: "Social Media Beheer door Gloyoo",
+        imageAlt: "Social Media Beheer door AutoAnders",
       },
       "content-creation": {
         badge: "Contentcreatie",
         imageUrl: "/bg.jpg",
         title: "Contentcreatie die Aandacht Omzet in Vertrouwen",
         description:
-          "Van reels tot brand assets, we creëren content die uw doelgroep aanspreekt, herkenbaarheid creëert en uw merk versterkt.",
+          "Van reels tot brand assets, we creëren content die uw doelgroep aanspreekt, herkenbaarheid creÃ«ert en uw merk versterkt.",
         primaryCta: "Project Aanvragen",
         secondaryCta: "Portfolio Bekijken",
-        imageAlt: "Contentcreatie door Gloyoo",
+        imageAlt: "Contentcreatie door AutoAnders",
       },
       "performance-marketing": {
         imageUrl: "/bg.jpg",
@@ -410,7 +410,7 @@ export const nlDictionary: LocaleDictionary = {
           "Met datagedreven campagnes verhogen we bereik, conversies en meetbare resultaten op de kanalen die tellen voor uw bedrijf.",
         primaryCta: "Strategie Aanvragen",
         secondaryCta: "Potentieel Ontdekken",
-        imageAlt: "Performance Marketing door Gloyoo",
+        imageAlt: "Performance Marketing door AutoAnders",
       },
       webdesign: {
         imageUrl: "/bg.jpg",
@@ -420,7 +420,7 @@ export const nlDictionary: LocaleDictionary = {
           "We ontwikkelen moderne websites die uw merk professioneel presenteren, vertrouwen opbouwen en bezoekers omzetten in klantaanvragen.",
         primaryCta: "Website Plannen",
         secondaryCta: "Meer Informatie",
-        imageAlt: "Webdesign door Gloyoo",
+        imageAlt: "Webdesign door AutoAnders",
       },
     },
     features: {
@@ -446,7 +446,7 @@ export const nlDictionary: LocaleDictionary = {
           title: "Naadloze Implementatie",
           description:
             "Webdesign, content en performance marketing grijpen in elkaar en zorgen voor een samenhangend totaalbeeld.",
-          imageAlt: "Geïntegreerde digitale marketing oplossingen",
+          imageAlt: "geïntegreerde digitale marketing oplossingen",
         },
       ],
       sections: [
@@ -485,7 +485,7 @@ export const nlDictionary: LocaleDictionary = {
             "Herkenbare content ontwikkelen voor sterke merkimpact",
             "Designsystemen creëren die in de praktijk bruikbaar blijven",
             "Sjablonen voorbereiden voor posts, landingspagina's en campagnes",
-            "Creatieve ideeën netjes in uitvoering brengen",
+            "Creatieve ideeÃ«n netjes in uitvoering brengen",
             "Merkwaarden vertalen naar beeldtaal en tone of voice",
             "Flexibel reageren op nieuwe formats en trends",
             "Professionele uitstraling garanderen over alle contactpunten",
@@ -686,7 +686,7 @@ export const nlDictionary: LocaleDictionary = {
             "Wij zetten ons in om uw persoonsgegevens te beschermen en deze eerlijk, rechtmatig en transparant te verwerken.",
           ],
           note:
-            "[UW AGENTSCHAPSNAAM]\n[Volledig geregistreerd adres]\nBTW: [EU VAT number]\nE-mail: [privacy@youragency.com]\n[Functionaris voor gegevensbescherming (indien van toepassing): [dpo@youragency.com]]",
+            "AutoAnders\n[Volledig geregistreerd adres]\nBTW: [EU VAT number]\nE-mail: [privacy@youragency.com]\n[Functionaris voor gegevensbescherming (indien van toepassing): [dpo@youragency.com]]",
         },
         {
           title: "Gegevens die wij verzamelen",
@@ -746,7 +746,7 @@ export const nlDictionary: LocaleDictionary = {
             "Wij zullen uw gegevens niet gebruiken voor een doel dat onverenigbaar is met de hierboven genoemde doeleinden zonder voorafgaande kennisgeving en, waar vereist, toestemming.",
           ],
           bullets: [
-            "Om onze socialmedia- en webdesigndiensten te leveren en te beheren.",
+            "Om onze autoservices, voertuigverkoop, inruil, financiering en klantcommunicatie te leveren en te beheren.",
             "Om met u te communiceren over uw project, voorstellen en facturen.",
             "Om te voldoen aan onze boekhoudkundige en wettelijke verplichtingen.",
             "Om service-updates, nieuwsbrieven en relevante marketing te verzenden waar toestemming vereist is.",
@@ -877,7 +877,7 @@ export const nlDictionary: LocaleDictionary = {
             "Gebruik voor alle privacygerelateerde vragen, verzoeken of klachten de onderstaande contactgegevens.",
           ],
           note:
-            "Privacy & GDPR: [privacy@youragency.com]\nFunctionaris voor gegevensbescherming: [dpo@youragency.com] (indien van toepassing)\nPost: [UW AGENTSCHAPSNAAM], [Volledig adres], t.a.v. Privacy Team\nReactietermijn: Binnen 30 kalenderdagen (GDPR-termijn)",
+            "Privacy & GDPR: [privacy@youragency.com]\nFunctionaris voor gegevensbescherming: [dpo@youragency.com] (indien van toepassing)\nPost: AutoAnders, [Volledig adres], t.a.v. Privacy Team\nReactietermijn: Binnen 30 kalenderdagen (GDPR-termijn)",
         },
       ],
       note:
@@ -1092,8 +1092,8 @@ export const nlDictionary: LocaleDictionary = {
               title: "Samenwerking",
               bullets: [
                 "Tijdige en correcte informatie",
-                "Feedback binnen 5–7 werkdagen",
-                "Eén contactpersoon",
+                "Feedback binnen 5â€“7 werkdagen",
+                "EÃ©n contactpersoon",
                 "Wijzigingen tijdig doorgeven",
               ],
             },
@@ -1165,7 +1165,7 @@ export const nlDictionary: LocaleDictionary = {
             {
               title: "Betalingen",
               bullets: [
-                "30–50% aanbetaling",
+                "30â€“50% aanbetaling",
                 "Rest bij oplevering",
                 "Maandelijkse retainer",
               ],
@@ -1235,7 +1235,7 @@ export const nlDictionary: LocaleDictionary = {
               ],
             },
             {
-              title: "Na beëindiging",
+              title: "Na Beëindiging",
               paragraphs: [
                 "Overdracht na volledige betaling.",
               ],
@@ -1374,9 +1374,9 @@ export const nlDictionary: LocaleDictionary = {
               title: "Strikt noodzakelijk",
               columns: ["Naam", "Aanbieder", "Doel", "Duur"],
               rows: [
-                ["_session", "Gloyoo", "Houdt uw sessie actief terwijl u door de site navigeert", "Sessie"],
-                ["csrf_token", "Gloyoo", "Beveiligingstoken om cross-site request forgery te voorkomen", "Sessie"],
-                ["cookie_consent", "Gloyoo", "Slaat uw cookievoorkeuren op", "12 maanden"],
+                ["_session", "AutoAnders", "Houdt uw sessie actief terwijl u door de site navigeert", "Sessie"],
+                ["csrf_token", "AutoAnders", "Beveiligingstoken om cross-site request forgery te voorkomen", "Sessie"],
+                ["cookie_consent", "AutoAnders", "Slaat uw cookievoorkeuren op", "12 maanden"],
               ],
             },
             {
@@ -1402,8 +1402,8 @@ export const nlDictionary: LocaleDictionary = {
               title: "Voorkeuren (met toestemming)",
               columns: ["Naam", "Aanbieder", "Doel", "Duur"],
               rows: [
-                ["lang_pref", "Gloyoo", "Onthoudt uw taalvoorkeur", "12 maanden"],
-                ["theme_pref", "Gloyoo", "Onthoudt uw weergavevoorkeur", "12 maanden"],
+                ["lang_pref", "AutoAnders", "Onthoudt uw taalvoorkeur", "12 maanden"],
+                ["theme_pref", "AutoAnders", "Onthoudt uw weergavevoorkeur", "12 maanden"],
               ],
             },
           ],
@@ -1475,7 +1475,7 @@ export const nlDictionary: LocaleDictionary = {
           title: "Updates van dit beleid",
           paragraphs: [
             "Wij kunnen dit cookiebeleid bijwerken wanneer we de cookies die we gebruiken wijzigen of wanneer wettelijke vereisten veranderen. Wij zullen u over wezenlijke wijzigingen informeren via onze cookiebanner of door een bijgewerkte datum op deze pagina te plaatsen. Wij raden aan deze pagina regelmatig te bekijken.",
-            "Voor vragen over ons gebruik van cookies kunt u contact met ons opnemen via privacy@gloyoo.com.",
+            "Voor vragen over ons gebruik van cookies kunt u contact met ons opnemen via privacy@autoanders.com.",
           ],
         },
       ],
@@ -1484,4 +1484,5 @@ export const nlDictionary: LocaleDictionary = {
     },
   },
 };
+
 
