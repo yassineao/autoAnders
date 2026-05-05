@@ -10,6 +10,24 @@ import {
 } from "@/app/lib/i18n";
 import { siteConfig } from "@/app/lib/seo";
 
+const sellMetadata = {
+  de: {
+    title: "Auto verkaufen | Faires Angebot von AutoAnders",
+    description:
+      "Verkaufen Sie Ihr Auto mit AutoAnders. Senden Sie Fahrzeugdaten, Kilometerstand, Ausstattung und Zustand und erhalten Sie eine faire Einschätzung.",
+  },
+  en: {
+    title: "Sell Your Car | Fair Offer from AutoAnders",
+    description:
+      "Sell your car with AutoAnders. Send vehicle details, mileage, equipment, and condition to receive a fair estimate.",
+  },
+  nl: {
+    title: "Auto verkopen | Eerlijk bod van AutoAnders",
+    description:
+      "Verkoop uw auto via AutoAnders. Stuur voertuiggegevens, kilometerstand, uitrusting en staat voor een eerlijke inschatting.",
+  },
+} satisfies Record<Locale, { title: string; description: string }>;
+
 export async function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
@@ -27,10 +45,11 @@ export async function generateMetadata({
 
   const dictionary = getDictionary(locale as Locale);
   const alternateLocale = getAlternateLocale(locale as Locale);
+  const metadata = sellMetadata[locale as Locale];
 
   return {
-    title: `${dictionary.home.hero.secondaryCta} | ${siteConfig.name}`,
-    description: dictionary.home.metadata.description,
+    title: metadata.title,
+    description: metadata.description,
     alternates: {
       canonical: `/${locale}/Sell`,
       languages: {
@@ -45,8 +64,8 @@ export async function generateMetadata({
       locale: dictionary.home.metadata.locale,
       url: `/${locale}/Sell`,
       siteName: siteConfig.name,
-      title: `${dictionary.home.hero.secondaryCta} | ${siteConfig.name}`,
-      description: dictionary.home.metadata.description,
+      title: metadata.title,
+      description: metadata.description,
       images: [
         {
           url: "/Logo.png",
@@ -58,8 +77,8 @@ export async function generateMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      title: `${dictionary.home.hero.secondaryCta} | ${siteConfig.name}`,
-      description: dictionary.home.metadata.description,
+      title: metadata.title,
+      description: metadata.description,
       images: ["/Logo.png"],
     },
     other: {

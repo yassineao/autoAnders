@@ -363,21 +363,22 @@ export const deDictionary: LocaleDictionary = {
   servicePage: {
     metadata: {
       // ✅ IMPROVED: More specific, keyword-rich
-      title: "Unsere Leistungen | Social Media, Content & Webdesign | Gloyoo",
+      title: "Autoservices | Kaufen, verkaufen, finanzieren | AutoAnders",
 
       // ✅ IMPROVED: Better flow, removed "fuer" typo
       description:
-        "Entdecken Sie unsere Leistungen: strategische Social-Media-Betreuung, Content Creation, Performance Marketing und Webdesign für mehr Sichtbarkeit und Anfragen.",
+        "Entdecken Sie die AutoAnders Services: gepruefte Gebrauchtwagen, Auto verkaufen, Inzahlungnahme, Finanzierung und transparente Fahrzeugchecks.",
 
       locale: "de_DE",
 
       keywords: [
-        "social media betreuung",
-        "content creation agentur",
-        "performance marketing",
-        "webdesign",
-        "instagram marketing",
-        "facebook ads",
+        "autoservices",
+        "gebrauchtwagen kaufen",
+        "auto verkaufen",
+        "auto inzahlung geben",
+        "autofinanzierung",
+        "fahrzeugcheck",
+        "autohaus",
       ],
     },
     overview: {
@@ -547,38 +548,37 @@ export const deDictionary: LocaleDictionary = {
     seo: {
       areaServed: ["Germany", "Austria", "Switzerland"],
       knowsAbout: [
-        "Social Media Marketing",
-        "Content Creation",
-        "Performance Marketing",
-        "Webdesign",
-        "Instagram Marketing",
-        "Facebook Advertising",
+        "Gebrauchtwagen",
+        "Autoverkauf",
+        "Inzahlungnahme",
+        "Autofinanzierung",
+        "Fahrzeugcheck",
       ],
-      offerCatalogName: "Unsere Leistungen",
+      offerCatalogName: "AutoAnders Autoservices",
       services: [
-        "Social Media Betreuung",
-        "Content Creation",
-        "Performance Marketing",
-        "Webdesign",
+        "Verfuegbare Autos",
+        "Auto verkaufen",
+        "Inzahlungnahme",
+        "Finanzierung",
       ],
     },
   },
   form: {
     metadata: {
       // ✅ IMPROVED: More action-oriented title
-      title: "Kontakt & Beratung | Projekt mit Gloyoo starten",
+      title: "Kontakt AutoAnders | Auto kaufen oder verkaufen",
 
       description:
-        "Starten Sie Ihr Projekt mit Gloyoo. Kontaktieren Sie uns für Social Media, Content Creation, Performance Marketing oder Webdesign – wir melden uns zeitnah bei Ihnen.",
+        "Kontaktieren Sie AutoAnders fuer Fragen zu Fahrzeugen, Autoverkauf, Inzahlungnahme, Finanzierung oder einem fairen Angebot.",
 
       locale: "de_DE",
 
       keywords: [
-        "kontakt gloyoo",
-        "beratung social media",
-        "projekt anfragen",
-        "social media agentur kontakt",
-        "webdesign anfrage",
+        "autoanders kontakt",
+        "auto kaufen anfrage",
+        "auto verkaufen anfrage",
+        "inzahlungnahme anfragen",
+        "autofinanzierung beratung",
       ],
     },
     content: {
@@ -586,23 +586,23 @@ export const deDictionary: LocaleDictionary = {
 
       // ✅ IMPROVED: Fixed typo "Gespraech" → "Gespräch"
       description:
-        "Sie haben eine Frage oder schon eine konkrete Idee? Unser Team freut sich darauf, mit Ihnen ins Gespräch zu kommen.",
+        "Sie haben eine Frage zu einem Fahrzeug, zum Verkauf Ihres Autos oder zur Finanzierung? Unser Team hilft Ihnen gerne weiter.",
 
       fields: {
-        companyName: "Firmenname",
+        companyName: "Fahrzeug oder Thema",
         lastName: "Nachname",
         email: "E-Mail",
         phoneNumber: "Telefonnummer",
         message: "Nachricht",
       },
       placeholders: {
-        companyName: "Muster GmbH",
+        companyName: "BMW 320i, Inzahlungnahme, Finanzierung...",
         lastName: "Mustermann",
         email: "hallo@unternehmen.de",
         phoneNumber: "+49 123 456789",
 
         // ✅ IMPROVED: Fixed typo "Erzaehlen" → "Erzählen"
-        message: "Erzählen Sie uns kurz von Ihrem Projekt",
+        message: "Erzählen Sie uns, welches Auto Sie interessiert oder welches Fahrzeug Sie verkaufen möchten",
       },
       consent: {
         prefix: "Sie stimmen unseren",
@@ -623,26 +623,26 @@ export const deDictionary: LocaleDictionary = {
       },
       testimonial: {
         quote:
-          "Wir entwickeln keine Standardlösungen. Gemeinsam schaffen wir einen Auftritt, der sichtbar macht, wofür Ihre Marke steht.",
-        author: "Gloyoo Team",
-        imageAlt: "Abstrakte 3D-Formen im Hintergrund des Kontaktformulars",
+          "Eine gute Autoentscheidung beginnt mit klaren Informationen, fairen Preisen und jemandem, der Ihre Fragen ernst nimmt.",
+        author: "AutoAnders Team",
+        imageAlt: "Auto im Hintergrund des Kontaktformulars",
         imageUrl: "/bg.jpg",
       },
     },
     seo: {
       areaServed: ["Germany", "Austria", "Switzerland"],
       knowsAbout: [
-        "Social Media Marketing",
-        "Content Creation",
-        "Performance Marketing",
-        "Webdesign",
+        "Gebrauchtwagen",
+        "Autoverkauf",
+        "Inzahlungnahme",
+        "Autofinanzierung",
       ],
-      offerCatalogName: "Kontakt und Beratung",
+      offerCatalogName: "Kontakt und Fahrzeugberatung",
       services: [
-        "Social Media Betreuung",
-        "Content Creation",
-        "Performance Marketing",
-        "Webdesign",
+        "Fahrzeuganfrage",
+        "Auto verkaufen",
+        "Inzahlungnahme",
+        "Finanzierung",
       ],
     },
   },
@@ -694,12 +694,12 @@ export const deDictionary: LocaleDictionary = {
     },
     privacy: {
       metadata: {
-        title: "Datenschutz | Gloyoo",
+        title: "Datenschutz | AutoAnders",
         description:
-          "Informationen darueber, wie personenbezogene Daten auf der Gloyoo-Website und im Rahmen der Leistungserbringung verarbeitet werden.",
+          "Informationen darueber, wie personenbezogene Daten auf der AutoAnders-Website und bei Anfragen zu Autokauf, Autoverkauf und Finanzierung verarbeitet werden.",
         locale: "de_DE",
         keywords: [
-          "gloyoo datenschutz",
+          "autoanders datenschutz",
           "datenschutzerklaerung",
           "dsgvo datenschutz",
           "datenschutzhinweis",
@@ -935,12 +935,12 @@ export const deDictionary: LocaleDictionary = {
     },
     impressum: {
       metadata: {
-        title: "Impressum | Gloyoo",
+        title: "Impressum | AutoAnders",
         description:
-          "Impressum und gesetzlich vorgeschriebene Anbieterkennzeichnung für die Gloyoo-Website gemäß den Anforderungen der Europäischen Union.",
+          "Impressum und gesetzlich vorgeschriebene Anbieterkennzeichnung fuer die AutoAnders-Website.",
         locale: "de_DE",
         keywords: [
-          "gloyoo impressum",
+          "autoanders impressum",
           "impressum",
           "anbieterkennzeichnung",
           "anbieterinformationen",
@@ -950,7 +950,7 @@ export const deDictionary: LocaleDictionary = {
       eyebrow: "Rechtliches",
       title: "Impressum",
       intro:
-        "Diese Seite enthält die gesetzlich vorgeschriebenen Anbieter- und Offenlegungsangaben für die Gloyoo-Website.",
+        "Diese Seite enthält die gesetzlich vorgeschriebenen Anbieter- und Offenlegungsangaben für die AutoAnders-Website.",
       heroMeta: [
         "Zuletzt aktualisiert: [DATUM]",
         "Gerichtsstand: Europäische Union",
@@ -1037,20 +1037,20 @@ export const deDictionary: LocaleDictionary = {
       metadata: {
         title: "TEST TITLE",
         description:
-          "Allgemeine Geschäftsbedingungen für Gloyoo Dienstleistungen, einschließlich Social Media Management, Webdesign, Zahlungsbedingungen, Haftung und Streitbeilegung.",
+          "Allgemeine Geschäftsbedingungen fuer AutoAnders Leistungen rund um Autokauf, Autoverkauf, Inzahlungnahme, Finanzierung und Fahrzeuganfragen.",
         locale: "de_DE",
         keywords: [
-          "gloyoo agb",
+          "autoanders agb",
           "allgemeine geschäftsbedingungen",
-          "agentur agb",
-          "webdesign vertrag",
-          "social media management agb",
+          "autohaus agb",
+          "autokauf agb",
+          "auto verkaufen agb",
         ],
       },
       eyebrow: "Rechtliches",
       title: "Allgemeine Geschäftsbedingungen",
       intro:
-        "Diese Seite beschreibt die Bedingungen für die von Gloyoo erbrachten Dienstleistungen, einschließlich Umfang, Zahlungen, geistigem Eigentum, Kündigung, Haftung und Streitbeilegung.",
+        "Diese Seite beschreibt die Bedingungen für AutoAnders Leistungen rund um Fahrzeuganfragen, Autokauf, Autoverkauf, Inzahlungnahme, Finanzierung, Zahlung, Haftung und Streitbeilegung.",
       heroMeta: [
         "Zuletzt aktualisiert: [DATUM]",
         "Richtlinie 2011/83/EU konform",
@@ -1077,49 +1077,51 @@ export const deDictionary: LocaleDictionary = {
             "Für die Zwecke dieser Allgemeinen Geschäftsbedingungen gelten die folgenden Begriffe.",
           ],
           bullets: [
-            '"Agentur" / "Wir" — Gloyoo',
+            '"AutoAnders" / "Wir" — AutoAnders',
             '"Kunde" / "Sie" — natürliche oder juristische Person',
             '"Verbraucher" — gemäß EU-Richtlinie 2011/83/EU',
-            '"Dienstleistungen" — Social Media, Webdesign und digitale Services',
-            '"Vertrag" — Vereinbarung zwischen Agentur und Kunde',
-            '"Leistungen" — Inhalte, Code, Designs und Ergebnisse',
-            '"Leistungsbeschreibung (SOW)" — Umfang, Zeitplan und Preis',
+            '"Dienstleistungen" — Fahrzeuganfragen, Autoverkauf, Inzahlungnahme, Finanzierung und Fahrzeugberatung',
+            '"Vertrag" — Vereinbarung zwischen AutoAnders und Kunde',
+            '"Fahrzeugdaten" — Angaben zu Marke, Modell, Zustand, Kilometerstand, Ausstattung und Preis',
+            '"Angebot" — unverbindliche oder verbindliche Einschätzung je nach individueller Vereinbarung',
           ],
         },
         {
           title: "Dienstleistungen",
           subsections: [
             {
-              title: "Social Media Management",
+              title: "Fahrzeuganfragen und Autokauf",
               bullets: [
-                "Strategie und Redaktionsplanung",
-                "Content-Erstellung",
-                "Community Management",
-                "Paid Advertising (Meta, TikTok, LinkedIn, Google)",
-                "Reporting und Optimierung",
+                "Bereitstellung verfügbarer Fahrzeugangebote",
+                "Informationen zu Marke, Modell, Zustand und Ausstattung",
+                "Unterstützung bei Besichtigung und Probefahrt",
+                "Beantwortung von Fragen zu Preis, Historie und Fahrzeugdaten",
+                "Begleitung bis zur Übergabe nach individueller Absprache",
               ],
             },
             {
-              title: "Webdesign & Entwicklung",
+              title: "Auto verkaufen oder in Zahlung geben",
               bullets: [
-                "UX/UI Design",
-                "CMS (WordPress, Webflow, Shopify)",
-                "E-Commerce Entwicklung",
-                "Wartung & SEO",
-                "Barrierefreiheit (WCAG 2.1 / EN 301 549)",
+                "Erfassung der wichtigsten Fahrzeugdaten",
+                "Bewertung anhand von Zustand, Kilometerstand und Marktumfeld",
+                "Erstellung einer fairen Einschätzung oder eines Angebots",
+                "Unterstützung bei Unterlagen und Übergabe",
+                "Möglichkeit zur Inzahlungnahme nach Prüfung",
               ],
             },
             {
-              title: "Zusatzleistungen",
+              title: "Finanzierung und Fahrzeugberatung",
               bullets: [
-                "Branding",
-                "E-Mail-Marketing",
-                "Digitale Analysen",
+                "Erklärung möglicher Zahlungs- und Finanzierungsoptionen",
+                "Unterstützung bei benötigten Informationen und Unterlagen",
+                "Transparente Beratung ohne Abschlussdruck",
+                "Fahrzeugcheck und Klärung relevanter Details",
+                "Allgemeine Beratung rund um Kauf, Verkauf und Inzahlungnahme",
               ],
             },
           ],
           note:
-            "Der genaue Leistungsumfang wird in einer Leistungsbeschreibung (SOW) definiert.",
+            "Der genaue Leistungsumfang ergibt sich aus der jeweiligen Anfrage, Fahrzeugprüfung und individuellen Vereinbarung.",
         },
         {
           title: "Annahme der Bedingungen",
@@ -1286,12 +1288,12 @@ export const deDictionary: LocaleDictionary = {
     },
     cookie: {
       metadata: {
-        title: "Cookie-Richtlinie | Gloyoo",
+        title: "Cookie-Richtlinie | AutoAnders",
         description:
-          "Informationen darueber, wie Cookies und aehnliche Technologien auf der Gloyoo-Website verwendet werden.",
+          "Informationen darueber, wie Cookies und aehnliche Technologien auf der AutoAnders-Website verwendet werden.",
         locale: "de_DE",
         keywords: [
-          "gloyoo cookie richtlinie",
+          "autoanders cookie richtlinie",
           "cookie richtlinie",
           "website cookies",
           "dsgvo cookies",

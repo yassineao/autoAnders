@@ -645,12 +645,12 @@ export const enDictionary: LocaleDictionary = {
       },
       privacy: {
         metadata: {
-          title: "Privacy | Gloyoo",
+          title: "Privacy | AutoAnders",
           description:
-            "Information about how personal data is processed on the Gloyoo website and in the course of providing services.",
+            "Information about how personal data is processed on the AutoAnders website and during car buying, selling, trade-in, and financing inquiries.",
           locale: "en_US",
           keywords: [
-            "gloyoo privacy",
+            "autoanders privacy",
             "privacy policy",
             "gdpr privacy policy",
             "data protection notice",
@@ -970,12 +970,12 @@ export const enDictionary: LocaleDictionary = {
       },
       impressum: {
         metadata: {
-          title: "Legal Notice | Gloyoo",
+          title: "Legal Notice | AutoAnders",
           description:
-            "Legal notice and mandatory provider information for the Gloyoo website in accordance with applicable European Union requirements.",
+            "Legal notice and mandatory provider information for the AutoAnders website.",
           locale: "en_US",
           keywords: [
-            "gloyoo legal notice",
+            "autoanders legal notice",
             "legal notice",
             "imprint",
             "provider information",
@@ -985,7 +985,7 @@ export const enDictionary: LocaleDictionary = {
         eyebrow: "Legal",
         title: "Legal Notice",
         intro:
-          "This page contains the mandatory provider and legal disclosure information for the Gloyoo website.",
+          "This page contains the mandatory provider and legal disclosure information for the AutoAnders website.",
         heroMeta: [
           "Last updated: [DATE]",
           "Jurisdiction: European Union",
@@ -1097,14 +1097,14 @@ export const enDictionary: LocaleDictionary = {
       },
       terms: {
         metadata: {
-          title: "Terms & Conditions | Gloyoo",
+          title: "Terms & Conditions | AutoAnders",
           description:
-            "Terms and conditions for Gloyoo services, including social media management, website design, payment terms, liability, and dispute resolution.",
+            "Terms and conditions for AutoAnders services, including vehicle inquiries, car sales, trade-ins, financing support, payment terms, liability, and dispute resolution.",
           locale: "en_US",
           keywords: [
-            "gloyoo terms",
+            "autoanders terms",
             "terms and conditions",
-            "digital agency terms",
+            "car dealer terms",
             "web design contract terms",
             "social media management terms",
           ],
@@ -1112,7 +1112,7 @@ export const enDictionary: LocaleDictionary = {
         eyebrow: "Legal",
         title: "Terms & Conditions",
         intro:
-          "This page sets out the terms governing the services provided by Gloyoo, including scope, payments, intellectual property, termination, liability, and dispute resolution.",
+          "This page sets out the terms governing AutoAnders services, including vehicle inquiries, car sales, trade-ins, financing support, payments, liability, and dispute resolution.",
         heroMeta: [
           "Last updated: [DATE]",
           "Directive 2011/83/EU compliant",
@@ -1520,12 +1520,12 @@ export const enDictionary: LocaleDictionary = {
       },
       cookie: {
         metadata: {
-          title: "Cookie Policy | Gloyoo",
+          title: "Cookie Policy | AutoAnders",
           description:
-            "Information about how cookies and similar technologies are used on the Gloyoo website.",
+            "Information about how cookies and similar technologies are used on the AutoAnders website.",
           locale: "en_US",
           keywords: [
-            "gloyoo cookie policy",
+            "autoanders cookie policy",
             "cookie policy",
             "website cookies",
             "gdpr cookies",

@@ -26,7 +26,7 @@ export const metadata: Metadata = {
         url: "/Logo.png",
         width: 1200,
         height: 630,
-        alt: "Gloyoo Logo",
+        alt: "AutoAnders Logo",
       },
     ],
   },
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
       "max-video-preview": -1,
     },
   },
-  category: "marketing",
+  category: "automotive",
 };
 
 export default async function RootLayout({

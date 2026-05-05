@@ -495,7 +495,7 @@ export const nlDictionary: LocaleDictionary = {
       ],
     },
     hero2: {
-      badge: "Waarom Gloyoo?",
+      badge: "Waarom AutoAnders?",
       title: "Samen creëren we een uitstraling die zichtbaar maakt waar uw merk voor staat.",
       description:
         "We ontwikkelen geen standaardoplossingen. Elk bedrijf, elk merk en elk doel is anders. Daarom werken we nauw met u samen om een individuele strategie en uitstraling te creëren die echt bij u past.",
@@ -508,53 +508,53 @@ export const nlDictionary: LocaleDictionary = {
     seo: {
       areaServed: ["Netherlands", "Belgium"],
       knowsAbout: [
-        "Social Media Marketing",
-        "Contentcreatie",
-        "Performance Marketing",
-        "Webdesign",
+        "Occasions",
+        "Auto verkopen",
+        "Auto inruilen",
+        "Autofinanciering",
         "Instagram Marketing",
         "Facebook Advertenties",
       ],
       offerCatalogName: "Onze Diensten",
       services: [
-        "Social Media Beheer",
-        "Contentcreatie",
-        "Performance Marketing",
-        "Webdesign",
+        "Beschikbare auto's",
+        "Auto verkopen",
+        "Inruilservice",
+        "Financiering",
       ],
     },
   },
   form: {
     metadata: {
-      title: "Contact & Advies | Start Uw Project met Gloyoo",
+      title: "Contact AutoAnders | Auto kopen of verkopen",
       description:
-        "Start uw project met Gloyoo. Neem contact met ons op voor social media, contentcreatie, performance marketing of webdesign—we nemen snel contact met u op.",
+        "Neem contact op met AutoAnders voor vragen over auto's, verkoop, inruil, financiering of een eerlijke waardering.",
       locale: "nl_NL",
       keywords: [
-        "contact gloyoo",
-        "social media advies",
-        "project aanvragen",
-        "social media bureau contact",
-        "webdesign aanvraag",
+        "contact autoanders",
+        "auto kopen aanvraag",
+        "auto verkopen aanvraag",
+        "auto inruilen",
+        "autofinanciering advies",
       ],
     },
     content: {
       title: "Contact Opnemen",
       description:
-        "Heeft u een vraag of al een concreet idee? Ons team kijkt ernaar uit om met u in gesprek te gaan.",
+        "Heeft u een vraag over een voertuig, uw auto verkopen of financiering? Ons team helpt u graag verder.",
       fields: {
-        companyName: "Bedrijfsnaam",
+        companyName: "Voertuig of onderwerp",
         lastName: "Achternaam",
         email: "E-mail",
         phoneNumber: "Telefoonnummer",
         message: "Bericht",
       },
       placeholders: {
-        companyName: "Voorbeeld B.V.",
+        companyName: "BMW 320i, inruil, financiering...",
         lastName: "Janssen",
         email: "hallo@bedrijf.nl",
         phoneNumber: "+31 6 12345678",
-        message: "Vertel ons kort over uw project",
+        message: "Vertel ons welke auto u interessant vindt of welk voertuig u wilt verkopen",
       },
       consent: {
         prefix: "U gaat akkoord met onze",
@@ -573,26 +573,26 @@ export const nlDictionary: LocaleDictionary = {
       },
       testimonial: {
         quote:
-          "We ontwikkelen geen standaardoplossingen. Samen creëren we een uitstraling die zichtbaar maakt waar uw merk voor staat.",
-        author: "Gloyoo Team",
-        imageAlt: "Abstracte 3D-vormen op de achtergrond van het contactformulier",
+          "Een goede autobeslissing begint met duidelijke informatie, eerlijke prijzen en iemand die uw vragen serieus neemt.",
+        author: "AutoAnders Team",
+        imageAlt: "Auto op de achtergrond van het contactformulier",
         imageUrl: "/bg.jpg",
       },
     },
     seo: {
       areaServed: ["Netherlands", "Belgium"],
       knowsAbout: [
-        "Social Media Marketing",
-        "Contentcreatie",
-        "Performance Marketing",
-        "Webdesign",
+        "Occasions",
+        "Auto verkopen",
+        "Auto inruilen",
+        "Autofinanciering",
       ],
-      offerCatalogName: "Contact en Advies",
+      offerCatalogName: "Contact en voertuigadvies",
       services: [
-        "Social Media Beheer",
-        "Contentcreatie",
-        "Performance Marketing",
-        "Webdesign",
+        "Voertuigaanvraag",
+        "Auto verkopen",
+        "Auto inruilen",
+        "Financiering",
       ],
     },
   },
@@ -644,12 +644,12 @@ export const nlDictionary: LocaleDictionary = {
     },
     privacy: {
       metadata: {
-        title: "Privacy | Gloyoo",
+        title: "Privacy | AutoAnders",
         description:
-          "Informatie over hoe persoonsgegevens worden verwerkt op de website van Gloyoo en tijdens het leveren van diensten.",
+          "Informatie over hoe persoonsgegevens worden verwerkt op de AutoAnders-website en bij aanvragen rond auto's kopen, verkopen, inruilen en financieren.",
         locale: "nl_NL",
         keywords: [
-          "gloyoo privacy",
+          "autoanders privacy",
           "privacybeleid",
           "avg privacybeleid",
           "gegevensbeschermingsverklaring",
@@ -885,12 +885,12 @@ export const nlDictionary: LocaleDictionary = {
     },
     impressum: {
       metadata: {
-        title: "Juridische Kennisgeving | Gloyoo",
+        title: "Juridische Kennisgeving | AutoAnders",
         description:
-          "Juridische kennisgeving en verplichte aanbiederinformatie voor de Gloyoo-website volgens de Europese regelgeving.",
+          "Juridische kennisgeving en verplichte aanbiederinformatie voor de AutoAnders-website.",
         locale: "nl_NL",
         keywords: [
-          "gloyoo juridische kennisgeving",
+          "autoanders juridische kennisgeving",
           "impressum",
           "aanbiederinformatie",
           "website juridische info",
@@ -899,7 +899,7 @@ export const nlDictionary: LocaleDictionary = {
       eyebrow: "Juridisch",
       title: "Juridische Kennisgeving",
       intro:
-        "Deze pagina bevat de verplichte aanbieder- en wettelijke informatie voor de Gloyoo-website.",
+        "Deze pagina bevat de verplichte aanbieder- en wettelijke informatie voor de AutoAnders-website.",
       heroMeta: [
         "Laatst bijgewerkt: [DATUM]",
         "Rechtsgebied: Europese Unie",
@@ -984,14 +984,14 @@ export const nlDictionary: LocaleDictionary = {
     },
     terms: {
       metadata: {
-        title: "Algemene Voorwaarden | Gloyoo",
+        title: "Algemene Voorwaarden | AutoAnders",
         description:
-          "Algemene voorwaarden voor Gloyoo diensten, inclusief social media management, webdesign, betalingsvoorwaarden, aansprakelijkheid en geschillenbeslechting.",
+          "Algemene voorwaarden voor AutoAnders diensten rond auto's kopen, verkopen, inruilen, financiering, betalingsvoorwaarden, aansprakelijkheid en geschillenbeslechting.",
         locale: "nl_NL",
         keywords: [
-          "gloyoo voorwaarden",
+          "autoanders voorwaarden",
           "algemene voorwaarden",
-          "digitale agency voorwaarden",
+          "autodealer voorwaarden",
           "webdesign contract",
           "social media management voorwaarden",
         ],
@@ -999,7 +999,7 @@ export const nlDictionary: LocaleDictionary = {
       eyebrow: "Juridisch",
       title: "Algemene Voorwaarden",
       intro:
-        "Deze pagina beschrijft de voorwaarden die van toepassing zijn op de diensten van Gloyoo, inclusief scope, betalingen, intellectueel eigendom, beëindiging, aansprakelijkheid en geschillenbeslechting.",
+        "Deze pagina beschrijft de voorwaarden voor AutoAnders diensten rond voertuiginformatie, auto's kopen, verkopen, inruilen, financiering, betalingen, aansprakelijkheid en geschillenbeslechting.",
       heroMeta: [
         "Laatst bijgewerkt: [DATUM]",
         "Conform Richtlijn 2011/83/EU",
@@ -1302,12 +1302,12 @@ export const nlDictionary: LocaleDictionary = {
     },
     cookie: {
       metadata: {
-        title: "Cookiebeleid | Gloyoo",
+        title: "Cookiebeleid | AutoAnders",
         description:
-          "Informatie over hoe cookies en vergelijkbare technologieen op de website van Gloyoo worden gebruikt.",
+          "Informatie over hoe cookies en vergelijkbare technologieen op de AutoAnders-website worden gebruikt.",
         locale: "nl_NL",
         keywords: [
-          "gloyoo cookiebeleid",
+          "autoanders cookiebeleid",
           "cookiebeleid",
           "website cookies",
           "avg cookies",

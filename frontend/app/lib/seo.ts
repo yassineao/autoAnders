@@ -1,10 +1,10 @@
-const fallbackSiteUrl = "https://gloyoo.vercel.app";
+const fallbackSiteUrl = "https://autoanders.nl";
 
 export const siteConfig = {
-  name: "Gloyoo",
-  defaultTitle: "Gloyoo | Social Media Agency and modern websites",
+  name: "AutoAnders",
+  defaultTitle: "AutoAnders | Autos kaufen, verkaufen und finanzieren",
   defaultDescription:
-    "Gloyoo helps companies in Germany grow online visibility through social media management, content creation, performance marketing, and modern websites.",
+    "AutoAnders hilft Fahrern, geprüfte Gebrauchtwagen zu finden, Fahrzeuge fair zu verkaufen, Inzahlungnahme anzufragen und passende Finanzierung zu verstehen.",
 };
 
 export function getSiteUrl() {
