@@ -204,6 +204,7 @@ export const deDictionary: LocaleDictionary = {
           fuel: "Benzin",
           engineCapacity: 1998,
           numberOfDoors: 4,
+          numberOfSeats: 4,
           condition: "Gebraucht",
           numberOfGears: 8,
           vat: "MwSt. ausweisbar",
@@ -228,6 +229,7 @@ export const deDictionary: LocaleDictionary = {
           fuel: "Diesel",
           engineCapacity: 1968,
           numberOfDoors: 5,
+          numberOfSeats: 5,
           condition: "Gebraucht",
           numberOfGears: 6,
           vat: "MwSt. ausweisbar",
@@ -252,6 +254,7 @@ export const deDictionary: LocaleDictionary = {
           fuel: "Hybrid",
           engineCapacity: 1991,
           numberOfDoors: 4,
+          numberOfSeats: 5,
           condition: "Gebraucht",
           numberOfGears: 9,
           vat: "MwSt. ausweisbar",
@@ -406,7 +409,7 @@ export const deDictionary: LocaleDictionary = {
     },
     hero: {
       "available-cars": {
-        imageUrl: "/bg.jpg",
+        imageUrl: "/hero.jpg",
         badge: "Verfuegbare Autos",
         title: "Finden Sie einen geprueften Gebrauchtwagen, der zu Ihnen passt",
         description:
@@ -417,7 +420,7 @@ export const deDictionary: LocaleDictionary = {
       },
       financing: {
         badge: "Finanzierung",
-        imageUrl: "/bg.jpg",
+        imageUrl: "/hero.jpg",
         title: "Finanzierung mit klaren Bedingungen",
         description:
           "Wir helfen Ihnen, eine passende Zahlungsoption zu finden, die zu Ihrem Budget passt.",
@@ -426,7 +429,7 @@ export const deDictionary: LocaleDictionary = {
         imageAlt: "Autofinanzierung bei AutoAnders",
       },
       tradein: {
-        imageUrl: "/bg.jpg",
+        imageUrl: "/hero.jpg",
         badge: "Inzahlungnahme",
         title: "Geben Sie Ihr aktuelles Auto einfach in Zahlung",
         description:
@@ -436,7 +439,7 @@ export const deDictionary: LocaleDictionary = {
         imageAlt: "Auto in Zahlung geben bei AutoAnders",
       },
       "vehicle-check": {
-        imageUrl: "/bg.jpg",
+        imageUrl: "/hero.jpg",
         badge: "Fahrzeugcheck",
         title: "Klare Informationen, bevor Sie entscheiden",
         description:
@@ -527,7 +530,7 @@ export const deDictionary: LocaleDictionary = {
       subdescription:
         "Ob Sie kaufen, verkaufen, in Zahlung geben oder Finanzierung besprechen moechten: AutoAnders haelt den Ablauf praktisch und transparent.",
       imageAlt: "Fahrzeugdetails im Hintergrund",
-      imageUrl: "/bg.jpg",
+      imageUrl: "/hero.jpg",
     },
     seo: {
       areaServed: ["Germany", "Austria", "Switzerland"],
@@ -610,7 +613,7 @@ export const deDictionary: LocaleDictionary = {
           "Eine gute Autoentscheidung beginnt mit klaren Informationen, fairen Preisen und jemandem, der Ihre Fragen ernst nimmt.",
         author: "AutoAnders Team",
         imageAlt: "Auto im Hintergrund des Kontaktformulars",
-        imageUrl: "/bg.jpg",
+        imageUrl: "/hero.jpg",
       },
     },
     seo: {

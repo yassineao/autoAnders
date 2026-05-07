@@ -223,6 +223,7 @@ type CatalogueCar = {
   fuel: string;
   engineCapacity: number;
   numberOfDoors: number;
+  numberOfSeats: number;
   condition: string;
   numberOfGears: number;
   vat: string;

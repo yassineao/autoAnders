@@ -190,6 +190,7 @@ export const enDictionary: LocaleDictionary = {
       fuel: "Petrol",
       engineCapacity: 1998,
       numberOfDoors: 4,
+      numberOfSeats: 4,
       condition: "Used",
       numberOfGears: 8,
       vat: "VAT deductible",
@@ -214,6 +215,7 @@ export const enDictionary: LocaleDictionary = {
       fuel: "Diesel",
       engineCapacity: 1968,
       numberOfDoors: 5,
+      numberOfSeats: 5,
       condition: "Used",
       numberOfGears: 6,
       vat: "VAT deductible",
@@ -238,6 +240,7 @@ export const enDictionary: LocaleDictionary = {
       fuel: "Hybrid",
       engineCapacity: 1991,
       numberOfDoors: 4,
+      numberOfSeats: 5,
       condition: "Used",
       numberOfGears: 9,
       vat: "VAT deductible",
@@ -384,7 +387,7 @@ export const enDictionary: LocaleDictionary = {
       },
       hero: {
         "available-cars": {
-          imageUrl: "/bg.jpg",
+          imageUrl: "/hero.jpg",
           badge: "Available Cars",
           title: "Find a car that fits your life",
           description:
@@ -395,7 +398,7 @@ export const enDictionary: LocaleDictionary = {
         },
         financing: {
           badge: "Car Financing",
-          imageUrl: "/bg.jpg",
+          imageUrl: "/hero.jpg",
           title: "Financing options explained clearly",
           description:
             "We help you understand possible payment options and the information needed to move forward confidently.",
@@ -404,7 +407,7 @@ export const enDictionary: LocaleDictionary = {
           imageAlt: "Car financing support at AutoAnders",
         },
         tradein: {
-          imageUrl: "/bg.jpg",
+          imageUrl: "/hero.jpg",
           badge: "Trade-In Service",
           title: "Trade in or sell your car without stress",
           description:
@@ -414,7 +417,7 @@ export const enDictionary: LocaleDictionary = {
           imageAlt: "Trade-in service from AutoAnders",
         },
         "vehicle-check": {
-          imageUrl: "/bg.jpg",
+          imageUrl: "/hero.jpg",
           badge: "Vehicle Check",
           title: "Know the important details before you buy",
           description:
@@ -505,7 +508,7 @@ export const enDictionary: LocaleDictionary = {
         subdescription:
           "Whether you want to buy, sell, trade in, or ask about financing, AutoAnders keeps the process practical and transparent.",
         imageAlt: "Car details in the background",
-        imageUrl: "/bg.jpg",
+        imageUrl: "/hero.jpg",
       },
       seo: {
         areaServed: ["Germany", "Europe", "International"],
@@ -578,7 +581,7 @@ export const enDictionary: LocaleDictionary = {
             "A good car decision starts with clear information, fair pricing, and someone who takes your questions seriously.",
           author: "AutoAnders Team",
           imageAlt: "Car background in the contact form",
-          imageUrl: "/bg.jpg",
+          imageUrl: "/hero.jpg",
         },
       },
       seo: {

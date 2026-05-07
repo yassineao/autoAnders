@@ -190,6 +190,7 @@ export const nlDictionary: LocaleDictionary = {
       fuel: "Benzine",
       engineCapacity: 1998,
       numberOfDoors: 4,
+      numberOfSeats: 4,
       condition: "Gebruikt",
       numberOfGears: 8,
       vat: "BTW aftrekbaar",
@@ -214,6 +215,7 @@ export const nlDictionary: LocaleDictionary = {
       fuel: "Diesel",
       engineCapacity: 1968,
       numberOfDoors: 5,
+      numberOfSeats: 5,
       condition: "Gebruikt",
       numberOfGears: 6,
       vat: "BTW aftrekbaar",
@@ -238,6 +240,7 @@ export const nlDictionary: LocaleDictionary = {
       fuel: "Hybride",
       engineCapacity: 1991,
       numberOfDoors: 4,
+      numberOfSeats: 5,
       condition: "Gebruikt",
       numberOfGears: 9,
       vat: "BTW aftrekbaar",
@@ -383,7 +386,7 @@ export const nlDictionary: LocaleDictionary = {
     },
     hero: {
       "available-cars": {
-        imageUrl: "/bg.jpg",
+        imageUrl: "/hero.jpg",
         badge: "Beschikbare auto's",
         title: "Vind een gecontroleerde occasion die bij u past",
         description:
@@ -394,7 +397,7 @@ export const nlDictionary: LocaleDictionary = {
       },
       financing: {
         badge: "Financiering",
-        imageUrl: "/bg.jpg",
+        imageUrl: "/hero.jpg",
         title: "Financiering met duidelijke voorwaarden",
         description:
           "Wij helpen u een passende betalingsoptie te vinden die aansluit bij uw budget.",
@@ -403,7 +406,7 @@ export const nlDictionary: LocaleDictionary = {
         imageAlt: "Autofinanciering bij AutoAnders",
       },
       tradein: {
-        imageUrl: "/bg.jpg",
+        imageUrl: "/hero.jpg",
         badge: "Inruilservice",
         title: "Ruil uw huidige auto eenvoudig in",
         description:
@@ -413,7 +416,7 @@ export const nlDictionary: LocaleDictionary = {
         imageAlt: "Auto inruilen bij AutoAnders",
       },
       "vehicle-check": {
-        imageUrl: "/bg.jpg",
+        imageUrl: "/hero.jpg",
         badge: "Voertuigcheck",
         title: "Duidelijke informatie vóór u beslist",
         description:
@@ -503,7 +506,7 @@ export const nlDictionary: LocaleDictionary = {
       subdescription:
         "Of u nu wilt kopen, verkopen, inruilen of financiering bespreken: AutoAnders houdt het proces praktisch en transparant.",
       imageAlt: "Autodetails op de achtergrond",
-      imageUrl: "/bg.jpg",
+      imageUrl: "/hero.jpg",
     },
     seo: {
       areaServed: ["Netherlands", "Belgium"],
@@ -576,7 +579,7 @@ export const nlDictionary: LocaleDictionary = {
           "Een goede autobeslissing begint met duidelijke informatie, eerlijke prijzen en iemand die uw vragen serieus neemt.",
         author: "AutoAnders Team",
         imageAlt: "Auto op de achtergrond van het contactformulier",
-        imageUrl: "/bg.jpg",
+        imageUrl: "/hero.jpg",
       },
     },
     seo: {

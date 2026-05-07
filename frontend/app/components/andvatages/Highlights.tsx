@@ -14,25 +14,25 @@ export default function Highlights({
   content,
 }: HighlightsProps) {
   return (
-    <section className="px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+    <section className="px-3 py-6 sm:px-6 sm:py-12 lg:px-8">
       <div className="mx-auto max-w-6xl">
-        <div className="grid gap-5 lg:grid-cols-3">
+        <div className="grid gap-3 sm:gap-5 lg:grid-cols-3">
           {content.items.map((item, index) => (
             <article
               key={item.title}
-              className={`overflow-hidden rounded-[2rem] border border-white/10 bg-gradient-to-br ${accents[index % accents.length]} p-6 shadow-brand-panel sm:p-8`}
+              className={`overflow-hidden rounded-xl border border-white/10 bg-gradient-to-br ${accents[index % accents.length]} p-4 shadow-brand-panel sm:rounded-[2rem] sm:p-8`}
             >
-              <p className="text-sm font-semibold uppercase tracking-[0.22em] text-brand-teal">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-brand-teal sm:text-sm sm:tracking-[0.22em]">
                 {content.eyebrow}
               </p>
-              <div className="mt-8">
-                <p className="text-4xl font-semibold text-white sm:text-5xl">
+              <div className="mt-4 sm:mt-8">
+                <p className="text-3xl font-semibold leading-none text-white sm:text-5xl">
                   {item.value}
                 </p>
-                <h2 className="mt-3 text-3xl font-semibold text-white sm:text-4xl">
+                <h2 className="mt-2 text-xl font-semibold leading-tight text-white sm:mt-3 sm:text-4xl">
                   {item.title}
                 </h2>
-                <p className="mt-5 text-sm leading-7 text-brand-grayLight sm:text-base">
+                <p className="mt-3 text-sm leading-6 text-brand-grayLight sm:mt-5 sm:text-base sm:leading-7">
                   {item.subtitle}
                 </p>
               </div>
