@@ -1,16 +1,24 @@
 import Image from "next/image";
+import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import type { LocaleDictionary } from "../../lib/i18n";
+import type { Locale, LocaleDictionary } from "../../lib/i18n";
 
 export default function Services({
     content,
+    locale,
 }: {
     content: LocaleDictionary["home"]["services"];
+    locale: Locale;
 }) {
     const serviceArt = [
         { src: "/new-car.png", alt: "New car" },
         { src: "/loan.png", alt: "Loan" },
         { src: "/deal.png", alt: "Deal" },
+    ];
+    const serviceHrefs = [
+        `/${locale}/Catalogue`,
+        `/${locale}/form`,
+        `/${locale}/Sell`,
     ];
 
     return (
@@ -46,10 +54,12 @@ export default function Services({
                     <div className="mt-8 grid gap-3 lg:hidden">
                         {content.items.map((item, index) => {
                             const art = serviceArt[index] ?? serviceArt[0];
+                            const href = serviceHrefs[index] ?? `/${locale}/Catalogue`;
 
                             return (
-                                <article
+                                <Link
                                     key={item.title}
+                                    href={href}
                                     className="relative overflow-hidden rounded-xl border border-white/10 bg-zinc-950 p-4 shadow-xl shadow-black/30"
                                 >
                                     <div className="absolute -right-8 -top-8 h-28 w-28 rounded-full bg-red-600/15 blur-3xl" />
@@ -82,16 +92,15 @@ export default function Services({
                                                 {item.description}
                                             </p>
 
-                                            <a
-                                                href="#about-us"
+                                            <span
                                                 className="mt-4 inline-flex h-10 items-center gap-2 rounded-lg font-bold text-red-500 transition-colors hover:text-white"
                                             >
                                                 {content.cta}
                                                 <ArrowRight className="h-4 w-4" />
-                                            </a>
+                                            </span>
                                         </div>
                                     </div>
-                                </article>
+                                </Link>
                             );
                         })}
                     </div>
@@ -99,10 +108,12 @@ export default function Services({
                     <div className="mx-auto mt-12 hidden max-w-6xl justify-items-center gap-6 lg:grid lg:grid-cols-3 lg:gap-8">
                         {content.items.map((item, index) => {
                             const art = serviceArt[index] ?? serviceArt[0];
+                            const href = serviceHrefs[index] ?? `/${locale}/Catalogue`;
 
                             return (
-                                <article
+                                <Link
                                     key={item.title}
+                                    href={href}
                                     className="group w-full overflow-hidden rounded-2xl border border-white/10 bg-zinc-950 shadow-xl shadow-black/30 transition duration-300 hover:-translate-y-1 hover:border-red-500/50 hover:bg-zinc-900"
                                 >
                                     <div className="relative flex h-56 w-full items-center justify-center overflow-hidden">
@@ -136,15 +147,14 @@ export default function Services({
                                             {item.description}
                                         </p>
 
-                                        <a
-                                            href="#about-us"
+                                        <span
                                             className="mt-6 inline-flex h-11 items-center justify-center gap-2 rounded-lg font-bold text-red-500 transition-colors hover:text-white"
                                         >
                                             {content.cta}
                                             <ArrowRight className="h-4 w-4" />
-                                        </a>
+                                        </span>
                                     </div>
-                                </article>
+                                </Link>
                             );
                         })}
                     </div>

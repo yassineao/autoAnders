@@ -1,12 +1,14 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import type { LocaleDictionary } from "../../lib/i18n";
+import type { Locale, LocaleDictionary } from "../../lib/i18n";
 
 export default function Hero({
   content,
+  locale,
 }: {
   content: LocaleDictionary["home"]["hero"];
+  locale: Locale;
 }) {
   return (
     <section
@@ -48,14 +50,14 @@ export default function Hero({
 
             <div className="mt-8 flex w-full flex-col gap-3 sm:flex-row sm:flex-wrap">
               <Link
-                href="/form"
+                href={`/${locale}/Catalogue`}
                 className="inline-flex h-12 w-full items-center justify-center rounded-md bg-red-600 px-6 py-2 text-sm font-bold text-white shadow-[0_18px_40px_rgba(220,38,38,0.3)] transition-all hover:bg-red-700 sm:w-auto"
               >
                 {content.primaryCta}
               </Link>
 
-              <a
-                href="#services"
+              <Link
+                href={`/${locale}/Sell`}
                 className="inline-flex h-12 w-full items-center justify-center rounded-md border border-white/20 bg-white/10 px-6 py-2 text-sm font-bold text-white backdrop-blur transition-all hover:border-red-500/50 hover:bg-red-600/15 sm:w-auto "
               >
                 {content.secondaryCta}
@@ -74,7 +76,7 @@ export default function Hero({
                   <path d="m7 7 10 10"></path>
                   <path d="M17 7v10H7"></path>
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
 

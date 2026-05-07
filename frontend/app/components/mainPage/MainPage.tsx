@@ -52,12 +52,12 @@ export default function MainPage({
 
       <div className=" justify-center overflow-hidden bg-brand-navyDark font-sans ">
 
-        <Hero content={home.hero} />
+        <Hero content={home.hero} locale={locale} />
       </div>
 
 
       <div className="defer-section  ">
-        <Services content={home.services} />
+        <Services content={home.services} locale={locale} />
       </div>
       <div className="defer-section bg-black">
         <AutoCatalogue
