@@ -68,7 +68,7 @@ export default function MainPage({
           labels={home.catalogue.labels}
         />
       </div>
-      <div className="defer-section lg:py-16 bg-black">
+      <div className="defer-section  bg-black">
         <Advantages content={home.advantages} />
       </div>
       <div className="defer-section bg-black">

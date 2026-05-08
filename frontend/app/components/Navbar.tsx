@@ -1,16 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Space_Grotesk } from "next/font/google";
 import MobileNav from "./MobileNav";
 import LocaleSwitchLink from "./LocaleSwitchLink";
+import ThemeToggle from "./ThemeToggle";
 import { type Locale, type LocaleDictionary } from "../lib/i18n";
-
-// Load Space Grotesk for logo
-const logoFont = Space_Grotesk({
-  subsets: ["latin"],
-  weight: ["700"],
-  display: "swap",
-});
 
 export default function Navbar({
   locale,
@@ -44,10 +37,6 @@ export default function Navbar({
                 priority
                 className="h-6 w-auto sm:h-7 lg:h-8"
               />
-              <span 
-                className={`${logoFont.className} text-xs font-bold tracking-widest text-white sm:text-sm lg:text-base`}
-              >
-              </span>
             </div>
           </Link>
 
@@ -106,6 +95,8 @@ export default function Navbar({
               label={content.switchLabel}
               className="inline-flex h-10 items-center rounded-lg px-4 text-sm font-medium text-brand-graySoft transition-colors hover:bg-white/5 hover:text-white"
             />
+
+            <ThemeToggle />
 
             {/* CTA Button */}
             <Link

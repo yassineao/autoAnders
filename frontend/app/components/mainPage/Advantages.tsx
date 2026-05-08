@@ -17,7 +17,7 @@ export default function Advantages({
     >
       <div className="flex justify-center px-4 pt-6 sm:pt-8">
         <Image
-          src="/LogoBG.png"
+          src="/LogoBG-noBG.png"
           alt="Autoanders Logo"
           width={2172}
           height={724}

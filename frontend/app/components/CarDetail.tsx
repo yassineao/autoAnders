@@ -130,26 +130,26 @@ export default function CarDetail({
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-end justify-center bg-black/80 px-0 pt-8 text-white backdrop-blur-sm sm:items-center sm:px-4 sm:py-6"
+      className="car-detail-overlay fixed inset-0 z-50 flex items-end justify-center bg-black/80 px-0 pt-8 text-white backdrop-blur-sm sm:items-center sm:px-4 sm:py-6"
       role="dialog"
       aria-modal="true"
       aria-label={`${car.brand} ${car.model}`}
       onMouseDown={onClose}
     >
       <section
-        className="relative grid max-h-[94dvh] w-full max-w-6xl grid-rows-[auto_minmax(0,1fr)] overflow-hidden rounded-t-2xl border border-white/10 bg-zinc-950 shadow-2xl sm:max-h-[92vh] sm:rounded-lg lg:grid-cols-[1.1fr_0.9fr] lg:grid-rows-1"
+        className="car-detail-shell relative grid max-h-[94dvh] w-full max-w-6xl grid-rows-[auto_minmax(0,1fr)] overflow-hidden rounded-t-2xl border border-white/10 bg-zinc-950 shadow-2xl sm:max-h-[92vh] sm:rounded-lg lg:grid-cols-[1.1fr_0.9fr] lg:grid-rows-1"
         onMouseDown={(event) => event.stopPropagation()}
       >
         <button
           type="button"
           onClick={onClose}
           aria-label={text.close}
-          className="absolute right-3 top-3 z-10 inline-flex h-11 w-11 items-center justify-center rounded-full bg-black/75 text-white transition hover:bg-white hover:text-black"
+          className="car-detail-close absolute right-3 top-3 z-10 inline-flex h-11 w-11 items-center justify-center rounded-full bg-black/75 text-white transition hover:bg-white hover:text-black"
         >
           <X className="h-5 w-5" />
         </button>
 
-        <div className="relative h-[30dvh] min-h-56 max-h-80 bg-black sm:h-auto sm:min-h-72 sm:max-h-none lg:min-h-[620px]">
+        <div className="car-detail-media relative h-[30dvh] min-h-56 max-h-80 bg-black sm:h-auto sm:min-h-72 sm:max-h-none lg:min-h-[620px]">
           <Image
             src={car.image}
             alt={`${car.brand} ${car.model}`}
@@ -157,12 +157,12 @@ export default function CarDetail({
             sizes="(min-width: 1024px) 55vw, 100vw"
             className="object-cover"
           />
-          <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black via-black/55 to-transparent p-4 pr-16 sm:p-7">
+          <div className="car-detail-media-caption absolute inset-x-0 bottom-0 bg-gradient-to-t from-black via-black/55 to-transparent p-4 pr-16 sm:p-7">
             <div className="flex flex-wrap gap-2">
               <span className="rounded-full bg-red-600 px-3 py-1 text-xs font-bold">
                 {car.vehicle}
               </span>
-              <span className="rounded-full bg-white/15 px-3 py-1 text-xs font-bold backdrop-blur">
+              <span className="car-detail-condition rounded-full bg-white/15 px-3 py-1 text-xs font-bold backdrop-blur">
                 {car.condition}
               </span>
             </div>
@@ -175,19 +175,19 @@ export default function CarDetail({
           </div>
         </div>
 
-        <div className="min-h-0 overflow-y-auto p-4 sm:p-7">
+        <div className="car-detail-body min-h-0 overflow-y-auto p-4 sm:p-7">
           <div className="grid gap-2 min-[380px]:grid-cols-2 sm:gap-3">
             {specs.slice(0, 4).map(({ label, value, icon: Icon }) => (
               <div
                 key={label}
-                className="flex min-w-0 items-center gap-3 rounded-lg border border-white/10 bg-white/5 p-3 min-[380px]:block sm:p-4"
+                className="car-detail-stat flex min-w-0 items-center gap-3 rounded-lg border border-white/10 bg-white/5 p-3 min-[380px]:block sm:p-4"
               >
                 <Icon className="h-5 w-5 shrink-0 text-red-500 min-[380px]:mb-2 sm:mb-3" />
                 <div className="min-w-0">
-                  <p className="text-[11px] font-semibold uppercase leading-tight text-zinc-500 sm:text-xs">
+                  <p className="car-detail-label text-[11px] font-semibold uppercase leading-tight text-zinc-500 sm:text-xs">
                     {label}
                   </p>
-                  <p className="mt-0.5 break-words font-bold leading-snug text-zinc-100 min-[380px]:mt-1">
+                  <p className="car-detail-value mt-0.5 break-words font-bold leading-snug text-zinc-100 min-[380px]:mt-1">
                     {value}
                   </p>
                 </div>
@@ -196,15 +196,15 @@ export default function CarDetail({
           </div>
 
           <div className="mt-5 sm:mt-6">
-            <h3 className="text-lg font-black">{text.overview}</h3>
+            <h3 className="car-detail-section-title text-lg font-black">{text.overview}</h3>
             <div className="mt-3 grid gap-2 sm:grid-cols-2">
               {specs.slice(4).map(({ label, value }) => (
                 <div
                   key={label}
-                  className="grid grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] items-start gap-3 border-b border-white/10 py-3 text-sm"
+                  className="car-detail-row grid grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] items-start gap-3 border-b border-white/10 py-3 text-sm"
                 >
-                  <span className="min-w-0 text-zinc-500">{label}</span>
-                  <span className="min-w-0 break-words text-right font-semibold text-zinc-100">
+                  <span className="car-detail-label min-w-0 text-zinc-500">{label}</span>
+                  <span className="car-detail-value min-w-0 break-words text-right font-semibold text-zinc-100">
                     {value}
                   </span>
                 </div>
@@ -213,12 +213,12 @@ export default function CarDetail({
           </div>
 
           <div className="mt-6">
-            <h3 className="text-lg font-black">{text.highlights}</h3>
+            <h3 className="car-detail-section-title text-lg font-black">{text.highlights}</h3>
             <div className="mt-3 flex flex-wrap gap-2">
               {localizedTags.map((tag) => (
                 <span
                   key={tag}
-                  className="rounded-full bg-red-600/15 px-3 py-1.5 text-sm font-semibold text-red-100"
+                  className="car-detail-tag rounded-full bg-red-600/15 px-3 py-1.5 text-sm font-semibold text-red-100"
                 >
                   {tag}
                 </span>
@@ -226,7 +226,7 @@ export default function CarDetail({
             </div>
           </div>
 
-          <div className="sticky bottom-0 -mx-4 mt-7 flex flex-col gap-3 border-t border-white/10 bg-zinc-950/95 px-4 pb-1 pt-4 backdrop-blur sm:static sm:mx-0 sm:flex-row sm:bg-transparent sm:px-0 sm:pb-0 sm:pt-5 sm:backdrop-blur-none">
+          <div className="car-detail-actions sticky bottom-0 -mx-4 mt-7 flex flex-col gap-3 border-t border-white/10 bg-zinc-950/95 px-4 pb-1 pt-4 backdrop-blur sm:static sm:mx-0 sm:flex-row sm:bg-transparent sm:px-0 sm:pb-0 sm:pt-5 sm:backdrop-blur-none">
            <div className="grid grid-cols-2 gap-3">
               <Link
               href={`/${locale}/form`}
@@ -237,7 +237,7 @@ export default function CarDetail({
             <button
               type="button"
               onClick={onClose}
-              className="inline-flex h-12 flex-1 items-center justify-center rounded-lg border border-white/10 px-5 text-sm font-black text-zinc-200 transition hover:bg-white/10"
+              className="car-detail-secondary inline-flex h-12 flex-1 items-center justify-center rounded-lg border border-white/10 px-5 text-sm font-black text-zinc-200 transition hover:bg-white/10"
             >
               {text.close}
             </button>

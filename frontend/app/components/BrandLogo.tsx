@@ -14,7 +14,7 @@ export default function BrandLogo({
   return (
     <div className={isFooter ? "h-20 sm:h-24" : "h-9 sm:h-10"}>
       <Image
-  src="/LogoBG.png"
+  src="/LogoBG-noBG.png"
   alt="AutoAnders Logo"
   width={2172}
   height={724}

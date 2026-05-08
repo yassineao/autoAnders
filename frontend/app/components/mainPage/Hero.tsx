@@ -13,12 +13,12 @@ export default function Hero({
   return (
     <section
       id="home"
-      className="relative z-10 min-h-screen scroll-mt-24 overflow-hidden px-4 pb-16 pt-28 sm:px-6 sm:pb-20 sm:pt-32 lg:px-8 lg:pt-28"
+      className="hero-section relative z-10 min-h-screen scroll-mt-24 overflow-hidden px-4 pb-16 pt-28 sm:px-6 sm:pb-20 sm:pt-32 lg:px-8 lg:pt-28"
     >
-      <div className="absolute inset-0 -z-10 bg-[url('/hero.jpg')] bg-cover bg-center bg-no-repeat" />
-      <div className="absolute inset-0 -z-10 bg-black/55" />
-      <div className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(0,0,0,0.94)_0%,rgba(0,0,0,0.78)_42%,rgba(0,0,0,0.24)_100%)]" />
-      <div className="absolute inset-x-0 bottom-0 -z-10 h-44 bg-[linear-gradient(180deg,rgba(0,0,0,0)_0%,#020202_88%)]" />
+      <div className="hero-photo absolute inset-0 -z-10 bg-[url('/hero.jpg')] bg-cover bg-center bg-no-repeat" />
+      <div className="hero-shade absolute inset-0 -z-10 bg-black/55" />
+      <div className="hero-side-gradient absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(0,0,0,0.94)_0%,rgba(0,0,0,0.78)_42%,rgba(0,0,0,0.24)_100%)]" />
+      <div className="hero-bottom-gradient absolute inset-x-0 bottom-0 -z-10 h-44 bg-[linear-gradient(180deg,rgba(0,0,0,0)_0%,#020202_88%)]" />
 
       <div className="mx-auto max-w-7xl">
         <div className="mt-8 grid min-h-[calc(100vh-11rem)] items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10">
@@ -32,10 +32,10 @@ export default function Hero({
               className="mb-8 h-auto w-52 sm:w-64"
             /> */}
 
-            <p className="mb-4 border-l-2 border-red-600 pl-4 text-sm font-semibold uppercase tracking-[0.22em] text-zinc-200">
+            <p className="hero-eyebrow mb-4 border-l-2 border-red-600 pl-4 text-sm font-semibold uppercase tracking-[0.22em] text-zinc-200">
               {content.eyebrow}
             </p>
-            <h1 className="max-w-4xl text-4xl font-black leading-[1.04] text-white sm:text-5xl lg:text-6xl xl:text-7xl">
+            <h1 className="hero-title max-w-4xl text-4xl font-black leading-[1.04] text-white sm:text-5xl lg:text-6xl xl:text-7xl">
               {content.titleFirst}
               <span className="block text-red-500">
                 {content.titleSecond}
@@ -44,7 +44,7 @@ export default function Hero({
 
             <div className="my-7 h-1 w-24 rounded-full bg-red-600 shadow-[0_0_28px_rgba(220,38,38,0.5)] sm:w-32" />
 
-            <p className="max-w-2xl text-base font-semibold leading-7 text-zinc-200 sm:text-lg sm:leading-8 lg:text-xl">
+            <p className="hero-description max-w-2xl text-base font-semibold leading-7 text-zinc-200 sm:text-lg sm:leading-8 lg:text-xl">
               {content.description}
             </p>
 
@@ -58,7 +58,7 @@ export default function Hero({
 
               <Link
                 href={`/${locale}/Sell`}
-                className="inline-flex h-12 w-full items-center justify-center rounded-md border border-white/20 bg-white/10 px-6 py-2 text-sm font-bold text-white backdrop-blur transition-all hover:border-red-500/50 hover:bg-red-600/15 sm:w-auto "
+                className="hero-secondary-cta inline-flex h-12 w-full items-center justify-center rounded-md border border-white/20 bg-white/10 px-6 py-2 text-sm font-bold text-white backdrop-blur transition-all hover:border-red-500/50 hover:bg-red-600/15 sm:w-auto "
               >
                 {content.secondaryCta}
                 <svg
@@ -81,16 +81,16 @@ export default function Hero({
           </div>
 
           <div className="relative mx-auto hidden w-full max-w-[560px] justify-center lg:flex">
-            <div className="absolute -left-10 top-8 h-40 w-1 bg-red-600 shadow-[0_0_30px_rgba(220,38,38,0.75)]" />
+            <div className="hero-logo-accent absolute -left-10 top-8 h-40 w-1 bg-red-600 shadow-[0_0_30px_rgba(220,38,38,0.75)]" />
             <div className="relative w-full py-16">
-              <div className="absolute inset-y-6 left-8 right-0 border-y border-white/15" />
+              <div className="hero-logo-frame absolute inset-y-6 left-8 right-0 border-y border-white/15" />
               <Image
                 src="/LogoBG.png"
                 alt="AutoAnders"
                 width={2880}
                 height={890}
                 priority
-                className="relative z-10 h-auto w-full drop-shadow-[0_28px_70px_rgba(0,0,0,0.75)]"
+                className="hero-logo relative z-10 h-auto w-full drop-shadow-[0_28px_70px_rgba(0,0,0,0.75)]"
               />
               <div className="absolute bottom-10 right-8 h-1 w-40 bg-red-600" />
             </div>

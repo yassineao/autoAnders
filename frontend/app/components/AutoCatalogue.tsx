@@ -517,7 +517,7 @@ export default function AutoCatalogue({
                     {localizedTags.map((tag) => (
                       <span
                         key={tag}
-                        className="rounded-full bg-red-600/15 px-2.5 py-1 text-red-100 sm:px-3"
+                        className="rounded-full bg-red-900 px-2.5 py-1 text-red-100 sm:px-3"
                       >
                         {tag}
                       </span>
@@ -561,14 +561,14 @@ export default function AutoCatalogue({
           })}
         </div>
         {filteredCars.length > 1 ? (
-          <div className="mt-3 flex items-center justify-center gap-2 sm:hidden">
+          <div className="mt-3 flex items-center justify-center gap-2 sm:hidden ">
             {filteredCars.map((car, index) => (
               <button
                 key={car.id}
                 type="button"
                 aria-label={`Show ${car.brand} ${car.model}`}
                 onClick={() => scrollToMobileCar(index)}
-                className={`h-2.5 rounded-full transition-all ${
+                className={`h-2.5 bg-zinc-700/50  rounded-full transition-all ${
                   activeMobileCarIndex === index
                     ? "w-6 bg-white"
                     : "w-2.5 bg-white/30"

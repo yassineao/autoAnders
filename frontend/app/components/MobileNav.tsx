@@ -3,6 +3,7 @@
 import { useEffect, useId, useState } from "react";
 import Link from "next/link";
 import LocaleSwitchLink from "./LocaleSwitchLink";
+import ThemeToggle from "./ThemeToggle";
 import { type Locale, type LocaleDictionary } from "../lib/i18n";
 
 type MobileNavProps = {
@@ -46,6 +47,8 @@ export default function MobileNav({ locale, content }: MobileNavProps) {
           label={content.switchLabel}
           className="inline-flex h-10 items-center rounded-full border border-white/10 bg-white/5 px-3 text-sm font-medium text-brand-muted transition-colors hover:border-white/20 hover:text-white"
         />
+
+        <ThemeToggle />
 
         <button
           type="button"

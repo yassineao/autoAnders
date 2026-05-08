@@ -64,7 +64,22 @@ export default async function RootLayout({
     <html
       lang={htmlLang}
       className="h-full antialiased"
+      data-theme="dark"
+      suppressHydrationWarning
     >
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+try {
+  var theme = localStorage.getItem("autoanders-theme");
+  document.documentElement.dataset.theme = theme === "light" ? "light" : "dark";
+  document.documentElement.style.colorScheme = document.documentElement.dataset.theme;
+} catch (_) {}
+`,
+          }}
+        />
+      </head>
       <body>
         {children}
       </body>
