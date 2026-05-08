@@ -85,7 +85,7 @@ export default function Hero({
             <div className="relative w-full py-16">
               <div className="hero-logo-frame absolute inset-y-6 left-8 right-0 border-y border-white/15" />
               <Image
-                src="/LogoBG.png"
+                src="/LogoBG-noBG.png"
                 alt="AutoAnders"
                 width={2880}
                 height={890}
