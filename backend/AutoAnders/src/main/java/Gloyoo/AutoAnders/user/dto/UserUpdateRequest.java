@@ -18,6 +18,9 @@ public class UserUpdateRequest {
     private String password;
 
     @Size(max = 30)
+    private String name;
+
+    @Size(max = 30)
     private String phoneNumber;
 
     // getters & setters
@@ -35,6 +38,14 @@ public class UserUpdateRequest {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getPhoneNumber() {

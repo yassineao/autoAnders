@@ -19,6 +19,9 @@ public class User {
     @Column(nullable = false, unique = true)
     private String email;
 
+    @Column(name= "name")
+    private String name;
+
     @Column(nullable = false)
     private String password;
 
@@ -29,9 +32,6 @@ public class User {
     @Column(nullable = false)
     private Role role;
 
-    @Enumerated(EnumType.STRING)
-    @Column(nullable = false)
-    private Service service;
 
     @Column(name = "created_at", nullable = false, updatable = false)
     private Instant createdAt;
@@ -52,6 +52,8 @@ public class User {
     void onUpdate() {
         this.updatedAt = Instant.now();
     }
+
+
 
 
 }

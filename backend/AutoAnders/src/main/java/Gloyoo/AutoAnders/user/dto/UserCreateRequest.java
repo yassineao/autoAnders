@@ -15,10 +15,24 @@ public class UserCreateRequest {
     @Size(min = 8, max = 255)
     private String password;
 
-    @Size(max = 30)
+    @Size(min = 8, max = 255)
+    private String name;
+
+
+    @Size(min = 8, max = 30)
     private String phoneNumber;
 
     // getters & setters
+
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public String getEmail() {
         return email;
     }

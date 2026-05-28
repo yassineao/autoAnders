@@ -1,6 +1,6 @@
 package Gloyoo.AutoAnders.user.repository;
 
-import com.Yassine.dev.api.user.entity.User;
+import Gloyoo.AutoAnders.user.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
