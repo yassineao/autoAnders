@@ -17,4 +17,4 @@ spring:
         format_sql: true
         dialect: org.hibernate.dialect.PostgreSQLDialect
 jwt:
-  secret: org.hibernate.dialect.PostgreSQLDialectkajfk-01208308ik
+  secret: ${SUPABASE_JWT_SECRET}

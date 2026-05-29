@@ -18,7 +18,7 @@ export default function Hero({
       <div className="hero-photo absolute inset-0 -z-10 bg-[url('/hero.jpg')] bg-cover bg-center bg-no-repeat" />
       <div className="hero-shade absolute inset-0 -z-10 bg-black/55" />
       <div className="hero-side-gradient absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(0,0,0,0.94)_0%,rgba(0,0,0,0.78)_42%,rgba(0,0,0,0.24)_100%)]" />
-      <div className="hero-bottom-gradient absolute inset-x-0 bottom-0 -z-10 h-44 bg-[linear-gradient(180deg,rgba(0,0,0,0)_0%,#020202_88%)]" />
+      {/* <div className="hero-bottom-gradient absolute inset-x-0 bottom-0 -z-10 h-44 bg-[linear-gradient(180deg,rgba(0,0,0,0)_0%,#020202_88%)]" /> */}
 
       <div className="mx-auto max-w-7xl">
         <div className="mt-8 grid min-h-[calc(100vh-11rem)] items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10">

@@ -12,7 +12,12 @@ import java.util.UUID;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "cars")
+@Table(name = "cars",
+        uniqueConstraints = {
+                @UniqueConstraint(name = "uk_cars_license_plate", columnNames = "license_plate")
+        }
+)
+
 public class Car {
     @GeneratedValue(strategy = GenerationType.UUID)
     @Id
@@ -45,6 +50,7 @@ public class Car {
     private String chassisNumber;
     private Integer numberOfKeys;
 
+    @Column(name = "license_plate", unique = true)
     private String licensePlate;
     private Integer engineDisplacement;
     private String colour;
@@ -59,56 +65,69 @@ public class Car {
     private BigDecimal leasePrice48Months;
     private BigDecimal leasePrice36Months;
 
+    @Enumerated(EnumType.STRING)
     private BodyType bodyType;
+
+    @Enumerated(EnumType.STRING)
     private Gearbox gearbox;
+
+    @Enumerated(EnumType.STRING)
     private Fuel fuel;
+
+    @Enumerated(EnumType.STRING)
     private EmissionClass emissionClass;
+
+    @Enumerated(EnumType.STRING)
     private EnergyLabel energyLabel;
+
+    @Enumerated(EnumType.STRING)
     private PaintType paintType;
+
+    @Enumerated(EnumType.STRING)
     private Upholstery upholstery;
 
     public Car(String title, String subtitle, Integer integer, Integer mileage, String power, String s, BigDecimal price, LocalDate localDate, Integer integer1, Integer wheelbase, Integer integer2, String s1, LocalDate localDate1, LocalDate localDate2, Integer integer3, Integer integer4, BigDecimal bigDecimal, BigDecimal bigDecimal1, BigDecimal bigDecimal2, Integer integer5, Boolean aBoolean, String s2, Integer integer6, String s3, Integer integer7, String colour, Integer integer8, Integer integer9, String s4, Boolean aBoolean1, String location, BigDecimal bigDecimal3, BigDecimal bigDecimal4, BigDecimal bigDecimal5, BigDecimal bigDecimal6, BodyType bodyType, Gearbox gearbox, Fuel fuel, EmissionClass emissionClass, EnergyLabel energyLabel, PaintType paintType, Upholstery upholstery) {
-    this.title = title;
-    this.subtitle = subtitle;
-    this.yearOfManufacture = integer;
-    this.mileage = mileage;
-    this.power = power;
-    this.referenceNumber = s;
-    this.firstRegistrationDate = localDate1;
-    this.numberOfDoors = integer2;
-    this.wheelbase = wheelbase;
-    this.numberOfCylinders = integer3;
-    this.motorVehicleTax = s1;
-    this.modelDateFrom = localDate1;
-    this.modelDateTo = localDate2;
-    this.maxTowingWeight = integer4;
-    this.maxTowingWeightUnbraked = integer5;
-    this.urbanFuelConsumption = bigDecimal1;
-    this.combinedFuelConsumption = bigDecimal2;
-    this.motorwayFuelConsumption = bigDecimal3;
-    this.co2Emissions = integer6;
-    this.taxDeductible = aBoolean1;
-    this.chassisNumber = s1;
-    this.numberOfKeys = integer7;
-    this.licensePlate = s1;
-    this.engineDisplacement = integer9;
-    this.colour = colour;
-    this.emptyWeight = integer8;
-    this.taxAdditionPercentage = integer9;
-    this.apkMotDate = s1;
-    this.serviceDocumentation = aBoolean1;
-    this.location = location;
-    this.financialLeasePricePerMonth = bigDecimal1;
-    this.leasePrice60Months = bigDecimal2;
-    this.leasePrice48Months = bigDecimal3;
-    this.leasePrice36Months = bigDecimal4;
-    this.bodyType = bodyType;
-    this.gearbox = gearbox;
-    this.fuel = fuel;
-    this.emissionClass = emissionClass;
-    this.energyLabel = energyLabel;
-    this.paintType = paintType;
-    this.upholstery = upholstery;
+        this.title = title;
+        this.subtitle = subtitle;
+        this.yearOfManufacture = integer;
+        this.mileage = mileage;
+        this.power = power;
+        this.referenceNumber = s;
+        this.firstRegistrationDate = localDate1;
+        this.numberOfDoors = integer2;
+        this.wheelbase = wheelbase;
+        this.numberOfCylinders = integer3;
+        this.motorVehicleTax = s1;
+        this.modelDateFrom = localDate1;
+        this.modelDateTo = localDate2;
+        this.maxTowingWeight = integer4;
+        this.maxTowingWeightUnbraked = integer5;
+        this.urbanFuelConsumption = bigDecimal1;
+        this.combinedFuelConsumption = bigDecimal2;
+        this.motorwayFuelConsumption = bigDecimal3;
+        this.co2Emissions = integer6;
+        this.taxDeductible = aBoolean1;
+        this.chassisNumber = s1;
+        this.numberOfKeys = integer7;
+        this.licensePlate = s1;
+        this.engineDisplacement = integer9;
+        this.colour = colour;
+        this.emptyWeight = integer8;
+        this.taxAdditionPercentage = integer9;
+        this.apkMotDate = s1;
+        this.serviceDocumentation = aBoolean1;
+        this.location = location;
+        this.financialLeasePricePerMonth = bigDecimal1;
+        this.leasePrice60Months = bigDecimal2;
+        this.leasePrice48Months = bigDecimal3;
+        this.leasePrice36Months = bigDecimal4;
+        this.bodyType = bodyType;
+        this.gearbox = gearbox;
+        this.fuel = fuel;
+        this.emissionClass = emissionClass;
+        this.energyLabel = energyLabel;
+        this.paintType = paintType;
+        this.upholstery = upholstery;
 
 
     }

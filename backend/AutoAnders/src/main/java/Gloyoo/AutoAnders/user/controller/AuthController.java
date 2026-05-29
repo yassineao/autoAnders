@@ -43,10 +43,10 @@ public class AuthController {
             User u = userService.register(req);
             // optional: auto-login after register
             String access = jwt.generateToken(u.getEmail(),
-                    Map.of("uid", u.getId(), "role", u.getRole(),"user",u.getName()),
+                    Map.of("uid", u.getId().toString(), "role", u.getRole(),"user",u.getName()),
                     ACCESS_TTL);
             String refresh = jwt.generateToken(u.getEmail(),
-                    Map.of("uid", u.getId(), "role", u.getRole(),"user",u.getName(), "type", "refresh"),
+                    Map.of("uid", u.getId().toString(), "role", u.getRole(),"user",u.getName(), "type", "refresh"),
                     REFRESH_TTL);
             return withAuthCookies(ResponseEntity.status(HttpStatus.CREATED), request, access, refresh)
                     .body(authPayload(u));
@@ -69,10 +69,10 @@ public class AuthController {
             }
 
             String access = jwt.generateToken(u.getEmail(),
-                    Map.of("uid", u.getId(), "role", u.getRole(),"user",u.getName()),
+                    Map.of("uid", u.getId().toString(), "role", u.getRole(),"user",u.getName()),
                     ACCESS_TTL);
             String refresh = jwt.generateToken(u.getEmail(),
-                    Map.of("uid", u.getId(), "role", u.getRole(),"user",u.getName(), "type", "refresh"),
+                    Map.of("uid", u.getId().toString(), "role", u.getRole(),"user",u.getName(), "type", "refresh"),
                     REFRESH_TTL);
             return withAuthCookies(ResponseEntity.ok(), request, access, refresh)
                     .body(authPayload(u));
@@ -205,7 +205,7 @@ public class AuthController {
 
     private Map<String, Object> authPayload(User user) {
         Map<String, Object> payload = new HashMap<>();
-        payload.put("uid", user.getId());
+        payload.put("uid", user.getId().toString());
         payload.put("role", user.getRole());
         payload.put("user", user.getName());
         payload.put("email", user.getEmail());
