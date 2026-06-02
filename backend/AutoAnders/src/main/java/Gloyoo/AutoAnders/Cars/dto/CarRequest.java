@@ -53,5 +53,6 @@ public record CarRequest(
         EmissionClass emissionClass,
         EnergyLabel energyLabel,
         PaintType paintType,
-        Upholstery upholstery
+        Upholstery upholstery,
+        Status status
 ) {}

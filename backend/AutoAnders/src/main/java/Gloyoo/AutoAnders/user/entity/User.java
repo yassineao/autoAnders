@@ -1,13 +1,17 @@
 package Gloyoo.AutoAnders.user.entity;
 
+import Gloyoo.AutoAnders.Cars.entity.Car;
 import jakarta.persistence.*;
 import lombok.*;
 
 import java.time.Instant;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 @Entity
 @Table(name = "users")
 public class User {
@@ -42,6 +46,7 @@ public class User {
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
 
 
+
     @PrePersist
     void onCreate() {
         this.createdAt = Instant.now();
@@ -53,7 +58,8 @@ public class User {
         this.updatedAt = Instant.now();
     }
 
-
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Car> cars = new ArrayList<>();
 
 
 }

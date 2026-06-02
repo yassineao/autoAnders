@@ -1,5 +1,6 @@
 package Gloyoo.AutoAnders.user.controller;
 
+import Gloyoo.AutoAnders.Cars.entity.Car;
 import Gloyoo.AutoAnders.config.JwtService;
 import Gloyoo.AutoAnders.user.dto.AuthRequest;
 import Gloyoo.AutoAnders.user.dto.AuthResponse;
@@ -18,6 +19,7 @@ import org.springframework.http.ResponseEntity;
 
 import java.time.Duration;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -109,6 +111,15 @@ public class AuthController {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(Map.of("error", "Invalid/expired token"));
         }
     }
+
+    @GetMapping("/getUserCars")
+    public ResponseEntity<?> getUserCars(Authentication authentication) {
+        User user = (User) authentication.getPrincipal();
+        List<Car> cars = userService.findAllCarsByUserId(user.getId());
+        return ResponseEntity.ok(cars);
+
+    }
+
 
     @GetMapping("/me")
     public ResponseEntity<?> me(Authentication authentication) {
