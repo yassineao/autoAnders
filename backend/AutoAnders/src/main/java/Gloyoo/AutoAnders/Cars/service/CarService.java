@@ -4,6 +4,8 @@ import Gloyoo.AutoAnders.Cars.dto.CarRequest;
 import Gloyoo.AutoAnders.Cars.entity.*;
 import Gloyoo.AutoAnders.Cars.repository.CarRepository;
 
+import Gloyoo.AutoAnders.user.entity.User;
+import Gloyoo.AutoAnders.user.repository.UserRepository;
 import jakarta.validation.constraints.NotNull;
 import org.springframework.stereotype.Service;
 
@@ -15,15 +17,20 @@ import java.util.UUID;
 @Service
 public class CarService {
     private final CarRepository carRepository;
+    private final UserRepository userRepository;
 
-    public CarService(CarRepository carRepository) {
+    public CarService(CarRepository carRepository, UserRepository userRepository) {
         this.carRepository = carRepository;
+        this.userRepository = userRepository;
     }
 
-    public Car addCar(@NotNull CarRequest carRequest) {
+    public Car addCar(@NotNull CarRequest carRequest, @NotNull UUID userId) {
         if (carRepository.existsByLicensePlate(carRequest.licensePlate())) {
             throw new IllegalArgumentException("Car already exists with this license plate");
         }
+        User user = userRepository.findById(userId)
+                .orElseThrow(() -> new IllegalArgumentException("User not found"));
+
         Car car = Car.builder()
                 .title(carRequest.title())
                 .subtitle(carRequest.subtitle())
@@ -68,14 +75,20 @@ public class CarService {
                 .paintType(carRequest.paintType())
                 .upholstery(carRequest.upholstery())
                 .status(carRequest.status())
+                .user(user)
                 .build();
 
         return carRepository.save(car);
     }
 
-    public Car updateCar(UUID id, CarRequest carRequest) {
+    public Car updateCar(@NotNull CarRequest carRequest,@NotNull UUID id) {
         Car car = carRepository.findById(id)
                 .orElseThrow(() -> new IllegalArgumentException("Car not found"));
+
+        if (!car.getLicensePlate().equals(carRequest.licensePlate())
+                && carRepository.existsByLicensePlate(carRequest.licensePlate())) {
+            throw new IllegalArgumentException("Car already exists with this license plate");
+        }
 
         car.setTitle(carRequest.title());
         car.setSubtitle(carRequest.subtitle());
@@ -127,7 +140,7 @@ public class CarService {
     public void deleteCar(UUID id) {
         Car car = carRepository.findById(id)
                 .orElseThrow(() -> new IllegalArgumentException("Car not found"));
-        carRepository.deleteById(id);
+        carRepository.deleteById(car.getId());
     }
 
     public List<Car> findAllCars() {

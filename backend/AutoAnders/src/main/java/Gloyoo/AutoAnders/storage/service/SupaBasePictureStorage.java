@@ -14,7 +14,7 @@ import java.util.UUID;
 public class SupaBasePictureStorage {
     private final RestClient restClient;
 
-    @Value("${SUPABASE_DB_URL}")
+    @Value("${supabase.url}")
     private String supabaseUrl;
 
     @Value("${supabase.service-role-key}")

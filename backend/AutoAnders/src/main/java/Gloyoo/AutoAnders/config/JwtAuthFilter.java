@@ -5,8 +5,10 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import Gloyoo.AutoAnders.config.JwtService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
@@ -19,6 +21,7 @@ import java.util.UUID;
 public class JwtAuthFilter extends OncePerRequestFilter {
 
     private static final String ACCESS_COOKIE = "accessToken";
+    private static final Logger log = LoggerFactory.getLogger(JwtAuthFilter.class);
 
     private final JwtService jwt;
 
@@ -59,13 +62,13 @@ public class JwtAuthFilter extends OncePerRequestFilter {
 
                 String role = (String) claims.get("role");
                 String user = (String) claims.get("user");
+                List<SimpleGrantedAuthority> authorities = List.of(
+                        new SimpleGrantedAuthority("ROLE_" + claims.get("role"))
+                );
 
                 if (SecurityContextHolder.getContext().getAuthentication() == null) {
-                    var authentication = new UsernamePasswordAuthenticationToken(
-                            uid,
-                            null,
-                            role != null ? List.of(() -> role) : List.of()
-                    );
+                    UsernamePasswordAuthenticationToken authentication =
+                            new UsernamePasswordAuthenticationToken(user, null, authorities);
 
                     authentication.setDetails(java.util.Map.of(
                             "uid", uid.toString(),
@@ -78,7 +81,8 @@ public class JwtAuthFilter extends OncePerRequestFilter {
                 }
 
             } catch (Exception e) {
-                e.printStackTrace();
+                log.warn("Rejected access token on {} {}: {}",
+                        request.getMethod(), request.getRequestURI(), e.getMessage());
                 SecurityContextHolder.clearContext();
                 response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
                 response.setContentType("application/json");
@@ -94,6 +98,15 @@ public class JwtAuthFilter extends OncePerRequestFilter {
         }
 
         chain.doFilter(request, response);
+    }
+
+    @Override
+    protected boolean shouldNotFilter(HttpServletRequest request) {
+        String path = request.getServletPath();
+        return path.equals("/auth/login")
+                || path.equals("/auth/register")
+                || path.equals("/auth/refresh")
+                || path.equals("/auth/logout");
     }
 
     private String readCookie(HttpServletRequest request, String name) {

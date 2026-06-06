@@ -5,14 +5,18 @@ import Gloyoo.AutoAnders.Cars.dto.CarRequest;
 import Gloyoo.AutoAnders.Cars.entity.Car;
 import Gloyoo.AutoAnders.Cars.entity.Status;
 import Gloyoo.AutoAnders.Cars.service.CarService;
+import Gloyoo.AutoAnders.user.entity.User;
 import jakarta.persistence.PostUpdate;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.UUID;
 
+@Slf4j
 @RestController
 @RequestMapping("/cars")
 public class CarController {
@@ -24,10 +28,23 @@ public class CarController {
     }
 
     @PostMapping
-    public ResponseEntity<Car> addCar(@RequestBody CarRequest carRequest) {
+    public ResponseEntity<Car> addCar(@RequestBody CarRequest carRequest, Authentication authentication) {
+        @SuppressWarnings("unchecked")
+        var details = (java.util.Map<String, String>) authentication.getDetails();
 
-        Car savedCar = carService.addCar(carRequest);
-        return ResponseEntity.status(HttpStatus.CREATED).body(savedCar);
+        UUID userId = UUID.fromString(details.get("uid"));
+        try{
+
+            Car savedCar = carService.addCar(carRequest, userId);
+
+
+            return ResponseEntity.status(HttpStatus.CREATED).body(savedCar);
+        }
+        catch (Exception e){
+            log.error(e.getMessage(), userId);
+            return ResponseEntity.badRequest().build();
+        }
+
     }
 
     @GetMapping
@@ -52,9 +69,9 @@ public class CarController {
         return ResponseEntity.noContent().build();
     }
     @PostMapping("/{id}")
-    public ResponseEntity<?> updateCar(@PathVariable UUID id , @RequestBody CarRequest carRequest) {
+    public ResponseEntity<?> updateCar( @RequestBody CarRequest carRequest, @PathVariable UUID id ) {
         try  {
-            Car savedCar = carService.updateCar(id, carRequest);
+            Car savedCar = carService.updateCar( carRequest,id);
             return ResponseEntity.ok(savedCar);
         }
         catch (Exception e) {

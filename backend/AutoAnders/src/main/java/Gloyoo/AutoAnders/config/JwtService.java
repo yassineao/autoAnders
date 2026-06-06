@@ -23,10 +23,10 @@ public class JwtService {
 
     public JwtService(@Value("${jwt.secret}") String secret) {
         if (secret == null || secret.isBlank()) {
-            throw new IllegalStateException("JWT secret is missing. Set JWT_SECRET in the backend environment.");
+            throw new IllegalStateException("JWT secret is missing. Set SUPABASE_JWT_SECRET in the backend environment.");
         }
         if (secret.getBytes(StandardCharsets.UTF_8).length < MIN_SECRET_LENGTH) {
-            throw new IllegalStateException("JWT_SECRET must be at least 32 bytes for HS256 signing.");
+            throw new IllegalStateException("SUPABASE_JWT_SECRET must be at least 32 bytes for HS256 signing.");
         }
 
         this.key = Keys.hmacShaKeyFor(secret.getBytes(StandardCharsets.UTF_8));

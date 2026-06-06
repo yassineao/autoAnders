@@ -14,28 +14,26 @@ import java.util.UUID;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Data
-@Repository
 @Entity
-@Table(name = "car_pictures"
-        )
+@Table(name = "car_pictures")
 public class CarPicture {
-    @GeneratedValue(strategy = GenerationType.UUID)
+
     @Id
+    @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
     @Column(name = "storage_path", nullable = false)
-    private String storagePath;
+    private String storage_path;
 
     private String title;
 
     private String description;
 
     private Integer width;
+
     private Integer height;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "car_id", nullable = false)
     private Car car;
-
 }
