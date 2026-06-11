@@ -8,6 +8,7 @@ import Gloyoo.AutoAnders.storage.service.SupaBasePictureStorage;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.util.List;
 import java.util.UUID;
 
 @Service
@@ -50,5 +51,9 @@ public class CarPictureService {
                 .build();
 
         return carPictureRepository.save(picture);
+    }
+
+    public List<CarPicture> getAllCarPicturesByCarId(UUID carId ) {
+        return carPictureRepository.findByCarId(carId);
     }
 }

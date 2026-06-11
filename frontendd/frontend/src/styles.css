@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #d90429;
+  --color-brand-secondary: #ffffff;
+  --color-brand-accent: #9d0208;
+  --color-brand-muted: #a1a1aa;
+  --color-brand-gray: #a1a1aa;
+  --color-brand-graySoft: #d4d4d8;
+  --color-brand-grayMuted: #71717a;
+  --color-brand-grayLight: #d4d4d8;
+  --color-brand-navyDark: #0b0b0f;
+  --color-brand-petalPink: #ef4444;
+  --color-brand-purple: #dc2626;
+  --color-brand-teal: #f87171;
+}
+
+:root {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+html[data-theme="light"] {
+  --background: #f7f7f8;
+  --foreground: #171717;
+  color-scheme: light;
+}
+
+html[data-theme="light"] body,
+html[data-theme="light"] main,
+html[data-theme="light"] section {
+  background-color: #ffffff87;
+  color: #171717;
+}
+html[data-theme="light"] footer {
+  background-color: #e9e7e7;
+  color: #171717;
+}
+html[data-theme="light"] :where(.text-white, .text-zinc-100, .text-zinc-200, .text-zinc-300) {
+  color: #111827;
+}
+
+html[data-theme="light"] :where(.absolute, .inset-0, .bg-gradient-to-r)  {
+  
+  color: #4b5563;
+}
+
+html[data-theme="light"] :where(.text-zinc-400, .text-zinc-500, .text-brand-muted) {
+  color: #4b5563;
+}
+
+html[data-theme="light"] :where(.bg-black, .bg-zinc-950, .bg-zinc-900, .bg-white\/5) {
+  background-color: #ffffff;
+}
+
+html[data-theme="light"] :where(.border-white\/5, .border-white\/10, .border-white\/20) {
+  border-color: rgb(15 23 42 / 0.12);
+}
+
+html[data-theme="light"] input,
+html[data-theme="light"] textarea,
+html[data-theme="light"] select {
+  background: #ffffff;
+  color: #111827;
+}
+
+html[data-theme="light"] :where( .border-white\/5, .bg-black\/80){
+  border-color: rgb(15 23 42 / 0.12);
+  background-color: rgba(156, 162, 178, 0.477);
+}
+
+
+html[data-theme="light"] :where( .border-white\/10, .bg-zinc-950){
+  border-color: rgb(15 23 42 / 0.12);
+  background-color: rgba(199, 200, 204, 0.477);
+}

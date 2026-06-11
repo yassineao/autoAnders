@@ -1,0 +1,2 @@
+ALTER TABLE wash_calendar
+ADD COLUMN accepted BOOLEAN NOT NULL;

@@ -2,12 +2,9 @@ package Gloyoo.AutoAnders.user.controller;
 
 import Gloyoo.AutoAnders.Cars.entity.Car;
 import Gloyoo.AutoAnders.config.JwtService;
-import Gloyoo.AutoAnders.user.dto.AuthRequest;
-import Gloyoo.AutoAnders.user.dto.AuthResponse;
-import Gloyoo.AutoAnders.user.dto.TokenResponse;
+import Gloyoo.AutoAnders.user.dto.*;
 import Gloyoo.AutoAnders.user.entity.User;
 import Gloyoo.AutoAnders.user.service.UserService;
-import Gloyoo.AutoAnders.user.dto.UserCreateRequest;
 import io.jsonwebtoken.Claims;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
@@ -118,6 +115,17 @@ public class AuthController {
         List<Car> cars = userService.findAllCarsByUserId(user.getId());
         return ResponseEntity.ok(cars);
 
+    }
+
+    @PatchMapping("/update")
+    public ResponseEntity<?> updateUser(
+            @RequestBody UserUpdateRequest req,
+            Authentication authentication
+    )
+    {
+        User user = (User) authentication.getPrincipal();
+        userService.update(user.getId(), req);
+        return ResponseEntity.ok().build();
     }
 
 

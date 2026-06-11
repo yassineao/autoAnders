@@ -7,6 +7,7 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.UUID;
 
 @RestController
@@ -36,5 +37,11 @@ public class CarPictureController {
         );
 
         return ResponseEntity.ok(picture);
+    }
+
+    @GetMapping
+    public ResponseEntity<List<CarPicture>> getAllCarPictures(@PathVariable UUID carId) {
+        List <CarPicture> carPictures = carPictureService.getAllCarPicturesByCarId(carId);
+        return ResponseEntity.ok().body(carPictures);
     }
 }

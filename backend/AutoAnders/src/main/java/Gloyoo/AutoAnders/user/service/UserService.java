@@ -3,6 +3,7 @@ package Gloyoo.AutoAnders.user.service;
 import Gloyoo.AutoAnders.Cars.entity.Car;
 import Gloyoo.AutoAnders.Cars.repository.CarRepository;
 import Gloyoo.AutoAnders.user.dto.UserCreateRequest;
+import Gloyoo.AutoAnders.user.dto.UserUpdateRequest;
 import Gloyoo.AutoAnders.user.entity.Role;
 import Gloyoo.AutoAnders.user.entity.User;
 import Gloyoo.AutoAnders.user.repository.UserRepository;
@@ -64,5 +65,22 @@ public class UserService {
 
     public boolean checkPassword(User user, String rawPassword) {
         return encoder.matches(rawPassword, user.getPassword());
+    }
+
+    public void update(UUID uuid, UserUpdateRequest req) {
+        User user = this.findByIdOrThrow(uuid);
+
+            user.setEmail(user.getEmail());
+
+
+        if (req.getName() != null) {
+            user.setName(req.getName());
+        }
+
+        if (req.getPassword() != null && !req.getPassword().isBlank()) {
+            user.setPassword(encoder.encode(req.getPassword()));
+        }
+
+        users.save(user);
     }
 }

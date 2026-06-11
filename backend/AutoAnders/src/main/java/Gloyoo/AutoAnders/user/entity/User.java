@@ -1,6 +1,7 @@
 package Gloyoo.AutoAnders.user.entity;
 
 import Gloyoo.AutoAnders.Cars.entity.Car;
+import Gloyoo.AutoAnders.washCalendar.entity.WashCalendar;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -8,6 +9,7 @@ import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -23,7 +25,7 @@ public class User {
     @Column(nullable = false, unique = true)
     private String email;
 
-    @Column(name= "name")
+    @Column(name = "name")
     private String name;
 
     @Column(nullable = false)
@@ -36,7 +38,6 @@ public class User {
     @Column(nullable = false)
     private Role role;
 
-
     @Column(name = "created_at", nullable = false, updatable = false)
     private Instant createdAt;
 
@@ -44,8 +45,12 @@ public class User {
     private Instant updatedAt;
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
+    @Builder.Default
+    private List<Car> cars = new ArrayList<>();
 
-
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
+    @Builder.Default
+    private List<WashCalendar> washCalendars = new ArrayList<>();
 
     @PrePersist
     void onCreate() {
@@ -57,9 +62,4 @@ public class User {
     void onUpdate() {
         this.updatedAt = Instant.now();
     }
-
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<Car> cars = new ArrayList<>();
-
-
 }

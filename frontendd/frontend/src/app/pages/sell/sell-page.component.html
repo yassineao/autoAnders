@@ -1,0 +1,23 @@
+<main class="min-h-screen bg-black px-4 pb-16 pt-28 text-white">
+  <section class="mx-auto max-w-5xl rounded-xl border border-white/10 bg-zinc-900 p-6 sm:p-8">
+    <p class="font-semibold text-red-500">{{ content().eyebrow }}</p>
+    <h1 class="mt-2 text-4xl font-black">{{ content().title }}</h1>
+    <p class="mt-4 max-w-2xl leading-7 text-zinc-400">{{ content().description }}</p>
+    <form #form="ngForm" (ngSubmit)="submit(form)" class="mt-8 grid gap-4 sm:grid-cols-2">
+      @for (field of fields; track field.name) {
+        <label class="text-sm text-zinc-300">
+          {{ field.label }}
+          <input [name]="field.name" ngModel [required]="field.required" [type]="field.type" class="mt-2 w-full rounded-lg border border-white/10 bg-zinc-950 px-4 py-3" />
+        </label>
+      }
+      <label class="text-sm text-zinc-300 sm:col-span-2">
+        Message
+        <textarea name="message" ngModel rows="5" class="mt-2 w-full rounded-lg border border-white/10 bg-zinc-950 px-4 py-3"></textarea>
+      </label>
+      <button [disabled]="form.invalid" class="rounded-lg bg-red-600 px-5 py-3.5 font-bold disabled:opacity-50 sm:col-span-2">{{ content().send }}</button>
+    </form>
+    @if (sent()) {
+      <p class="mt-5 rounded-lg bg-emerald-500/10 p-4 text-emerald-300">Request sent.</p>
+    }
+  </section>
+</main>

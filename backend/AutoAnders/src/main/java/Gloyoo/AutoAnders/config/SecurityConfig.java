@@ -95,7 +95,6 @@ public class SecurityConfig {
         cfg.setAllowedOriginPatterns(List.of(
                 "http://localhost:3000",
                 "http://localhost:5173",
-                "https://guitar-io.vercel.app",
                 "https://*.vercel.app"
         ));
 
