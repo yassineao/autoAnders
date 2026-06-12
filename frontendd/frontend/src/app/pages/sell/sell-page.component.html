@@ -14,7 +14,7 @@
         Message
         <textarea name="message" ngModel rows="5" class="mt-2 w-full rounded-lg border border-white/10 bg-zinc-950 px-4 py-3"></textarea>
       </label>
-      <button [disabled]="form.invalid" class="rounded-lg bg-red-600 px-5 py-3.5 font-bold disabled:opacity-50 sm:col-span-2">{{ content().send }}</button>
+      <button id="submit-button" [disabled]="form.invalid" class="rounded-lg bg-red-600 px-5 py-3.5 font-bold disabled:opacity-50 sm:col-span-2">{{ content().send }}</button>
     </form>
     @if (sent()) {
       <p class="mt-5 rounded-lg bg-emerald-500/10 p-4 text-emerald-300">Request sent.</p>

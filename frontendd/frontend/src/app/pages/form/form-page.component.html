@@ -36,7 +36,7 @@
             <a [routerLink]="['/', locale(), 'privacy']" class="underline">{{ content().consent.privacyPolicy }}</a>{{ content().consent.suffix }}
           </span>
         </label>
-        <button [disabled]="form.invalid || sending()" class="w-full rounded-lg bg-red-600 px-5 py-3.5 font-bold disabled:opacity-50">{{ sending() ? "Sending..." : content().submitLabel }}</button>
+        <button id="submit-button" [disabled]="form.invalid || sending()" class="w-full rounded-lg bg-red-600 px-5 py-3.5 font-bold disabled:opacity-50">{{ sending() ? "Sending..." : content().submitLabel }}</button>
       </form>
     </section>
     <aside class="relative hidden overflow-hidden rounded-xl lg:block">

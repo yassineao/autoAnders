@@ -86,3 +86,258 @@
     at ɵɵelementStart (C:\Users\yassu\autoAnders\frontendd\frontend\.angular\cache\21.2.15\frontend\vite\deps_ssr\chunk-4RTEKKDK.js:13999:3)
     at Module.ɵɵelement (C:\Users\yassu\autoAnders\frontendd\frontend\.angular\cache\21.2.15\frontend\vite\deps_ssr\chunk-4RTEKKDK.js:14038:3)
     at LocaleShellComponent_Template (C:\Users\yassu\autoAnders\frontendd\frontend\src\app\shared\locale-shell\locale-shell.component.ts:14:5)[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'theme' does not exist on type 'HomeComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/home/home.component.html:5:9:
+[37m      5 │     @if ([32mtheme[37m() !== 'light') {
+        ╵          [32m~~~~~[0m
+
+  Error occurs in the template of component HomeComponent.
+
+    src/app/pages/home/home.component.ts:13:15:
+[37m      13 │   templateUrl: [32m"./home.component.html"[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'theme' does not exist on type 'HomeComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/home/home.component.html:5:9:
+[37m      5 │     @if ([32mtheme[37m() !== 'light') {
+        ╵          [32m~~~~~[0m
+
+  Error occurs in the template of component HomeComponent.
+
+    src/app/pages/home/home.component.ts:13:15:
+[37m      13 │   templateUrl: [32m"./home.component.html"[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mUnexpected "="[0m [css-syntax-error]
+
+    src/styles.css:1330:38:
+[37m      1330 │ ...a-theme="light"] :where( class[32m=[37m".mt-10, .flex, .flex-col, .ga...
+           ╵                                  [32m^[0m
+
+[39m[22m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mUnexpected "\".mt-10, .flex, .flex-col, .gap-4, .border-t, .border-white\\/10, .pt-6, .text-sm, .text-zinc-400, .lg:flex-row, .lg:items-center, .lg:justify-between\""[0m [css-syntax-error]
+
+    src/styles.css:1330:33:
+[37m      1330 │ ...] :where( [32m".mt-10, .flex, .flex-col, .gap-4, .border-t, .bord[37m...
+           ╵              [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mUnknown word brightness[0m [1m[35m[plugin angular-css][0m
+
+    src/styles.css:83:2:
+[37m      83 │   [32m[37mbrightness(0);
+         ╵   [32m^[0m
+
+  The plugin "angular-css" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.css'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2367: This comparison appears to be unintentional because the types 'Signal<"light" | "dark">' and 'string' have no overlap.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/home/home.component.html:4:9:
+[37m      4 │     @if ([32mtheme === "light"[37m) {
+        ╵          [32m~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component HomeComponent.
+
+    src/app/pages/home/home.component.ts:13:15:
+[37m      13 │   templateUrl: [32m"./home.component.html"[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2349: This expression is not callable.
+  Type 'String' has no call signatures.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/home/home.component.html:4:9:
+[37m      4 │     @if ([32mtheme[37m() === "light") {
+        ╵          [32m~~~~~[0m
+
+  Error occurs in the template of component HomeComponent.
+
+    src/app/pages/home/home.component.ts:13:15:
+[37m      13 │   templateUrl: [32m"./home.component.html"[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2722: Cannot invoke an object which is possibly 'undefined'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/home/home.component.html:4:9:
+[37m      4 │     @if ([32mtheme[37m() === "light") {
+        ╵          [32m~~~~~[0m
+
+  Error occurs in the template of component HomeComponent.
+
+    src/app/pages/home/home.component.ts:13:15:
+[37m      13 │   templateUrl: [32m"./home.component.html"[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2349: This expression is not callable.
+  Type 'String' has no call signatures.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/home/home.component.html:4:9:
+[37m      4 │     @if ([32mtheme[37m() === "light") {
+        ╵          [32m~~~~~[0m
+
+  Error occurs in the template of component HomeComponent.
+
+    src/app/pages/home/home.component.ts:13:15:
+[37m      13 │   templateUrl: [32m"./home.component.html"[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2722: Cannot invoke an object which is possibly 'undefined'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/home/home.component.html:4:9:
+[37m      4 │     @if ([32mtheme[37m() === "light") {
+        ╵          [32m~~~~~[0m
+
+  Error occurs in the template of component HomeComponent.
+
+    src/app/pages/home/home.component.ts:13:15:
+[37m      13 │   templateUrl: [32m"./home.component.html"[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2349: This expression is not callable.
+  Type 'String' has no call signatures.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/home/home.component.html:4:9:
+[37m      4 │     @if ([32mtheme[37m() === "light") {
+        ╵          [32m~~~~~[0m
+
+  Error occurs in the template of component HomeComponent.
+
+    src/app/pages/home/home.component.ts:13:15:
+[37m      13 │   templateUrl: [32m"./home.component.html"[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2722: Cannot invoke an object which is possibly 'undefined'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/home/home.component.html:4:9:
+[37m      4 │     @if ([32mtheme[37m() === "light") {
+        ╵          [32m~~~~~[0m
+
+  Error occurs in the template of component HomeComponent.
+
+    src/app/pages/home/home.component.ts:13:15:
+[37m      13 │   templateUrl: [32m"./home.component.html"[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2349: This expression is not callable.
+  Type 'String' has no call signatures.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/home/home.component.html:4:9:
+[37m      4 │     @if ([32mtheme[37m() === "light") {
+        ╵          [32m~~~~~[0m
+
+  Error occurs in the template of component HomeComponent.
+
+    src/app/pages/home/home.component.ts:13:15:
+[37m      13 │   templateUrl: [32m"./home.component.html"[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2722: Cannot invoke an object which is possibly 'undefined'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/home/home.component.html:4:9:
+[37m      4 │     @if ([32mtheme[37m() === "light") {
+        ╵          [32m~~~~~[0m
+
+  Error occurs in the template of component HomeComponent.
+
+    src/app/pages/home/home.component.ts:13:15:
+[37m      13 │   templateUrl: [32m"./home.component.html"[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2349: This expression is not callable.
+  Type 'String' has no call signatures.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/home/home.component.html:4:9:
+[37m      4 │     @if ([32mtheme[37m() === "light") {
+        ╵          [32m~~~~~[0m
+
+  Error occurs in the template of component HomeComponent.
+
+    src/app/pages/home/home.component.ts:13:15:
+[37m      13 │   templateUrl: [32m"./home.component.html"[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2722: Cannot invoke an object which is possibly 'undefined'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/home/home.component.html:4:9:
+[37m      4 │     @if ([32mtheme[37m() === "light") {
+        ╵          [32m~~~~~[0m
+
+  Error occurs in the template of component HomeComponent.
+
+    src/app/pages/home/home.component.ts:13:15:
+[37m      13 │   templateUrl: [32m"./home.component.html"[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2349: This expression is not callable.
+  Type 'String' has no call signatures.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/home/home.component.html:4:9:
+[37m      4 │     @if ([32mtheme[37m() === "light") {
+        ╵          [32m~~~~~[0m
+
+  Error occurs in the template of component HomeComponent.
+
+    src/app/pages/home/home.component.ts:13:15:
+[37m      13 │   templateUrl: [32m"./home.component.html"[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2722: Cannot invoke an object which is possibly 'undefined'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/home/home.component.html:4:9:
+[37m      4 │     @if ([32mtheme[37m() === "light") {
+        ╵          [32m~~~~~[0m
+
+  Error occurs in the template of component HomeComponent.
+
+    src/app/pages/home/home.component.ts:13:15:
+[37m      13 │   templateUrl: [32m"./home.component.html"[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2349: This expression is not callable.
+  Type 'String' has no call signatures.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/home/home.component.html:4:9:
+[37m      4 │     @if ([32mtheme[37m() === "light") {
+        ╵          [32m~~~~~[0m
+
+  Error occurs in the template of component HomeComponent.
+
+    src/app/pages/home/home.component.ts:13:15:
+[37m      13 │   templateUrl: [32m"./home.component.html"[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2722: Cannot invoke an object which is possibly 'undefined'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/home/home.component.html:4:9:
+[37m      4 │     @if ([32mtheme[37m() === "light") {
+        ╵          [32m~~~~~[0m
+
+  Error occurs in the template of component HomeComponent.
+
+    src/app/pages/home/home.component.ts:13:15:
+[37m      13 │   templateUrl: [32m"./home.component.html"[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
